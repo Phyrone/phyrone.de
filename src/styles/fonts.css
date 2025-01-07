@@ -1,0 +1,10 @@
+@import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource-variable/pixelify-sans';
+
+.font-jetbrains-mono {
+	font-family: 'JetBrains Mono Variable', monospace;
+}
+
+.font-pixelify-sans {
+	font-family: 'Pixelify Sans Variable', system-ui;
+}

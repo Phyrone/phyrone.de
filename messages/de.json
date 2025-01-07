@@ -1,0 +1,8 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"show_youtube_video": "YouTube Video anzeigen",
+	"imprint": "Impressum",
+	"privacy_policy": "Datenschutzerklärung",
+	"landing_text_hello_1": "ich bin Samuel, ein Informatik Student an der ",
+	"landing_text_university_link": "HTWK Leipzig"
+}

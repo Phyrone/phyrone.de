@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'styles/fonts.css';
+
+:root,
+[data-theme] {
+	background-color: theme(colors.base-300);
+	color: theme(colors.base-content);
+}
+
+pre.shiki.nord::before {
+	content: none;
+}
