@@ -17,7 +17,7 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store  \
 RUN chown -R 1000:1000 /build
 
 
-FROM denoland/deno:distroless
+FROM denoland/deno
 COPY --from=build /build/ /app/
 WORKDIR /app/
 EXPOSE 3000
