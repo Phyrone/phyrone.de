@@ -18,6 +18,8 @@ RUN chown -R 1000:1000 /build
 
 
 FROM denoland/deno
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -y && apt-get install wget -y --no-install-recommends
 COPY --from=build /build/ /app/
 WORKDIR /app/
 EXPOSE 3000
