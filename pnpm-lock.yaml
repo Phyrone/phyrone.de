@@ -13,7 +13,7 @@ importers:
         version: 0.12.13
       '@ffmpeg/util':
         specifier: ^0.12.1
-        version: 0.12.1
+        version: 0.12.2
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.1.2
         version: 5.1.2
@@ -171,16 +171,6 @@ importers:
       vite-imagetools:
         specifier: ^7.0.5
         version: 7.0.5(rollup@4.29.1)
-
-  utils/hls-video:
-    dependencies:
-      ffmpeg:
-        specifier: ^0.0.4
-        version: 0.0.4
-    devDependencies:
-      '@types/ffmpeg':
-        specifier: ^1.0.7
-        version: 1.0.7
 
 packages:
 
@@ -613,8 +603,8 @@ packages:
     resolution: {integrity: sha512-WK01NqTfFfdXxxVD2+OQnd6LQp4ahWq2kjIh/eVoTo43Lo9ICI5nLOItg/1rcIvOuM7J1ANWTBazWGBKk1kACA==}
     engines: {node: '>=16.x'}
 
-  '@ffmpeg/util@0.12.1':
-    resolution: {integrity: sha512-10jjfAKWaDyb8+nAkijcsi9wgz/y26LOc1NKJradNMyCIl6usQcBbhkjX5qhALrSBcOy6TOeksunTYa+a03qNQ==}
+  '@ffmpeg/util@0.12.2':
+    resolution: {integrity: sha512-ouyoW+4JB7WxjeZ2y6KpRvB+dLp7Cp4ro8z0HIVpZVCM7AwFlHa0c4R8Y/a4M3wMqATpYKhC7lSFHQ0T11MEDw==}
     engines: {node: '>=18.x'}
 
   '@fontsource-variable/jetbrains-mono@5.1.2':
@@ -1514,9 +1504,6 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
-
-  '@types/ffmpeg@1.0.7':
-    resolution: {integrity: sha512-7Pw61IDG9Tj+gXGNshJ7JIM2fhDe0IrK7/F+b8midmsiljiugWKbW5KoNmhtZS3pPXWVfVHP3wOwquF/wbVxiw==}
 
   '@types/geojson@7946.0.15':
     resolution: {integrity: sha512-9oSxFzDCT2Rj6DfcHF8G++jxBKS7mBqXl5xrRW+Kbvjry6Uduya2iiwqHPhVXpasAVMBYKkEPGgKhd3+/HZ6xA==}
@@ -2662,9 +2649,6 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
-
-  ffmpeg@0.0.4:
-    resolution: {integrity: sha512-3TgWUJJlZGQn+crJFyhsO/oNeRRnGTy6GhgS98oUCIfZrOW5haPPV7DUfOm3xJcHr5q3TJpjk2GudPutrNisRA==}
 
   figures@6.1.0:
     resolution: {integrity: sha512-d+l3qxjSesT4V7v2fh+QnmFnUWv9lSpjarhShNTgBOfA0ttejbQUAlHLitbjkoRiDulW0OPoQPYIGhIC8ohejg==}
@@ -4865,9 +4849,6 @@ packages:
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
-  when@3.7.8:
-    resolution: {integrity: sha512-5cZ7mecD3eYcMiCH4wtRPA5iFJZ50BJYDfckI5RRpQiktMiYTcn0ccLTZOvcbBume+1304fQztxeNzNS9Gvrnw==}
-
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
@@ -5301,7 +5282,7 @@ snapshots:
 
   '@ffmpeg/types@0.12.3': {}
 
-  '@ffmpeg/util@0.12.1': {}
+  '@ffmpeg/util@0.12.2': {}
 
   '@fontsource-variable/jetbrains-mono@5.1.2': {}
 
@@ -6347,8 +6328,6 @@ snapshots:
       '@types/json-schema': 7.0.15
 
   '@types/estree@1.0.6': {}
-
-  '@types/ffmpeg@1.0.7': {}
 
   '@types/geojson@7946.0.15': {}
 
@@ -7764,10 +7743,6 @@ snapshots:
   fdir@6.4.2(picomatch@4.0.2):
     optionalDependencies:
       picomatch: 4.0.2
-
-  ffmpeg@0.0.4:
-    dependencies:
-      when: 3.7.8
 
   figures@6.1.0:
     dependencies:
@@ -10178,8 +10153,6 @@ snapshots:
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
-
-  when@3.7.8: {}
 
   which@2.0.2:
     dependencies:
