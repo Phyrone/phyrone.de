@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@ffmpeg/ffmpeg':
-        specifier: ^0.12.13
-        version: 0.12.13
-      '@ffmpeg/util':
-        specifier: ^0.12.1
-        version: 0.12.1
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.1.2
         version: 5.1.2
@@ -604,18 +598,6 @@ packages:
   '@eslint/plugin-kit@0.2.4':
     resolution: {integrity: sha512-zSkKow6H5Kdm0ZUQUB2kV5JIXqoG0+uH5YADhaEHswm664N9Db8dXSi0nMJpacpMf+MyyglF1vnZohpEg5yUtg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@ffmpeg/ffmpeg@0.12.13':
-    resolution: {integrity: sha512-DX5xvpxkV0QaHIJRMRiz8zfh4mJO01rPKrpXgIzHWSB0A58YMUvbBJxHs4cSJPcX1Lar7HK6RAi28ObsUe7V8A==}
-    engines: {node: '>=18.x'}
-
-  '@ffmpeg/types@0.12.3':
-    resolution: {integrity: sha512-WK01NqTfFfdXxxVD2+OQnd6LQp4ahWq2kjIh/eVoTo43Lo9ICI5nLOItg/1rcIvOuM7J1ANWTBazWGBKk1kACA==}
-    engines: {node: '>=16.x'}
-
-  '@ffmpeg/util@0.12.1':
-    resolution: {integrity: sha512-10jjfAKWaDyb8+nAkijcsi9wgz/y26LOc1NKJradNMyCIl6usQcBbhkjX5qhALrSBcOy6TOeksunTYa+a03qNQ==}
-    engines: {node: '>=18.x'}
 
   '@fontsource-variable/jetbrains-mono@5.1.2':
     resolution: {integrity: sha512-syGEJ/N4FFisAXegxtbe1etYpo2T630dqCbYufPf7Dli/hMKSoSUIm3wK4q5RsGFRxWno1WecfnsgZA1jRK0EQ==}
@@ -5294,14 +5276,6 @@ snapshots:
   '@eslint/plugin-kit@0.2.4':
     dependencies:
       levn: 0.4.1
-
-  '@ffmpeg/ffmpeg@0.12.13':
-    dependencies:
-      '@ffmpeg/types': 0.12.3
-
-  '@ffmpeg/types@0.12.3': {}
-
-  '@ffmpeg/util@0.12.1': {}
 
   '@fontsource-variable/jetbrains-mono@5.1.2': {}
 

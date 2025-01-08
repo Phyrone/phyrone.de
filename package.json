@@ -57,8 +57,6 @@
 		"vite-imagetools": "^7.0.5"
 	},
 	"dependencies": {
-		"@ffmpeg/ffmpeg": "^0.12.13",
-		"@ffmpeg/util": "^0.12.1",
 		"@fontsource-variable/jetbrains-mono": "^5.1.2",
 		"@fontsource-variable/pixelify-sans": "^5.1.1",
 		"@inlang/paraglide-sveltekit": "^0.11.1",
