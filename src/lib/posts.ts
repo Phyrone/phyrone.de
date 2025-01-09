@@ -6,7 +6,7 @@ import moment from "moment/min/moment-with-locales";
 import type { MomentFormatSpecification } from 'moment';
 
 const ARTICLE_DATA_EXTRACT_PATTERN =
-	/^\/posts\/(?:(?<year>\d{4})[-/](?:(?<month>[0-1]?\d)[-/](?:(?<day>[0-3]?\d)[-/])?)?)?(?:.+\/)?(?<slug>[a-zA-Z0-9][^/]*).(?:svx|svelte\.md)$/;
+	/^\/posts\/(?:(?<year>\d{4})[-/](?:(?<month>[0-1]?\d)[-/](?:(?<day>[0-3]?\d)[-/])?)?)?(?:[a-zA-Z0-9][^/]+?\/)*?(?<slug>[a-zA-Z0-9][^/]+?)(?:\/index)?.(?:svx|svelte\.md|md)$/;
 
 const DATE_INPUT_FORMATS:MomentFormatSpecification = [
 	'DD.MM.YYYY',
