@@ -7,12 +7,14 @@ import {
 	POSTS_KV_PROMISE,
 } from "$lib/posts.ts";
 import { z } from "zod";
+/** @type {import('moment')} */
+import moment from "moment/min/moment-with-locales";
 
 export type PostData = {
 	slug: string;
 	url: string;
 	key: string;
-	date?: Date;
+	date?: moment.Moment;
 	metadata: PostMetadata;
 };
 
@@ -36,7 +38,7 @@ export const load: LayoutLoad = async function load() {
 						const date = metadata.date ??
 							await FULL_DATE.safeParseAsync({ y: year, m: month, d: day })
 								.then((d) => d.data)
-								.then((d) => d ? new Date(d.y, d.m - 1, d.d) : undefined);
+								.then((d) => d ? moment(new Date(d.y, d.m - 1, d.d)) : undefined);
 
 						return { slug, key, url, metadata, date } satisfies PostData;
 					})();

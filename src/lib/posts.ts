@@ -21,7 +21,7 @@ export const PostMetadata = z
 		title: z.string(),
 		description: z.string({ coerce: true }),
 		date: z.string({ coerce: true }).transform((d) =>
-			moment(d, DATE_INPUT_FORMATS, "de", true).toDate()
+			moment(d, DATE_INPUT_FORMATS, "de", true)
 		),
 		thumbnail: z.string({ coerce: true }),
 		tags: z.array(z.string({ coerce: true })),
@@ -73,12 +73,12 @@ async function load_posts(): Promise<PostKvs> {
 						metadata_unsafe,
 					);
 					if (metadata_result.data?.date) {
-						data.year = metadata_result.data.date.getFullYear();
-						//data.year = metadata_result.data.date?.year();
-						//data.month = metadata_result.data.date?.month() + 1;
-						data.month = metadata_result.data.date.getMonth() + 1;
-						data.day = metadata_result.data.date.getDate();
-						//data.day = metadata_result.data.date?.day();
+						//data.year = metadata_result.data.date.getFullYear();
+						data.year = metadata_result.data.date?.year();
+						data.month = metadata_result.data.date?.month() + 1;
+						//data.month = metadata_result.data.date.getMonth() + 1;
+						//data.day = metadata_result.data.date.getDate();
+						data.day = metadata_result.data.date?.date();
 					}
 					if (metadata_result.data?.slug) {
 						data.slug = metadata_result.data?.slug;

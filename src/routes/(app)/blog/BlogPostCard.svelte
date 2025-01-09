@@ -28,10 +28,9 @@
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
 			{@const localized_moment_date = moment_date.locale(languageTag())}
-			{@const recent = localized_moment_date.isSameOrAfter(moment().subtract(1, 'week'))}
 			<h3 class={['text-xs','truncate']}
-					title={localized_moment_date.format('LLLL') + ' (' +localized_moment_date.fromNow()+')'}>
-				<span>{recent ? localized_moment_date.calendar() : localized_moment_date.format('LL')}</span>
+					title={localized_moment_date.format('LLLL')}>
+				<span>{localized_moment_date.format('LLLL')}</span>
 			</h3>
 		{/if}
 		{#if post.metadata.description}
