@@ -25,7 +25,7 @@ importers:
         version: 7.0.0
       hls.js:
         specifier: ^1.5.18
-        version: 1.5.18
+        version: 1.5.19
       lucide-svelte:
         specifier: ^0.471.0
         version: 0.471.0(svelte@5.16.0)
@@ -2861,8 +2861,8 @@ packages:
   hastscript@9.0.0:
     resolution: {integrity: sha512-jzaLBGavEDKHrc5EfFImKN7nZKKBdSLIdGvCwDZ9TfzbF2ffXiov8CKE445L2Z1Ek2t/m4SKQ2j6Ipv7NyUolw==}
 
-  hls.js@1.5.18:
-    resolution: {integrity: sha512-znxR+2jecWluu/0KOBqUcvVyAB5tLff10vjMGrpAlz1eFY+ZhF1bY3r82V+Bk7WJdk03iTjtja9KFFz5BrqjSA==}
+  hls.js@1.5.19:
+    resolution: {integrity: sha512-C020dKWEJcyvLnrqsFKW4q6D/6IEzKWdhktIS5bgoyEFE8lHgrFBq4RIngdy113abJOlIruhv8qjg7UX8hwxOw==}
 
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
@@ -8084,7 +8084,7 @@ snapshots:
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
 
-  hls.js@1.5.18: {}
+  hls.js@1.5.19: {}
 
   hookable@5.5.3: {}
 
