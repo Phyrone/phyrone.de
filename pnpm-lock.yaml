@@ -27,8 +27,8 @@ importers:
         specifier: ^1.5.18
         version: 1.5.19
       lucide-svelte:
-        specifier: ^0.471.0
-        version: 0.471.0(svelte@5.18.0)
+        specifier: ^0.473.0
+        version: 0.473.0(svelte@5.18.0)
       moment:
         specifier: ^2.30.1
         version: 2.30.1
@@ -3450,8 +3450,8 @@ packages:
   lru_map@0.3.3:
     resolution: {integrity: sha512-Pn9cox5CsMYngeDbmChANltQl+5pi6XmTrraMSzhPmMBbmgcxmqWry0U3PGapCU1yB4/LqCcom7qhHZiF/jGfQ==}
 
-  lucide-svelte@0.471.0:
-    resolution: {integrity: sha512-z+C6G2K089iDGbl8HzTdD5G6i5BvuaBxdIPQDa650Kb8TXBJRODa7YfmaIHy78+Y+YaB75N0lzUIQEclzflJrQ==}
+  lucide-svelte@0.473.0:
+    resolution: {integrity: sha512-Lw2+vrDmVlz/WC1/KcuCEV/1ENrHtChw4GH1cssMbbpdUFyVjZkt9S+7olCOGW8jOZJOrzZNfefV1DdaDw46jQ==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -8791,7 +8791,7 @@ snapshots:
 
   lru_map@0.3.3: {}
 
-  lucide-svelte@0.471.0(svelte@5.18.0):
+  lucide-svelte@0.473.0(svelte@5.18.0):
     dependencies:
       svelte: 5.18.0
 
