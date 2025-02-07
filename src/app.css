@@ -1,7 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'styles/fonts.css';
+@import "tailwindcss";
+@import './styles/fonts.css';
+
+@plugin "daisyui";
 
 :root,
 [data-theme] {

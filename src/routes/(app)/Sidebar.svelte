@@ -1,7 +1,7 @@
 <script lang="ts">
 	import profile_img from '$assets/profile.png?enhanced';
 	import { NewspaperIcon, PocketKnifeIcon } from 'lucide-svelte';
-	import { siGithub, siMastodon, siYoutube ,siBluesky} from 'simple-icons';
+	import { siGithub, siMastodon, siYoutube, siBluesky } from 'simple-icons';
 	import SimpleIcon from '$lib/SimpleIcon.svelte';
 </script>
 
@@ -39,7 +39,8 @@
 			alt="profile"
 		/>
 	</a>
-	<ul class="menu menu-horizontal flex-auto menu-lg sm:menu-md sm:menu-vertical sm:overflow-auto px-0 max-w-sm mx-auto sm:mx-0">
+	<ul
+		class="menu menu-xl w-full flex-auto menu-lg sm:menu-md sm:menu-vertical sm:overflow-auto px-0 max-w-sm mx-auto sm:mx-0">
 		<li>
 			<a href="/blog" title="Blog">
 				<NewspaperIcon />

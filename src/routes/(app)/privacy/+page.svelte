@@ -1,8 +1,8 @@
 <script lang="ts">
-	import {privacy_policy} from '$lib/paraglide/messages';
+	import { privacy_policy } from '$lib/paraglide/messages';
 	import {} from '$lib/paraglide/runtime';
 
-	import { resolveRoute,base} from '$app/paths';
+	import { resolveRoute, base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -162,16 +162,16 @@
 	Angemessenheitsbeschlüsse als Grundlagen vorrangig gelten. Informationen zu Drittlandtransfers und
 	vorliegenden Angemessenheitsbeschlüssen können dem Informationsangebot der EU-Kommission entnommen
 	werden: <a
-		href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de"
-		target="_blank"
-		>https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de.</a
-	>
+	href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de"
+	target="_blank"
+>https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de.</a
+>
 	Im Rahmen des sogenannten „Data Privacy Framework" (DPF) hat die EU-Kommission das Datenschutzniveau
 	ebenfalls für bestimmte Unternehmen aus den USA im Rahmen der Angemessenheitsbeschlusses vom 10.07.2023
 	als sicher anerkannt. Die Liste der zertifizierten Unternehmen als auch weitere Informationen zu dem
 	DPF können Sie der Website des Handelsministeriums der USA unter
 	<a href="https://www.dataprivacyframework.gov/" target="_blank"
-		>https://www.dataprivacyframework.gov/</a
+	>https://www.dataprivacyframework.gov/</a
 	>
 	(in Englisch) entnehmen. Wir informieren Sie im Rahmen der Datenschutzhinweise, welche von uns eingesetzten
 	Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.
@@ -250,7 +250,7 @@
 <ul>
 	<li>
 		<strong
-			>Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation
+		>Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation
 			ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die
 			aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch
 			für ein auf diese Bestimmungen gestütztes Profiling. Werden die Sie betreffenden
@@ -333,7 +333,7 @@
 		Bereitstellung unseres Onlineangebotes nutzen wir von uns betriebene Serverhardware sowie den
 		damit verbundenen Speicherplatz, die Rechenkapazität und die Software;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</span
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</span
 		>
 	</li>
 	<li>
@@ -347,7 +347,7 @@
 		missbräuchlichen Angriffen, sogenannten DDoS-Attacken), und zum anderen, um die Auslastung der
 		Server und ihre Stabilität sicherzustellen;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
 		</span><strong>Löschung von Daten:</strong> Logfile-Informationen werden für die Dauer von maximal
 		30 Tagen gespeichert und danach gelöscht oder anonymisiert. Daten, deren weitere Aufbewahrung zu
 		Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der
@@ -359,18 +359,18 @@
 		und/oder Rechenkapazitäten); <strong>Dienstanbieter:</strong>
 		Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 		</span><strong>Website:</strong>
 		<a href="https://www.hetzner.com" target="_blank">https://www.hetzner.com</a>;
 		<strong>Datenschutzerklärung:</strong>
 		<a href="https://www.hetzner.com/de/rechtliches/datenschutz" target="_blank"
-			>https://www.hetzner.com/de/rechtliches/datenschutz</a
+		>https://www.hetzner.com/de/rechtliches/datenschutz</a
 		>.
 		<strong>Auftragsverarbeitungsvertrag:</strong>
 		<a
 			href="https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/"
 			target="_blank"
-			>https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/</a
+		>https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/</a
 		>.
 	</li>
 </ul>
@@ -483,12 +483,12 @@
 		<strong>Dienstanbieter:</strong>
 		Bluesky, PBLLC., Seattle, USA, <a href="mailto:support@bsky.app">support@bsky.app</a>;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 		</span><strong>Website:</strong>
 		<a href="https://bsky.social/" target="_blank">https://bsky.social/</a>.
 		<strong>Datenschutzerklärung:</strong>
 		<a href="https://bsky.social/about/support/privacy-policy" target="_blank"
-			>https://bsky.social/about/support/privacy-policy</a
+		>https://bsky.social/about/support/privacy-policy</a
 		>.
 	</li>
 	<li>
@@ -497,12 +497,12 @@
 		Seiten; <strong>Dienstanbieter:</strong>
 		Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 		</span><strong>Website:</strong>
 		<a href="https://www.instagram.com" target="_blank">https://www.instagram.com</a>;
 		<strong>Datenschutzerklärung:</strong>
 		<a href="https://privacycenter.instagram.com/policy/" target="_blank"
-			>https://privacycenter.instagram.com/policy/</a
+		>https://privacycenter.instagram.com/policy/</a
 		>.
 		<strong>Grundlage Drittlandtransfers:</strong> Data Privacy Framework (DPF).
 	</li>
@@ -510,26 +510,26 @@
 		<strong>Threads: </strong>Soziales Netzwerk; <strong>Dienstanbieter:</strong> Meta Platforms
 		Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 		</span><strong>Website:</strong>
 		<a href="https://www.threads.net/" target="_blank">https://www.threads.net/</a>.
 		<strong>Datenschutzerklärung:</strong>
 		<a href="https://help.instagram.com/515230437301944" target="_blank"
-			>https://help.instagram.com/515230437301944</a
+		>https://help.instagram.com/515230437301944</a
 		>.
 	</li>
 	<li>
 		<strong>YouTube: </strong>Soziales Netzwerk und Videoplattform; <strong>Dienstanbieter:</strong>
 		Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 		</span><strong>Datenschutzerklärung:</strong>
 		<a href="https://policies.google.com/privacy" target="_blank"
-			>https://policies.google.com/privacy</a
+		>https://policies.google.com/privacy</a
 		>; <strong>Grundlage Drittlandtransfers:</strong> Data Privacy Framework (DPF).
 		<strong>Widerspruchsmöglichkeit (Opt-Out):</strong>
 		<a href="https://myadcenter.google.com/personalizationoff" target="_blank"
-			>https://myadcenter.google.com/personalizationoff</a
+		>https://myadcenter.google.com/personalizationoff</a
 		>.
 	</li>
 </ul>
@@ -599,7 +599,7 @@
 		<strong>Dienstanbieter:</strong>
 		Die Google Fonts werden auf unserem Server gehostet, es werden keine Daten an Google übermittelt;
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</span
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</span
 		>
 	</li>
 	<li>
@@ -607,20 +607,20 @@
 		<p>
 			Wir binden die Landkarten des Dienstes "Google Maps" des Anbieters Google ein. Zu den
 			verarbeiteten Daten können insbesondere IP-Adressen und Standortdaten der Nutzer gehören; <strong
-				>Dienstanbieter:</strong
-			>
+		>Dienstanbieter:</strong
+		>
 			Google Cloud EMEA Limited, 70 Sir John Rogerson’s Quay, Dublin 2, Irland;
 		</p>
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO);
 		</span><br />
 		<strong>Website:</strong>
 		<a href="https://mapsplatform.google.com/" target="_blank">https://mapsplatform.google.com/</a>;
 		<br />
 		<strong>Datenschutzerklärung:</strong><a
-			href="https://policies.google.com/privacy"
-			target="_blank">https://policies.google.com/privacy</a
-		>.<br />
+		href="https://policies.google.com/privacy"
+		target="_blank">https://policies.google.com/privacy</a
+	>.<br />
 		<strong>Grundlage Drittlandtransfers:</strong> Data Privacy Framework (DPF).
 	</li>
 	<li>
@@ -636,15 +636,15 @@
 			Foundation (OSMF);
 		</p>
 		<span class=""
-			><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+		><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
 			<br />
 		</span><strong>Website:</strong><a href="https://www.openstreetmap.de" target="_blank"
-			>https://www.openstreetmap.de</a
-		>.<br />
+	>https://www.openstreetmap.de</a
+	>.<br />
 		<strong>Datenschutzerklärung:</strong><a
-			href="https://osmfoundation.org/wiki/Privacy_Policy"
-			target="_blank">https://osmfoundation.org/wiki/Privacy_Policy</a
-		>.
+		href="https://osmfoundation.org/wiki/Privacy_Policy"
+		target="_blank">https://osmfoundation.org/wiki/Privacy_Policy</a
+	>.
 	</li>
 	<li>
 		<strong>YouTube-Videos: </strong><br />
@@ -666,18 +666,18 @@
 			<strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO);
 			<br />
 		</span><strong>Website:</strong><a href="https://www.youtube.com" target="_blank"
-			>https://www.youtube.com</a
-		>;<br />
+	>https://www.youtube.com</a
+	>;<br />
 		<strong>Datenschutzerklärung:</strong>
 		<a href="https://policies.google.com/privacy" target="_blank"
-			>https://policies.google.com/privacy</a
+		>https://policies.google.com/privacy</a
 		>;<br />
 		<strong>Grundlage Drittlandtransfers:</strong> Data Privacy Framework (DPF).<br />
 		<strong>Weitere Informationen:</strong>
 		<a
 			href="https://support.google.com/youtube/answer/171780?hl=de-DE#zippy=%2Cturn-on-privacy-enhanced-mode%2Cerweiterten-datenschutzmodus-aktivieren"
 			target="_blank"
-			>https://support.google.com/youtube/answer/171780?hl=de-DE#zippy=%2Cturn-on-privacy-enhanced-mode%2Cerweiterten-datenschutzmodus-aktivieren</a
+		>https://support.google.com/youtube/answer/171780?hl=de-DE#zippy=%2Cturn-on-privacy-enhanced-mode%2Cerweiterten-datenschutzmodus-aktivieren</a
 		>.
 	</li>
 </ul>
@@ -763,7 +763,8 @@
 		<strong>Protokolldaten:</strong> Protokolldaten sind Informationen über Ereignisse oder Aktivitäten,
 		die in einem System oder Netzwerk protokolliert wurden. Diese Daten enthalten typischerweise Informationen
 		wie Zeitstempel, IP-Adressen, Benutzeraktionen, Fehlermeldungen und andere Details über die Nutzung
-		oder den Betrieb eines Systems. Protokolldaten werden oft zur Analyse von Systemproblemen, zur Sicherheitsüberwachung
+		oder den Betrieb eines Systems. Protokolldaten werden oft zur Analyse von Systemproblemen, zur
+		Sicherheitsüberwachung
 		oder zur Erstellung von Leistungsberichten verwendet.
 	</li>
 	<li>
@@ -821,35 +822,39 @@
 		title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
 		target="_blank"
 		rel="noopener noreferrer nofollow"
-		>Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a
+	>Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a
 	>
 </p>
 
 <style>
-	h1 {
-		@apply my-4 text-3xl sm:text-4xl font-bold;
-	}
+    @reference "tailwindcss/theme";
+		@plugin "daisyui";
 
-	h2 {
-		@apply my-3 text-2xl sm:text-3xl font-bold;
-	}
+    h1 {
+        @apply my-4 text-3xl sm:text-4xl font-bold;
+    }
 
-	h3 {
-		@apply my-2 text-xl sm:text-2xl font-bold;
-	}
-	p{
-		@apply my-2;
-	}
+    h2 {
+        @apply my-3 text-2xl sm:text-3xl font-bold;
+    }
 
-	a {
-		@apply link;
-	}
+    h3 {
+        @apply my-2 text-xl sm:text-2xl font-bold;
+    }
 
-	strong {
-		@apply font-bold;
-	}
+    p {
+        @apply my-2;
+    }
 
-	ul {
-		@apply list-inside list-disc;
-	}
+    a {
+        @apply link;
+    }
+
+    strong {
+        @apply font-bold;
+    }
+
+    ul {
+        @apply list-inside list-disc;
+    }
 </style>
