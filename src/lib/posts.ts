@@ -2,7 +2,7 @@ import { z } from "zod";
 import { resolveRoute } from "$app/paths";
 import type { Component } from "svelte";
 /** @type {import('moment')} */
-import moment from "moment/min/moment-with-locales";
+import moment from "moment";
 import type { MomentFormatSpecification } from 'moment';
 
 const ARTICLE_DATA_EXTRACT_PATTERN =
