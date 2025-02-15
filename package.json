@@ -61,7 +61,7 @@
 		"@fontsource-variable/pixelify-sans": "^5.1.1",
 		"@inlang/paraglide-sveltekit": "^0.15.0",
 		"@tailwindcss/vite": "^4.0.4",
-		"dashjs": "^4.7.4",
+		"dashjs": "^5.0.0",
 		"fuse.js": "^7.0.0",
 		"hls.js": "^1.5.18",
 		"lucide-svelte": "^0.475.0",
