@@ -32,9 +32,7 @@ const config = {
 							lang,
 							theme,
 							structure: 'classic',
-							colorReplacements:{
-
-							},
+							colorReplacements: {},
 							meta: {
 								'data-code-lang': lang,
 								'data-code': code
@@ -47,7 +45,13 @@ const config = {
 			}
 		})
 	],
-
+	compilerOptions: {
+		preserveComments: false,
+		preserveWhitespace: false,
+	},
+	vitePlugin:{
+		experimental:{}
+	},
 	kit: {
 		adapter: adapter_node({
 			out: 'dist',
