@@ -43,7 +43,7 @@
     "remark-mermaidjs": "^7.0.0",
     "remark-reading-time": "^2.0.1",
     "sass-embedded": "^1.85.0",
-    "shiki": "^2.3.2",
+    "shiki": "^3.0.0",
     "svelte": "^5.20.1",
     "svelte-check": "^4.1.4",
     "tailwindcss": "^4.0.6",
