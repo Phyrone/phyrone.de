@@ -60,7 +60,7 @@
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.1.2",
     "@fontsource-variable/pixelify-sans": "^5.1.1",
-    "@inlang/paraglide-sveltekit": "^0.15.5",
+    "@inlang/paraglide-sveltekit": "^0.16.0",
     "@tailwindcss/vite": "^4.0.6",
     "dashjs": "^5.0.0",
     "fuse.js": "^7.1.0",
