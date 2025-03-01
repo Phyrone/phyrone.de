@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.1.2
-        version: 5.1.2
+        version: 5.2.0
       '@fontsource-variable/pixelify-sans':
         specifier: ^5.1.1
-        version: 5.1.1
+        version: 5.2.0
       '@inlang/paraglide-sveltekit':
         specifier: ^0.16.0
         version: 0.16.0(@sveltejs/kit@2.17.3(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.5)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(lightningcss@1.29.1)(sass-embedded@1.85.1)(terser@5.39.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.20.5)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(lightningcss@1.29.1)(sass-embedded@1.85.1)(terser@5.39.0)(tsx@4.19.2)(yaml@2.6.1)))
@@ -753,11 +753,11 @@ packages:
     resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/jetbrains-mono@5.1.2':
-    resolution: {integrity: sha512-syGEJ/N4FFisAXegxtbe1etYpo2T630dqCbYufPf7Dli/hMKSoSUIm3wK4q5RsGFRxWno1WecfnsgZA1jRK0EQ==}
+  '@fontsource-variable/jetbrains-mono@5.2.0':
+    resolution: {integrity: sha512-lADaBQjb74/qSw2y4skhPhuz2OJvAdsrO5EkRnRTjkIBNwOryI4bskaDtDRVOCYggvcYAzGgEgG73DFX8LrgZg==}
 
-  '@fontsource-variable/pixelify-sans@5.1.1':
-    resolution: {integrity: sha512-DSylniHwXpRSozjgFoxvqvqVPPZGB0ahLjdiu73vtSeRGkksg7JBTj6CERY2m32GTensgw6xVdOIMq6d9kFaqw==}
+  '@fontsource-variable/pixelify-sans@5.2.0':
+    resolution: {integrity: sha512-J4xw10o9qWaZESWfpNzqMofHaN1Hku4Lwj2uyF2d2nIQmbCM8SRAPRNriXL7m/MwlR1nqwUs/q1RpMhMzcuOtA==}
 
   '@formatjs/ecma402-abstract@2.3.3':
     resolution: {integrity: sha512-pJT1OkhplSmvvr6i3CWTPvC/FGC06MbN5TNBfRO6Ox62AEz90eMq+dVvtX9Bl3jxCEkS0tATzDarRZuOLw7oFg==}
@@ -5672,9 +5672,9 @@ snapshots:
       '@eslint/core': 0.12.0
       levn: 0.4.1
 
-  '@fontsource-variable/jetbrains-mono@5.1.2': {}
+  '@fontsource-variable/jetbrains-mono@5.2.0': {}
 
-  '@fontsource-variable/pixelify-sans@5.1.1': {}
+  '@fontsource-variable/pixelify-sans@5.2.0': {}
 
   '@formatjs/ecma402-abstract@2.3.3':
     dependencies:
