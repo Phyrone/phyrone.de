@@ -146,7 +146,7 @@ importers:
         version: 4.0.14
       tailwindcss-intersect:
         specifier: ^2.1.0
-        version: 2.1.0(tailwindcss@4.0.14)
+        version: 2.2.0(tailwindcss@4.0.14)
       tailwindcss-motion:
         specifier: ^1.1.0
         version: 1.1.0(tailwindcss@4.0.14)
@@ -4698,8 +4698,8 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
-  tailwindcss-intersect@2.1.0:
-    resolution: {integrity: sha512-JonOxIkpCgDkEFaIw3WHN7t2bs+uclnCzsvCcVyN/VuCULtJnxHGe0PEi13rZf/KnW1D77UKogoUEmwxW+wo/A==}
+  tailwindcss-intersect@2.2.0:
+    resolution: {integrity: sha512-LnOQ/iU44jNQ8k3OExa7Ccv/y5NlzAN574jjDnX5gLCdlqoeUT5ADtTznF92oAdon3NZA69b+JLknahbwsqxDA==}
     peerDependencies:
       tailwindcss: '>=3.2.0 || >=4.0.0'
 
@@ -10223,7 +10223,7 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
-  tailwindcss-intersect@2.1.0(tailwindcss@4.0.14):
+  tailwindcss-intersect@2.2.0(tailwindcss@4.0.14):
     dependencies:
       tailwindcss: 4.0.14
 
