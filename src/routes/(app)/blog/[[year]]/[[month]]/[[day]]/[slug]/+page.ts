@@ -21,6 +21,7 @@ export const load: PageLoad = async ({ params }) => {
 	}
 
 	return {
+		key,
 		post,
 		metadata
 	};

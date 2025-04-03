@@ -3,7 +3,7 @@
 	import { get_image } from '$lib/images.ts';
 	import moment from 'moment/min/moment-with-locales';
 	import { languageTag } from '$lib/paraglide/runtime';
-
+	import { PageTransition, transitions } from 'ssgoi';
 
 	type Props = {
 		post: PostData;
@@ -13,9 +13,9 @@
 	let thumbnail = $derived(get_image(post.metadata.thumbnail, post.key));
 </script>
 
-<a href={post.url} class="card md:card-side md:h-44 bg-base-200">
+<a  href={post.url} class="card md:card-side md:h-44 bg-base-200">
 	{#if thumbnail}
-		<figure class="">
+		<figure data-hero-key={'post::'+post.key} class="">
 			<enhanced:img
 				class="h-48 md:h-full w-fit max-w-64 rounded-lg md:rounded-none m-4 md:m-0 object-contain"
 				src={thumbnail}
