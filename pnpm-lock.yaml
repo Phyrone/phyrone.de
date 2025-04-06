@@ -40,7 +40,7 @@ importers:
         version: 12.6.3
       simple-icons:
         specifier: ^14.12.0
-        version: 14.12.0
+        version: 14.12.1
       ssgoi:
         specifier: ^2.0.0
         version: 2.0.0(svelte@5.25.7)
@@ -4431,8 +4431,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-icons@14.12.0:
-    resolution: {integrity: sha512-IlW4sFVSCq6bfVnxfdhGqU7NXGR39lwsLY8EiZSHfyIq4TO6tGaDxIgTZSthq/t7rfK1fzZVjKeKWaBe2Ep5lA==}
+  simple-icons@14.12.1:
+    resolution: {integrity: sha512-9BYt6kvNs4n0asXZx4/h8MkcI+5qSnpYhtYVRnD1Clf0Vlh9Lfd4cRVjo/DbnosqsUGcq2M+clr/h4valZeg+Q==}
     engines: {node: '>=0.12.18'}
 
   simple-swizzle@0.2.2:
@@ -9842,7 +9842,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-icons@14.12.0: {}
+  simple-icons@14.12.1: {}
 
   simple-swizzle@0.2.2:
     dependencies:
