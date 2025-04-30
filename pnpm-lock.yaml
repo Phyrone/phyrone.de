@@ -88,8 +88,8 @@ importers:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
       daisyui:
-        specifier: 5.0.30
-        version: 5.0.30
+        specifier: 5.0.32
+        version: 5.0.32
       eslint:
         specifier: ^9.23.0
         version: 9.25.0(jiti@2.4.2)
@@ -2528,8 +2528,8 @@ packages:
   dagre-d3-es@7.0.11:
     resolution: {integrity: sha512-tvlJLyQf834SylNKax8Wkzco/1ias1OPw8DcUMDE7oUIoSEW25riQVuiu/0OWEFqT0cxHT3Pa9/D82Jr47IONw==}
 
-  daisyui@5.0.30:
-    resolution: {integrity: sha512-eLQsjeYC3qDTjapQa30BP/qhdZ9y1II4ZXOEzJ9j0UKJePP3Rnh79rwZkMefkfozW2dgcx65cXTyzAUHLNoCYg==}
+  daisyui@5.0.32:
+    resolution: {integrity: sha512-fdcfLdyxApqX33tITX6M2YXeYsw+SARZi57dfo0OHB7ay8R5f6zZX2A5WITn6Gnx/Bvl+HEByXAVzFVFBsIrmA==}
 
   dashjs@5.0.1:
     resolution: {integrity: sha512-RtWiddkt4tibPrsXwwpnU8a8hH3a4KsxzUDAAOHD/LyzPCv65lNBwch9OPnS0hqFSKv/tepyr7XvTDRJcBpu6A==}
@@ -7810,7 +7810,7 @@ snapshots:
       d3: 7.9.0
       lodash-es: 4.17.21
 
-  daisyui@5.0.30: {}
+  daisyui@5.0.32: {}
 
   dashjs@5.0.1:
     dependencies:
