@@ -3,6 +3,8 @@ import adapter_node from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { createHighlighter, bundledLanguages } from 'shiki';
 import relativeEnhancedImages from './md-images.js';
+import {resolve} from 'node:path';
+
 
 /** @type {import('shiki').BuiltinTheme} **/
 const theme = 'nord';
@@ -22,7 +24,7 @@ const config = {
 		//TODO outsource mdsvex config into a seperate file
 		mdsvex({
 			extensions: sv_md_exteions,
-			layout: 'src/lib/layouts/default/root.svelte',
+			layout: resolve('./src/lib/layouts/default/root.svelte'),
 			remarkPlugins: [relativeEnhancedImages],
 			smartypants: true,
 			highlight: {
