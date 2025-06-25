@@ -3,8 +3,6 @@
 	import Sidebar from './Sidebar.svelte';
 	import * as m from '$lib/paraglide/messages';
 	import { onNavigate } from '$app/navigation';
-	import transitions_config from './transitions';
-	import { Ssgoi } from 'ssgoi';
 
 	type Props = {
 		children?: Snippet;
@@ -35,9 +33,9 @@
 			'lg:mx-4'
 		]}
 	>
-		<Ssgoi {onNavigate} config={transitions_config} class="flex-auto">
+		<dev class="flex-auto">
 			{@render children?.()}
-		</Ssgoi>
+		</dev>
 		<footer class="bottom-0 flex-none">
 			<a href="/imprint" class="btn btn-link">{m.imprint()}</a>
 			<a href="/privacy" class="btn btn-link">{m.privacy_policy()}</a>
