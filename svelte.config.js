@@ -1,10 +1,10 @@
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import adapter_node from '@sveltejs/adapter-node';
+import adapter_static from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { createHighlighter, bundledLanguages } from 'shiki';
 import relativeEnhancedImages from './md-images.js';
-import {resolve} from 'node:path';
-
+import { resolve } from 'node:path';
 
 /** @type {import('shiki').BuiltinTheme} **/
 const theme = 'nord';
@@ -49,16 +49,22 @@ const config = {
 	],
 	compilerOptions: {
 		preserveComments: false,
-		preserveWhitespace: false,
+		preserveWhitespace: false
 	},
-	vitePlugin:{
-		experimental:{}
+	vitePlugin: {
+		experimental: {}
 	},
 	kit: {
-		adapter: adapter_node({
-			out: 'dist',
-			precompress: true
+		adapter: adapter_node({ out: 'dist', precompress: true }),
+		/*
+		adapter: adapter_static({
+			pages: 'dist',
+			assets: 'dist',
+			fallback: '404.html',
+			precompress: true,
+			strict: true
 		}),
+		 */
 		csp: {
 			mode: 'auto',
 			directives: {
@@ -74,7 +80,7 @@ const config = {
 			$assets: 'src/assets',
 			$posts: 'src/posts',
 			$components: 'src/components',
-			$paraglide: 'src/lib/paraglide',
+			$paraglide: 'src/lib/paraglide'
 		},
 		inlineStyleThreshold: 256,
 		paths: {

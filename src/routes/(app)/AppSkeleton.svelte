@@ -37,8 +37,8 @@
 			{@render children?.()}
 		</dev>
 		<footer class="bottom-0 flex-none">
-			<a href="/imprint" class="btn btn-link">{m.imprint()}</a>
-			<a href="/privacy" class="btn btn-link">{m.privacy_policy()}</a>
+			<a href="/impressum" class="btn btn-link">{m.imprint()}</a>
+			<a href="/datenschutz" class="btn btn-link">{m.privacy_policy()}</a>
 		</footer>
 	</div>
 </div>
