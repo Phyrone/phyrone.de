@@ -73,7 +73,8 @@ const config = {
 			$styles: 'src/styles',
 			$assets: 'src/assets',
 			$posts: 'src/posts',
-			$components: 'src/components'
+			$components: 'src/components',
+			$paraglide: 'src/lib/paraglide',
 		},
 		inlineStyleThreshold: 256,
 		paths: {

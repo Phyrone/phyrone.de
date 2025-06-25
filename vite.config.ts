@@ -1,4 +1,4 @@
-import { paraglide } from "@inlang/paraglide-sveltekit/vite";
+import { paraglideVitePlugin } from "@inlang/paraglide-js";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig, searchForWorkspaceRoot } from "vite";
 import { enhancedImages } from "@sveltejs/enhanced-img";
@@ -9,9 +9,10 @@ export default defineConfig({
 		tailwindcss(),
 		enhancedImages(),
 		sveltekit(),
-		paraglide({
+		paraglideVitePlugin({
 			project: "./project.inlang",
 			outdir: "./src/lib/paraglide",
+			strategy: ["cookie", "url"],
 		}),
 	],
 	server: {
@@ -25,21 +26,13 @@ export default defineConfig({
 		cssCodeSplit: true,
 		sourcemap: true,
 	},
-	experimental:{
-		hmrPartialAccept: true,
-	},
-	ssr:{
-		target: "node",
-	},
-	html:{
-
-	},
-	json:{
-		stringify: 'auto',
-	},
-	esbuild:{
-		sourcemap:  "inline",
+	experimental: { hmrPartialAccept: true },
+	ssr: { target: "node" },
+	html: {},
+	json: { stringify: "auto" },
+	esbuild: {
+		sourcemap: "inline",
 		charset: "utf8",
-		format: "esm"
-	}
+		format: "esm",
+	},
 });

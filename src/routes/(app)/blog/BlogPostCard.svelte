@@ -2,7 +2,7 @@
 	import type { PostData } from '../+layout.ts';
 	import { get_image } from '$lib/images.ts';
 	import moment from 'moment/min/moment-with-locales';
-	import { languageTag } from '$lib/paraglide/runtime';
+	import {getLocale} from '$paraglide/runtime';
 
 	type Props = {
 		post: PostData;
@@ -26,7 +26,7 @@
 		<h2 class="card-title truncate">{post.metadata.title ?? post.slug}</h2>
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
-			{@const localized_moment_date = moment_date.locale(languageTag())}
+			{@const localized_moment_date = moment_date.locale(getLocale())}
 			<h3 class={['text-xs','truncate']}
 					title={localized_moment_date.format('LLLL')}>
 				<span>{localized_moment_date.format('LLLL')}</span>

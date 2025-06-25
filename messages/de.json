@@ -4,5 +4,6 @@
 	"imprint": "Impressum",
 	"privacy_policy": "Datenschutzerklärung",
 	"landing_text_hello_1": "ich bin Samuel, ein Informatik Student an der ",
-	"landing_text_university_link": "HTWK Leipzig"
+	"landing_text_university_link": "HTWK Leipzig",
+	"hello_world": "Hello, {name} from de!"
 }
