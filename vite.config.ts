@@ -25,7 +25,6 @@ export default defineConfig({
 		cssCodeSplit: true,
 		sourcemap: true,
 	},
-	appType: "mpa",
 	experimental:{
 		hmrPartialAccept: true,
 	},
