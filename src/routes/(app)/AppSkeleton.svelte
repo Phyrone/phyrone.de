@@ -3,6 +3,7 @@
 	import Sidebar from './Sidebar.svelte';
 	import * as m from '$lib/paraglide/messages';
 	import { onNavigate } from '$app/navigation';
+	import { localizeHref } from '$lib/paraglide/runtime';
 
 	type Props = {
 		children?: Snippet;
@@ -37,8 +38,8 @@
 			{@render children?.()}
 		</dev>
 		<footer class="bottom-0 flex-none">
-			<a href="/impressum" class="btn btn-link">{m.imprint()}</a>
-			<a href="/datenschutz" class="btn btn-link">{m.privacy_policy()}</a>
+			<a href={localizeHref("/impressum")} class="btn btn-link">{m.imprint()}</a>
+			<a href={localizeHref("/datenschutz")} class="btn btn-link">{m.privacy_policy()}</a>
 		</footer>
 	</div>
 </div>
