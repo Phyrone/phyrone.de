@@ -1,8 +1,0 @@
-{
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"component_youtube_video_btn_show_text": "Show YouTube Video",
-	"framework_footer_imprint": "Imprint",
-	"framework_footer_privacy_policy": "Privacy Policy",
-	"landing_text_hello_1": "I'm Samuel, computer science student at the ",
-	"landing_university_link": "Leipzig University of Applied Sciences"
-}

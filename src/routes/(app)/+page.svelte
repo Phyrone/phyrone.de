@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { landing_text_hello_1, landing_text_university_link } from '$lib/paraglide/messages';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <svelte:head>
@@ -7,8 +7,10 @@
 </svelte:head>
 
 <h1 class={['text-6xl', 'font-jetbrains-mono']}>HI</h1>
-<h2 class="font-jetbrains-mono text-lg break-words">
-	{landing_text_hello_1()}
-	<a href="https://fim.htwk-leipzig.de/" class="link">{landing_text_university_link()}</a>
-</h2>
 
+<p class="font-jetbrains-mono text-lg break-words">
+	{m['landing.hello']()}
+	<a href="https://fim.htwk-leipzig.de/" class="link">{m['landing.university-link']()}</a>
+</p>
+
+<!-- <h2 class={['text-3xl']}>{m['landing.favorite-programming-languages']()}</h2> -->
