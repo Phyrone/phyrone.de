@@ -8,6 +8,6 @@
 	let { children, href }: Props = $props();
 </script>
 
-<a {href} rel="nofollow" class="link">
+<a {href} class="link">
 	{@render children?.()}
 </a>

@@ -14,9 +14,7 @@
 	let href = $derived(post.url);
 </script>
 
-<a
-	{href}
-	class={[
+<a {href} class={[
 		'group card bg-base-200 drop-shadow-md transition-all ',
 		'md:card-side hover:drop-shadow-sm md:h-44'
 	]}

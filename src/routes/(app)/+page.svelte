@@ -11,3 +11,4 @@
 	{landing_text_hello_1()}
 	<a href="https://fim.htwk-leipzig.de/" class="link">{landing_text_university_link()}</a>
 </h2>
+
