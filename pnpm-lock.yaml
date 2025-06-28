@@ -56,9 +56,6 @@ importers:
       qs:
         specifier: ^6.14.0
         version: 6.14.0
-      sharp:
-        specifier: ^0.34.2
-        version: 0.34.2
       simple-icons:
         specifier: ^15.3.0
         version: 15.3.0
