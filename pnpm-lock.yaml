@@ -27,8 +27,8 @@ importers:
         specifier: ^6.14.0
         version: 6.14.0
       css-select:
-        specifier: ~5.1.0
-        version: 5.1.0
+        specifier: ~5.2.0
+        version: 5.2.2
       dashjs:
         specifier: ^5.0.3
         version: 5.0.3
@@ -2421,8 +2421,8 @@ packages:
   csp_evaluator@1.1.5:
     resolution: {integrity: sha512-EL/iN9etCTzw/fBnp0/uj0f5BOOGvZut2mzsiiBZ/FdT6gFQCKRO/tmcKOxn5drWZ2Ndm/xBb1SI4zwWbGtmIw==}
 
-  css-select@5.1.0:
-    resolution: {integrity: sha512-nwoRF1rvRRnnCqqY7updORDsuqKzqYJ28+oSMaJMMgOauh3fvwHqMS7EZpIPqK8GL+g9mKxF1vP/ZjSeNjEVHg==}
+  css-select@5.2.2:
+    resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
 
   css-tree@3.1.0:
     resolution: {integrity: sha512-0eW44TGN5SQXU1mWSkKwFstI/22X2bG1nYzZTYMAWjylYURhse752YgbE4Cx46AC+bAvI+/dYTPRk1LqSUnu6w==}
@@ -7980,7 +7980,7 @@ snapshots:
   cheerio-select@2.1.0:
     dependencies:
       boolbase: 1.0.0
-      css-select: 5.1.0
+      css-select: 5.2.2
       css-what: 6.2.1
       domelementtype: 2.3.0
       domhandler: 5.0.3
@@ -8217,7 +8217,7 @@ snapshots:
 
   csp_evaluator@1.1.5: {}
 
-  css-select@5.1.0:
+  css-select@5.2.2:
     dependencies:
       boolbase: 1.0.0
       css-what: 6.2.1
@@ -9984,7 +9984,7 @@ snapshots:
 
   node-html-parser@7.0.1:
     dependencies:
-      css-select: 5.1.0
+      css-select: 5.2.2
       he: 1.2.0
 
   node-mock-http@1.0.1: {}
