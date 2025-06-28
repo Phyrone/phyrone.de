@@ -7,7 +7,7 @@
   "landing_text_university_link": "HTWK Leipzig",
   "landing": {
     "hello": "ich bin Samuel, ein Informatik Student an der ",
-    "university-link": "HTWK Leipzig",
+    "university-link": "HTWK Leipzig"
   },
   "hello_world": "Hello, {name} from de!"
 }
