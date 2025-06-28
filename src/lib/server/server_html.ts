@@ -4,6 +4,8 @@ import { parse } from 'node-html-parser';
 //import { available_themes, THEME_COOKIE_NAME } from '$lib/theme';
 import { minify } from '@swc/html';
 
+
+
 // creating a handle to use the paraglide middleware
 export const handle: Handle = ({ event, resolve }) =>
 	paraglideMiddleware(event.request, ({ request: localizedRequest, locale }) => {
@@ -12,7 +14,7 @@ export const handle: Handle = ({ event, resolve }) =>
 		return resolve(event, {
 			transformPageChunk: async ({ html }) => {
 				let element = parse(html, {
-					comment: true
+					comment: true,
 				});
 				let html_element = element.querySelector('html');
 				if (html_element) {
