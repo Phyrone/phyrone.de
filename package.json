@@ -54,7 +54,7 @@
 		"typescript-eslint": "^8.35.0",
 		"unist-util-visit": "^5.0.0",
 		"unlighthouse": "^0.17.0",
-		"vite": "^6.3.5",
+		"vite": "^7.0.0",
 		"vite-imagetools": "^7.1.0"
 	},
 	"dependencies": {
