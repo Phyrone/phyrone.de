@@ -14,13 +14,20 @@
 	let href = $derived(post.url);
 </script>
 
-<a {href} class={[
-	'card transition-all drop-shadow-md hover:drop-shadow-sm md:card-side bg-base-200 md:h-44'
-]}>
+<a
+	{href}
+	class={[
+		'group card bg-base-200 drop-shadow-md transition-all ',
+		'md:card-side hover:drop-shadow-sm md:h-44'
+	]}
+>
 	{#if thumbnail}
 		<figure class="">
 			<enhanced:img
-				class="transition-all duration-500 m-4 h-48 w-fit max-w-64 rounded-lg object-contain md:m-0 md:h-full md:rounded-none hover:scale-125"
+				class={[
+					'm-4 h-48 w-fit max-w-64 rounded-lg object-contain',
+					'md:m-0 md:h-full md:rounded-none md:transition-all md:duration-500 md:group-hover:scale-125'
+				]}
 				src={thumbnail}
 				alt="thumbnail for {post.slug}"
 			/>

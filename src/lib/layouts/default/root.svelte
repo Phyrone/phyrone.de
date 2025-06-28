@@ -25,5 +25,6 @@
 		<title>Phyrone</title>
 	{/if}
 </svelte:head>
-
-<slot />
+<article>
+	<slot />
+</article>
