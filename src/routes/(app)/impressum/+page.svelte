@@ -86,7 +86,9 @@ Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</
 
 <style>
     @reference "tailwindcss/theme";
-    @plugin "daisyui";
+    @plugin "daisyui"{
+
+		}
 
     h1 {
         @apply my-4 text-3xl sm:text-4xl font-bold;

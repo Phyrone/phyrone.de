@@ -2,7 +2,7 @@
 	import type { PostData } from '../+layout.ts';
 	import { get_image } from '$lib/images.ts';
 	import moment from 'moment/min/moment-with-locales';
-	import {getLocale} from '$paraglide/runtime';
+	import { getLocale } from '$paraglide/runtime';
 
 	type Props = {
 		post: PostData;
@@ -10,9 +10,12 @@
 
 	let { post }: Props = $props();
 	let thumbnail = $derived(get_image(post.metadata.thumbnail, post.key));
+
+
+	let href = $derived(post.url);
 </script>
 
-<a  href={post.url} class="card md:card-side md:h-44 bg-base-200">
+<a {href} class="card md:card-side md:h-44 bg-base-200">
 	{#if thumbnail}
 		<figure class="">
 			<enhanced:img
