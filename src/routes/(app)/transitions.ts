@@ -5,13 +5,13 @@ export default createTransitionConfig({
 		{
 			from: '/blog',
 			to: '/blog/*',
-			transitions: transitions.hero(),
+			transitions: transitions.hero()
 		},
 		{
 			from: '/blog/*',
 			to: '/blog',
-			transitions: transitions.hero(),
+			transitions: transitions.hero()
 		}
 	],
-	defaultTransition: transitions.none(),
-})
+	defaultTransition: transitions.none()
+});

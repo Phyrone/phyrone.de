@@ -38,8 +38,8 @@
 			{@render children?.()}
 		</dev>
 		<footer class="bottom-0 flex-none">
-			<a href={localizeHref("/impressum")} class="btn btn-link">{m.imprint()}</a>
-			<a href={localizeHref("/datenschutz")} class="btn btn-link">{m.privacy_policy()}</a>
+			<a href={localizeHref('/impressum')} class="btn btn-link">{m.imprint()}</a>
+			<a href={localizeHref('/datenschutz')} class="btn btn-link">{m.privacy_policy()}</a>
 		</footer>
 	</div>
 </div>

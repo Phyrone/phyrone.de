@@ -10,7 +10,7 @@
 </script>
 
 {#snippet failed(error, reset)}
-	<div class="aspect-video skeleton grid h-56 w-96 place-content-center">
+	<div class="skeleton grid aspect-video h-56 w-96 place-content-center">
 		<button onclick={reset} class="btn btn-circle btn-error">
 			<CircleXIcon />
 		</button>
@@ -18,7 +18,7 @@
 {/snippet}
 
 {#snippet unknown()}
-	<div class="aspect-video skeleton grid h-56 w-96 place-content-center">
+	<div class="skeleton grid aspect-video h-56 w-96 place-content-center">
 		<div>
 			<FileQuestion />
 		</div>

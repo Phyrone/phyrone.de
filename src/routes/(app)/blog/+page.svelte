@@ -12,8 +12,8 @@
 <svelte:head>
 	<title>Phyrone | Blog</title>
 </svelte:head>
-<h1 class={['text-6xl','mb-4','font-jetbrains-mono','select-none']}>Blog</h1>
-<div class={['flex','flex-col']}>
+<h1 class={['text-6xl', 'mb-4', 'font-jetbrains-mono', 'select-none']}>Blog</h1>
+<div class={['flex', 'flex-col']}>
 	{#each data.posts as post}
 		<BlogPostCard {post} />
 	{/each}

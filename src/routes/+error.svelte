@@ -6,7 +6,7 @@
 <AppSkeleton>
 	<div class="grid h-full w-full place-items-center">
 		<div>
-			<h1 class="font-pixelify-sans select-none text-4xl">{page.status}</h1>
+			<h1 class="font-pixelify-sans text-4xl select-none">{page.status}</h1>
 			{#if page.error}
 				<p class="select-nonefont-pixelify-sans text-2xl">{page.error.message}</p>
 			{/if}

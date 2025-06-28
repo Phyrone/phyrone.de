@@ -4,7 +4,6 @@
 	import NavigatingIndicator from './NavigatingIndicator.svelte';
 
 	let { children } = $props();
-
 </script>
 
 {#if navigating.type}

@@ -11,15 +11,14 @@
 	let { post }: Props = $props();
 	let thumbnail = $derived(get_image(post.metadata.thumbnail, post.key));
 
-
 	let href = $derived(post.url);
 </script>
 
-<a {href} class="card md:card-side md:h-44 bg-base-200">
+<a {href} class="card md:card-side bg-base-200 md:h-44">
 	{#if thumbnail}
 		<figure class="">
 			<enhanced:img
-				class="h-48 md:h-full w-fit max-w-64 rounded-lg md:rounded-none m-4 md:m-0 object-contain"
+				class="m-4 h-48 w-fit max-w-64 rounded-lg object-contain md:m-0 md:h-full md:rounded-none"
 				src={thumbnail}
 				alt="thumbnail for {post.slug}"
 			/>
@@ -30,13 +29,12 @@
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
 			{@const localized_moment_date = moment_date.locale(getLocale())}
-			<h3 class={['text-xs','truncate']}
-					title={localized_moment_date.format('LLLL')}>
+			<h3 class={['text-xs', 'truncate']} title={localized_moment_date.format('LLLL')}>
 				<span>{localized_moment_date.format('LLLL')}</span>
 			</h3>
 		{/if}
 		{#if post.metadata.description}
-			<p class="text-sm truncate">{post.metadata.description}</p>
+			<p class="truncate text-sm">{post.metadata.description}</p>
 		{/if}
 	</div>
 </a>

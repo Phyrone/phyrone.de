@@ -1,8 +1,8 @@
-import { paraglideVitePlugin } from "@inlang/paraglide-js";
-import { sveltekit } from "@sveltejs/kit/vite";
-import { defineConfig, searchForWorkspaceRoot } from "vite";
-import { enhancedImages } from "@sveltejs/enhanced-img";
-import tailwindcss from "@tailwindcss/vite";
+import { paraglideVitePlugin } from '@inlang/paraglide-js';
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig, searchForWorkspaceRoot } from 'vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
 	plugins: [
@@ -10,30 +10,29 @@ export default defineConfig({
 		enhancedImages(),
 		sveltekit(),
 		paraglideVitePlugin({
-			project: "./project.inlang",
-			outdir: "./src/lib/paraglide",
-			strategy: ["url", "baseLocale"],
-
-		}),
+			project: './project.inlang',
+			outdir: './src/lib/paraglide',
+			strategy: ['url', 'baseLocale']
+		})
 	],
 	server: {
 		fs: {
-			allow: [searchForWorkspaceRoot(process.cwd())],
-		},
+			allow: [searchForWorkspaceRoot(process.cwd())]
+		}
 	},
 	build: {
-		minify: "terser",
-		cssMinify: "lightningcss",
+		minify: 'terser',
+		cssMinify: 'lightningcss',
 		cssCodeSplit: true,
-		sourcemap: true,
+		sourcemap: true
 	},
 	experimental: { hmrPartialAccept: true },
-	ssr: { target: "node" },
+	ssr: { target: 'node' },
 	html: {},
-	json: { stringify: "auto" },
+	json: { stringify: 'auto' },
 	esbuild: {
-		sourcemap: "inline",
-		charset: "utf8",
-		format: "esm",
-	},
+		sourcemap: 'inline',
+		charset: 'utf8',
+		format: 'esm'
+	}
 });

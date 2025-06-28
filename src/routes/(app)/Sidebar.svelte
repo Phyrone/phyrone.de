@@ -40,7 +40,8 @@
 		/>
 	</a>
 	<ul
-		class="menu menu-xl w-full flex-auto menu-lg sm:menu-md sm:menu-vertical sm:overflow-auto px-0 max-w-sm mx-auto sm:mx-0">
+		class="menu menu-xl menu-lg sm:menu-md sm:menu-vertical mx-auto w-full max-w-sm flex-auto px-0 sm:mx-0 sm:overflow-auto"
+	>
 		<li>
 			<a href="/blog" title="Blog">
 				<NewspaperIcon />
@@ -59,17 +60,29 @@
 			</details>
 		</li>
 	</ul>
-	<div class="join flex w-full max-w-sm mx-auto sm:mx-0">
-		<a class="btn join-item flex-auto sm:btn-sm" href="https://github.com/phyrone" title="Github">
+	<div class="join mx-auto flex w-full max-w-sm sm:mx-0">
+		<a class="btn join-item sm:btn-sm flex-auto" href="https://github.com/phyrone" title="Github">
 			<SimpleIcon icon={siGithub} />
 		</a>
-		<a class="btn join-item flex-auto sm:btn-sm" href="https://mastodon.social/@phyrone" title="Mastodon">
+		<a
+			class="btn join-item sm:btn-sm flex-auto"
+			href="https://mastodon.social/@phyrone"
+			title="Mastodon"
+		>
 			<SimpleIcon icon={siMastodon} />
 		</a>
-		<a class="btn join-item flex-auto sm:btn-sm" href="https://bsky.app/profile/phyrone.bsky.social" title="Bluesky">
+		<a
+			class="btn join-item sm:btn-sm flex-auto"
+			href="https://bsky.app/profile/phyrone.bsky.social"
+			title="Bluesky"
+		>
 			<SimpleIcon icon={siBluesky} />
 		</a>
-		<a class="btn join-item flex-auto sm:btn-sm" href="https://www.youtube.com/@phyrone" title="Youtube">
+		<a
+			class="btn join-item sm:btn-sm flex-auto"
+			href="https://www.youtube.com/@phyrone"
+			title="Youtube"
+		>
 			<SimpleIcon icon={siYoutube} />
 		</a>
 	</div>

@@ -1,14 +1,14 @@
-import type { LayoutLoad } from "./$types";
+import type { LayoutLoad } from './$types';
 
 import {
 	get_post_metadata,
 	get_post_url,
 	type PostMetadata,
-	POSTS_KV_PROMISE,
-} from "$lib/posts.ts";
-import { z } from "zod";
+	POSTS_KV_PROMISE
+} from '$lib/posts.ts';
+import { z } from 'zod';
 /** @type {import('moment')} */
-import moment from "moment/min/moment-with-locales";
+import moment from 'moment/min/moment-with-locales';
 
 export type PostData = {
 	slug: string;
@@ -25,7 +25,7 @@ export const load: LayoutLoad = async function load() {
 	const FULL_DATE = z.object({
 		y: z.number({ coerce: true }).positive().int(),
 		m: z.number({ coerce: true }).positive().int(),
-		d: z.number({ coerce: true }).positive().int(),
+		d: z.number({ coerce: true }).positive().int()
 	});
 	for (const year in KVS) {
 		for (const month in KVS[year]) {
@@ -35,10 +35,11 @@ export const load: LayoutLoad = async function load() {
 						const metadata = (await get_post_metadata(key)) ?? {};
 						const url = get_post_url(year, month, day, slug);
 
-						const date = metadata.date ??
-							await FULL_DATE.safeParseAsync({ y: year, m: month, d: day })
+						const date =
+							metadata.date ??
+							(await FULL_DATE.safeParseAsync({ y: year, m: month, d: day })
 								.then((d) => d.data)
-								.then((d) => d ? moment(new Date(d.y, d.m - 1, d.d)) : undefined);
+								.then((d) => (d ? moment(new Date(d.y, d.m - 1, d.d)) : undefined)));
 
 						return { slug, key, url, metadata, date } satisfies PostData;
 					})();
@@ -50,6 +51,6 @@ export const load: LayoutLoad = async function load() {
 	const posts = await Promise.all(posts_futtures);
 
 	return {
-		posts,
+		posts
 	};
 };

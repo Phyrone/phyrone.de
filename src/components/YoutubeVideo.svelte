@@ -13,7 +13,7 @@
 	let width = 560;
 </script>
 
-{#if browser ? ($show_youtube_accepted) : false}
+{#if browser ? $show_youtube_accepted : false}
 	<iframe
 		{width}
 		{height}

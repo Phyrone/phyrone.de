@@ -23,7 +23,7 @@
 	Telefon: <a href="tel:+491525813480">+49 152 5813480</a> <br />
 	E-Mail: <a href="mailto:admin@phyrone.de">admin@phyrone.de</a>
 </p>
-<br>
+<br />
 
 <h2>Haftungsausschluss:</h2>
 <h3>Haftung für Inhalte</h3>
@@ -81,36 +81,36 @@
 </p>
 <br />
 Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der
-<a href="https://www.kanzlei-hasselbach.de/rechtsgebiete/familienrecht/">Kanzlei Hasselbach, Fachanwälte für
-	Familienrecht</a>
+<a href="https://www.kanzlei-hasselbach.de/rechtsgebiete/familienrecht/"
+	>Kanzlei Hasselbach, Fachanwälte für Familienrecht</a
+>
 
 <style>
-    @reference "tailwindcss/theme";
-    @plugin "daisyui"{
+	@reference "tailwindcss/theme";
+	@plugin "daisyui" {
+	}
 
-		}
+	h1 {
+		@apply my-4 text-3xl font-bold sm:text-4xl;
+	}
 
-    h1 {
-        @apply my-4 text-3xl sm:text-4xl font-bold;
-    }
+	h2 {
+		@apply my-3 text-2xl font-bold sm:text-3xl;
+	}
 
-    h2 {
-        @apply my-3 text-2xl sm:text-3xl font-bold;
-    }
+	h3 {
+		@apply my-2 text-xl font-bold sm:text-2xl;
+	}
 
-    h3 {
-        @apply my-2 text-xl sm:text-2xl font-bold;
-    }
+	p {
+		@apply my-2;
+	}
 
-    p {
-        @apply my-2;
-    }
+	a {
+		@apply link;
+	}
 
-    a {
-        @apply link;
-    }
-
-    strong {
-        @apply font-bold;
-    }
+	strong {
+		@apply font-bold;
+	}
 </style>
