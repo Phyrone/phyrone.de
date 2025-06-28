@@ -44,6 +44,9 @@ importers:
       node-html-parser:
         specifier: ^7.0.1
         version: 7.0.1
+      sharp:
+        specifier: ^0.34.2
+        version: 0.34.2
       simple-icons:
         specifier: ^15.3.0
         version: 15.3.0
