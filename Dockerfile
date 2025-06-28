@@ -24,4 +24,4 @@ COPY --from=build /build/ /app/
 WORKDIR /app/
 EXPOSE 3000
 USER 1000:1000
-CMD ["run", "--allow-net", "--allow-read", "--allow-env", "/app/dist/index.js"]
+CMD ["run", "--allow-net", "--allow-read", "--allow-env","--allow-ffi", "/app/dist/index.js"]

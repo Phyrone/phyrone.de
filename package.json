@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"prod": "vite build && deno run --allow-net --allow-read --allow-env dist/index.js",
+		"prod": "vite build && deno run --allow-net --allow-read --allow-env --allow-ffi dist/index.js",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
