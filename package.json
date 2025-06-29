@@ -65,7 +65,7 @@
 		"@swc/html": "^1.12.7",
 		"@tailwindcss/vite": "^4.1.11",
 		"@types/qs": "^6.14.0",
-		"css-select": "~5.2.0",
+		"css-select": "~6.0.0",
 		"dashjs": "^5.0.3",
 		"etag": "^1.8.1",
 		"fuse.js": "^7.1.0",
