@@ -64,7 +64,7 @@ importers:
         version: 0.12.0(svelte@5.35.2)
       zod:
         specifier: ^3.25.67
-        version: 3.25.74
+        version: 3.25.75
     devDependencies:
       '@sveltejs/adapter-node':
         specifier: ^5.2.12
@@ -185,7 +185,7 @@ importers:
         version: 5.0.0
       unlighthouse:
         specifier: ^0.17.1
-        version: 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.74)
+        version: 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.75)
       vite:
         specifier: ^7.0.0
         version: 7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1)
@@ -5508,8 +5508,8 @@ packages:
   zimmerframe@1.1.2:
     resolution: {integrity: sha512-rAbqEGa8ovJy4pyBxZM70hg4pE6gDgaQ0Sl9M3enG3I0d6H4XSAM3GeNGLKnsBpuijUow064sf7ww1nutC5/3w==}
 
-  zod@3.25.74:
-    resolution: {integrity: sha512-J8poo92VuhKjNknViHRAIuuN6li/EwFbAC8OedzI8uxpEPGiXHGQu9wemIAioIpqgfB4SySaJhdk0mH5Y4ICBg==}
+  zod@3.25.75:
+    resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -6202,7 +6202,7 @@ snapshots:
       pathe: 2.0.3
       std-env: 3.9.0
 
-  '@nuxt/ui@3.2.0(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.74)':
+  '@nuxt/ui@3.2.0(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.75)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.17(typescript@5.8.3))
       '@internationalized/date': 3.8.2
@@ -6248,7 +6248,7 @@ snapshots:
       vaul-vue: 0.4.1(reka-ui@2.3.1(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))
       vue-component-type-helpers: 2.2.10
     optionalDependencies:
-      zod: 3.25.74
+      zod: 3.25.75
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -7423,10 +7423,10 @@ snapshots:
       unhead: 2.0.11
       vue: 3.5.17(typescript@5.8.3)
 
-  '@unlighthouse/cli@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.74)':
+  '@unlighthouse/cli@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.75)':
     dependencies:
       '@lhci/utils': 0.15.1
-      '@unlighthouse/client': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.74)
+      '@unlighthouse/client': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.75)
       '@unlighthouse/core': 0.17.1(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)
       '@unlighthouse/server': 0.17.1(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)
       better-opn: 3.0.2
@@ -7489,10 +7489,10 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.74)':
+  '@unlighthouse/client@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.75)':
     dependencies:
       '@headlessui/vue': 1.7.23(vue@3.5.17(typescript@5.8.3))
-      '@nuxt/ui': 3.2.0(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.74)
+      '@nuxt/ui': 3.2.0(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.75)
       '@tailwindcss/vite': 4.1.11(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))
       dayjs: 1.11.13
       defu: 6.1.4
@@ -8073,13 +8073,13 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1452169
       mitt: 3.0.1
-      zod: 3.25.74
+      zod: 3.25.75
 
   chromium-bidi@5.1.0(devtools-protocol@0.0.1464554):
     dependencies:
       devtools-protocol: 0.0.1464554
       mitt: 3.0.1
-      zod: 3.25.74
+      zod: 3.25.75
 
   citty@0.1.6:
     dependencies:
@@ -11230,10 +11230,10 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unlighthouse@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.74):
+  unlighthouse@0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(vue@3.5.17(typescript@5.8.3))(zod@3.25.75):
     dependencies:
-      '@unlighthouse/cli': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.74)
-      '@unlighthouse/client': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.74)
+      '@unlighthouse/cli': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.75)
+      '@unlighthouse/client': 0.17.1(@babel/parser@7.27.7)(axios@1.10.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@7.0.2(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass-embedded@1.89.2)(terser@5.43.1))(zod@3.25.75)
       '@unlighthouse/core': 0.17.1(puppeteer@24.10.2(typescript@5.8.3))(rollup@4.44.1)
     optionalDependencies:
       puppeteer: 24.10.2(typescript@5.8.3)
@@ -11579,6 +11579,6 @@ snapshots:
 
   zimmerframe@1.1.2: {}
 
-  zod@3.25.74: {}
+  zod@3.25.75: {}
 
   zwitch@2.0.4: {}
