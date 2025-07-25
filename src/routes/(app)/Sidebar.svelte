@@ -22,7 +22,7 @@
 >
 	<a
 		href="/"
-		class="mx-auto max-w-44 py-3 sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
+		class="sm:mx-auto max-w-8 py-3 sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
 		title="Homepage"
 		aria-label="go to homepage"
 	>
