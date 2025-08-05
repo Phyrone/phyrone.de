@@ -40,7 +40,7 @@ importers:
         version: 7.1.0
       hls.js:
         specifier: ^1.6.7
-        version: 1.6.7
+        version: 1.6.8
       lucide-svelte:
         specifier: ^0.536.0
         version: 0.536.0(svelte@5.37.3)
@@ -3258,8 +3258,8 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
-  hls.js@1.6.7:
-    resolution: {integrity: sha512-QW2fnwDGKGc9DwQUGLbmMOz8G48UZK7PVNJPcOUql1b8jubKx4/eMHNP5mGqr6tYlJNDG1g10Lx2U/qPzL6zwQ==}
+  hls.js@1.6.8:
+    resolution: {integrity: sha512-oifhtMNYRpB1VmzH/hWd4NXziMJ1hCeA15XG1ET4jh6u4khXsYsqqvpEFWmNWS+8J6tbsv10wYq5ZiY21HG2Gg==}
 
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
@@ -9244,7 +9244,7 @@ snapshots:
 
   he@1.2.0: {}
 
-  hls.js@1.6.7: {}
+  hls.js@1.6.8: {}
 
   hookable@5.5.3: {}
 
