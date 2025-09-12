@@ -16,7 +16,7 @@ importers:
         version: 5.2.6
       '@inlang/paraglide-js':
         specifier: ^2.2.0
-        version: 2.3.0
+        version: 2.3.1
       '@swc/html':
         specifier: ^1.13.2
         version: 1.13.5
@@ -705,8 +705,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inlang/paraglide-js@2.3.0':
-    resolution: {integrity: sha512-BXrQ77UL04zs5lRhfNW+DmTNbCcH1xBt5eDxntq+or5YHbJP1Srf57mRUHybX1A0XOQFThd+pvtkzcrnBvlc1w==}
+  '@inlang/paraglide-js@2.3.1':
+    resolution: {integrity: sha512-BJ0FaXO4Cccwoux2nAx6GnZGhuJU5cE+8TRi+ZVS8Aw1u9LAZEEEK4YR7bsyGUVunRdSE5G+u8/4Z9NXWd6A8A==}
     hasBin: true
 
   '@inlang/recommend-sherlock@0.2.1':
@@ -6149,7 +6149,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.3':
     optional: true
 
-  '@inlang/paraglide-js@2.3.0':
+  '@inlang/paraglide-js@2.3.1':
     dependencies:
       '@inlang/recommend-sherlock': 0.2.1
       '@inlang/sdk': 2.4.9
