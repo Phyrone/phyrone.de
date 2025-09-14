@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.2.6
-        version: 5.2.6
+        version: 5.2.7
       '@fontsource-variable/pixelify-sans':
         specifier: ^5.2.6
         version: 5.2.6
@@ -522,8 +522,8 @@ packages:
   '@floating-ui/vue@1.1.7':
     resolution: {integrity: sha512-idmAtbAIigGXN2SI5gItiXYBYtNfDTP9yIiObxgu13dgtG7ARCHlNfnR29GxP4LI4o13oiwsJ8wVgghj1lNqcw==}
 
-  '@fontsource-variable/jetbrains-mono@5.2.6':
-    resolution: {integrity: sha512-1pvtyK6H1paBOixbtZ9xfQgArVQ4SJMW3WSGZPOd5PiW3yg0t8umwKnjDMzW2ofb7qSdiXnsnIaHPT36vEOdlg==}
+  '@fontsource-variable/jetbrains-mono@5.2.7':
+    resolution: {integrity: sha512-vwU6O4wv1h1BvEJUWaylorj0WZ3+GB3uVsgUH7IpGX/euSXm0UyTu6MWusk1pph562F8cBvuv41P4jufRogF4Q==}
 
   '@fontsource-variable/pixelify-sans@5.2.6':
     resolution: {integrity: sha512-unHf6GS+5YkEHZZNCIOB+P6vqUU5YW91hRDjAgU4iA2wrPmG+hbj4Xy3jsVD7nklFM62Q3QnD9dU2ZTFF/is9A==}
@@ -5997,7 +5997,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@fontsource-variable/jetbrains-mono@5.2.6': {}
+  '@fontsource-variable/jetbrains-mono@5.2.7': {}
 
   '@fontsource-variable/pixelify-sans@5.2.6': {}
 
