@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.2.6
-        version: 5.2.7
+        version: 5.2.8
       '@fontsource-variable/pixelify-sans':
         specifier: ^5.2.6
-        version: 5.2.6
+        version: 5.2.7
       '@inlang/paraglide-js':
         specifier: ^2.2.0
         version: 2.3.2
@@ -522,11 +522,11 @@ packages:
   '@floating-ui/vue@1.1.7':
     resolution: {integrity: sha512-idmAtbAIigGXN2SI5gItiXYBYtNfDTP9yIiObxgu13dgtG7ARCHlNfnR29GxP4LI4o13oiwsJ8wVgghj1lNqcw==}
 
-  '@fontsource-variable/jetbrains-mono@5.2.7':
-    resolution: {integrity: sha512-vwU6O4wv1h1BvEJUWaylorj0WZ3+GB3uVsgUH7IpGX/euSXm0UyTu6MWusk1pph562F8cBvuv41P4jufRogF4Q==}
+  '@fontsource-variable/jetbrains-mono@5.2.8':
+    resolution: {integrity: sha512-WBA9elru6Jdp5df2mES55wuOO0WIrn3kpXnI4+W2ek5u3ZgLS9XS4gmIlcQhiZOWEKl95meYdvK7xI+ETLCq/Q==}
 
-  '@fontsource-variable/pixelify-sans@5.2.6':
-    resolution: {integrity: sha512-unHf6GS+5YkEHZZNCIOB+P6vqUU5YW91hRDjAgU4iA2wrPmG+hbj4Xy3jsVD7nklFM62Q3QnD9dU2ZTFF/is9A==}
+  '@fontsource-variable/pixelify-sans@5.2.7':
+    resolution: {integrity: sha512-IbQ7po3a7bQuguwyGQ7x7kMUCYvHjzxTdc7lYAcqzgR87MQb+vf8fuu4hjGyFLlWaDhS6QEe0jrS9dmCJ9ZlYw==}
 
   '@formatjs/ecma402-abstract@2.3.4':
     resolution: {integrity: sha512-qrycXDeaORzIqNhBOx0btnhpD1c+/qFIHAN9znofuMJX6QBwtbrmlpWfD4oiUUD2vJUOIYFA/gYtg2KAMGG7sA==}
@@ -6026,9 +6026,9 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@fontsource-variable/jetbrains-mono@5.2.7': {}
+  '@fontsource-variable/jetbrains-mono@5.2.8': {}
 
-  '@fontsource-variable/pixelify-sans@5.2.6': {}
+  '@fontsource-variable/pixelify-sans@5.2.7': {}
 
   '@formatjs/ecma402-abstract@2.3.4':
     dependencies:
