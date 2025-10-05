@@ -58,7 +58,7 @@ importers:
         version: 6.14.0
       simple-icons:
         specifier: ^15.7.0
-        version: 15.16.0
+        version: 15.16.1
       svelte-persisted-store:
         specifier: ^0.12.0
         version: 0.12.0(svelte@5.39.8)
@@ -5171,8 +5171,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-icons@15.16.0:
-    resolution: {integrity: sha512-AeyYdQ5BsFe7ONruVRClZ+2921tQIEcHuP9AZdNUR0in1jFeakH0pA9Rkjj0T/RkTH7Icx2jprXxWWY3aaCDJQ==}
+  simple-icons@15.16.1:
+    resolution: {integrity: sha512-UpT6dslPDUfl+9xAjxHAh4ralefkrAqBe8o4cN+HtBOa2HjYZnEAiQsUkAdkaMfW05rU/rc/MWaKxF/cpUllCg==}
     engines: {node: '>=0.12.18'}
 
   simple-swizzle@0.2.2:
@@ -11722,7 +11722,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-icons@15.16.0: {}
+  simple-icons@15.16.1: {}
 
   simple-swizzle@0.2.2:
     dependencies:
