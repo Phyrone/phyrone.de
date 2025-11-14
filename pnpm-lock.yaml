@@ -16,7 +16,7 @@ importers:
         version: 5.2.7
       '@inlang/paraglide-js':
         specifier: ^2.2.0
-        version: 2.4.0
+        version: 2.5.0
       '@swc/html':
         specifier: ^1.13.2
         version: 1.15.1
@@ -739,8 +739,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inlang/paraglide-js@2.4.0':
-    resolution: {integrity: sha512-T/m9uoev574/1JrhCnPcgK1xnAwkVMgaDev4LFthnmID8ubX2xjboSGO3IztwXWwO0aJoT1UJr89JCwjbwgnJQ==}
+  '@inlang/paraglide-js@2.5.0':
+    resolution: {integrity: sha512-FnycOM6j0GYd/n97NCDyXJiHnyPYGPgufL640eZWs+rTIRrOgDVz/o77iWRYFZK84REOcmSDi0N6PbbY8NT8+A==}
     hasBin: true
 
   '@inlang/recommend-sherlock@0.2.1':
@@ -2616,8 +2616,8 @@ packages:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
 
-  comment-json@4.2.5:
-    resolution: {integrity: sha512-bKw/r35jR3HGt5PEPm1ljsQQGyCrR8sFGNiN5L+ykDHdpO8Smxkrkla9Yi6NkQyUrb8V54PGhfMs6NrIwtxtdw==}
+  comment-json@4.4.1:
+    resolution: {integrity: sha512-r1To31BQD5060QdkC+Iheai7gHwoSZobzunqkf2/kQ6xIAfJyrKNAFUwdKvkK7Qgu7pVTKQEa7ok7Ed3ycAJgg==}
     engines: {node: '>= 6'}
 
   commondir@1.0.1:
@@ -3488,10 +3488,6 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  has-own-prop@2.0.0:
-    resolution: {integrity: sha512-Pq0h+hvsVm6dDEa8x82GnLSYHOzNDt7f0ddFa3FqcQlgzEiptPqL+XrOJNavjOzSYiYWIrgeVYYgGlLmnxwilQ==}
-    engines: {node: '>=8'}
-
   has-symbols@1.1.0:
     resolution: {integrity: sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==}
     engines: {node: '>= 0.4'}
@@ -3573,8 +3569,8 @@ packages:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
 
-  human-id@4.1.1:
-    resolution: {integrity: sha512-3gKm/gCSUipeLsRYZbbdA1BD83lBoWUkZ7G9VFrhWPAU76KwYo5KR8V28bpoPm/ygy0x5/GCbpRQdY7VLYCoIg==}
+  human-id@4.1.2:
+    resolution: {integrity: sha512-v/J+4Z/1eIJovEBdlV5TYj1IR+ZiohcYGRY+qN/oC9dAfKzVT023N/Bgw37hrKCoVRBvk3bqyzpr2PP5YeTMSg==}
     hasBin: true
 
   human-signals@5.0.0:
@@ -3779,6 +3775,10 @@ packages:
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
   jsesc@3.1.0:
@@ -4818,10 +4818,6 @@ packages:
 
   remark-reading-time@2.0.2:
     resolution: {integrity: sha512-ILjIuR0dQQ8pELPgaFvz7ralcSN62rD/L1pTUJgWb4gfua3ZwYEI8mnKGxEQCbrXSUF/OvycTkcUbifGOtOn5A==}
-
-  repeat-string@1.6.1:
-    resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
-    engines: {node: '>=0.10'}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -6428,7 +6424,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inlang/paraglide-js@2.4.0':
+  '@inlang/paraglide-js@2.5.0':
     dependencies:
       '@inlang/recommend-sherlock': 0.2.1
       '@inlang/sdk': 2.4.9
@@ -6442,7 +6438,7 @@ snapshots:
 
   '@inlang/recommend-sherlock@0.2.1':
     dependencies:
-      comment-json: 4.2.5
+      comment-json: 4.4.1
 
   '@inlang/sdk@2.4.9':
     dependencies:
@@ -6509,7 +6505,7 @@ snapshots:
     dependencies:
       '@lix-js/server-protocol-schema': 0.1.1
       dedent: 1.5.1
-      human-id: 4.1.1
+      human-id: 4.1.2
       js-sha256: 0.11.1
       kysely: 0.27.6
       sqlite-wasm-kysely: 0.3.0(kysely@0.27.6)
@@ -8806,13 +8802,11 @@ snapshots:
 
   commander@8.3.0: {}
 
-  comment-json@4.2.5:
+  comment-json@4.4.1:
     dependencies:
       array-timsort: 1.0.3
       core-util-is: 1.0.3
       esprima: 4.0.1
-      has-own-prop: 2.0.0
-      repeat-string: 1.6.1
 
   commondir@1.0.1: {}
 
@@ -8883,7 +8877,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 5.9.3
@@ -9770,8 +9764,6 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  has-own-prop@2.0.0: {}
-
   has-symbols@1.1.0: {}
 
   has-tostringtag@1.0.2:
@@ -9889,7 +9881,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  human-id@4.1.1: {}
+  human-id@4.1.2: {}
 
   human-signals@5.0.0: {}
 
@@ -10048,6 +10040,10 @@ snapshots:
       esprima: 4.0.1
 
   js-yaml@4.1.0:
+    dependencies:
+      argparse: 2.0.1
+
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
@@ -11213,8 +11209,6 @@ snapshots:
       estree-util-value-to-estree: 3.4.0
       reading-time: 1.5.0
       unist-util-visit: 3.1.0
-
-  repeat-string@1.6.1: {}
 
   require-directory@2.1.1: {}
 
