@@ -23,9 +23,9 @@ export const load: LayoutLoad = async function load() {
 	const posts_futtures: Promise<PostData>[] = [];
 
 	const FULL_DATE = z.object({
-		y: z.number({ coerce: true }).positive().int(),
-		m: z.number({ coerce: true }).positive().int(),
-		d: z.number({ coerce: true }).positive().int()
+		y: z.coerce.number().positive().int(),
+		m: z.coerce.number().positive().int(),
+		d: z.coerce.number().positive().int()
 	});
 	for (const year in KVS) {
 		for (const month in KVS[year]) {

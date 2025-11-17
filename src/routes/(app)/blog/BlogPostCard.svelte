@@ -20,8 +20,9 @@
 	]}
 >
 	{#if thumbnail}
-		<figure class="">
+		<figure class="" data-hero-key="post-thumbnail-{btoa(post.key)}">
 			<enhanced:img
+
 				class={[
 					'm-4 h-48 w-fit max-w-64 rounded-lg object-contain',
 					'md:m-0 md:h-full md:rounded-none md:transition-all md:duration-500 md:group-hover:scale-125'
@@ -31,8 +32,8 @@
 			/>
 		</figure>
 	{/if}
-	<div class="card-body">
-		<h2 class="card-title truncate">{post.metadata.title ?? post.slug}</h2>
+	<div class="card-body" data-hero-key="post-meta-{btoa(post.key)}">
+		<h2  class="card-title truncate">{post.metadata.title ?? post.slug}</h2>
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
 			{@const localized_moment_date = moment_date.locale(getLocale())}

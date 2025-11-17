@@ -2,6 +2,7 @@
 @import './styles/fonts.css';
 
 @plugin "daisyui" {
+    logs: false;
 }
 
 :root,

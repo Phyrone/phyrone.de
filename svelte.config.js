@@ -65,12 +65,6 @@ const config = {
 			strict: true
 		}),
 		 */
-		csp: {
-			mode: 'auto',
-			directives: {
-				'script-src': ['self']
-			}
-		},
 		csrf: {
 			checkOrigin: true
 		},

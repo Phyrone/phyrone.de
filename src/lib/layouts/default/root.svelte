@@ -1,6 +1,6 @@
-<svelte:options runes={false} />
+<svelte:options runes={true} />
 
-<script context="module" lang="ts">
+<script module lang="ts">
 	import h1 from './c-h1.svelte';
 	import h2 from './c-h2.svelte';
 	import h3 from './c-h3.svelte';
@@ -15,16 +15,16 @@
 </script>
 
 <script lang="ts">
-	export let title: string;
+	//export let title: string;
+	import type { Snippet } from 'svelte';
+	type Props = {
+		children?: Snippet;
+	}
+	let { children }: Props = $props();
 </script>
 
-<svelte:head>
-	{#if title}
-		<title>Phyrone | {title}</title>
-	{:else}
-		<title>Phyrone</title>
-	{/if}
-</svelte:head>
+
 <article>
-	<slot />
+	<!-- <slot /> -->
+	{@render children?.()}
 </article>

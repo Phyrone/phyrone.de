@@ -9,4 +9,6 @@
 {#if navigating.type}
 	<NavigatingIndicator />
 {/if}
+
 {@render children()}
+
