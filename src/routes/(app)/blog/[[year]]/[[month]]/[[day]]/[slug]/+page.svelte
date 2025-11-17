@@ -10,7 +10,6 @@
 	let title = $state('');
 
 	let thumbnail = $derived(get_image(data.metadata.thumbnail, data.key));
-
 </script>
 
 <svelte:head>
@@ -33,7 +32,7 @@
 			{/if}
 		</div>
 		<div data-hero-key="post-meta-{btoa(data.key)}">
-			<h1 class={['text-7xl','font-bold']}>{data.metadata.title ?? data.metadata.slug}</h1>
+			<h1 class={['text-7xl', 'font-bold']}>{data.metadata.title ?? data.metadata.slug}</h1>
 		</div>
 		<div class="divider"></div>
 		<main data-hero-key="post-body-{btoa(data.key)}">

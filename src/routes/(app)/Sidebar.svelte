@@ -22,7 +22,7 @@
 >
 	<a
 		href="/"
-		class="sm:mx-auto max-w-8 py-3 sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
+		class="max-w-8 py-3 sm:mx-auto sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
 		title="Homepage"
 		aria-label="go to homepage"
 	>
@@ -61,40 +61,32 @@
 		</li>
 	</ul>
 	<div class="join mx-auto flex w-full max-w-sm sm:mx-0">
-		<a class={[
-				"btn join-item sm:btn-sm flex-auto transition-all",
-				"hover:bg-black hover:text-white",
+		<a
+			class={[
+				'btn join-item sm:btn-sm flex-auto transition-all',
+				'hover:bg-black hover:text-white'
 			]}
-			 href="https://github.com/phyrone"
-			 title="Github"
+			href="https://github.com/phyrone"
+			title="Github"
 		>
 			<SimpleIcon icon={siGithub} />
 		</a>
 		<a
-			class={[
-				"btn join-item sm:btn-sm flex-auto",
-				"hover:bg-[#563ACC] hover:text-white",
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#563ACC] hover:text-white']}
 			href="https://mastodon.social/@phyrone"
 			title="Mastodon"
 		>
 			<SimpleIcon icon={siMastodon} />
 		</a>
 		<a
-			class={[
-				"btn join-item sm:btn-sm flex-auto",
-				"hover:bg-[#1285FE] hover:text-white",
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#1285FE] hover:text-white']}
 			href="https://bsky.app/profile/phyrone.bsky.social"
 			title="Bluesky"
 		>
 			<SimpleIcon icon={siBluesky} />
 		</a>
 		<a
-			class={[
-				"btn join-item sm:btn-sm flex-auto",
-				"hover:bg-[#ff0000] hover:text-white",
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#ff0000] hover:text-white']}
 			href="https://www.youtube.com/@phyrone"
 			title="Youtube"
 		>
