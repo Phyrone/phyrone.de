@@ -67,7 +67,7 @@ importers:
         version: 0.36.0(@sveltejs/kit@2.49.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(svelte@5.43.14)(zod@4.1.12)
       simple-icons:
         specifier: ^15.21.0
-        version: 15.21.0
+        version: 15.22.0
       svelte-persisted-store:
         specifier: ^0.12.0
         version: 0.12.0(svelte@5.43.14)
@@ -5093,8 +5093,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-icons@15.21.0:
-    resolution: {integrity: sha512-xEKtyjl3bmmnyxZIsxNlN4RnN/BaP2tecQCSxOj1C6llJKt0TG4u+ZNJKSA82yBGrkO0CWW10UBTFMkH6tVKzQ==}
+  simple-icons@15.22.0:
+    resolution: {integrity: sha512-i/w5Ie4tENfGYbdCo2iJ+oies0vOFd8QXWHopKOUzudfLCvnmeheF2PpHp89Z2azpc+c2su3lMiWO/SpP+429A==}
     engines: {node: '>=0.12.18'}
 
   sirv@2.0.4:
@@ -11631,7 +11631,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-icons@15.21.0: {}
+  simple-icons@15.22.0: {}
 
   sirv@2.0.4:
     dependencies:
