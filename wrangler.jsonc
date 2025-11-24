@@ -1,0 +1,20 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "phyrone",
+  "compatibility_date": "2025-11-21",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "pages_build_output_dir": "./.svelte-kit/cloudflare",
+  "minify": true,
+  "observability": {
+    "enabled": true
+  },
+  "placement": {
+    "mode": "off"
+  }
+}

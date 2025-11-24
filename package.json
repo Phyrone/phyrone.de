@@ -12,13 +12,15 @@
 		"format": "prettier --write .",
 		"fmt": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"unlighthouse": "unlighthouse"
+		"unlighthouse": "unlighthouse",
+		"wrangler": "wrangler"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-cloudflare": "^7.2.4",
 		"@sveltejs/adapter-node": "^5.4.0",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/enhanced-img": "^0.9.0",
-		"@sveltejs/kit": "^2.48.5",
+		"@sveltejs/kit": "^2.49.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/container-queries": "^0.1.1",
@@ -43,36 +45,35 @@
 		"prettier-plugin-tailwindcss": "^0.7.1",
 		"remark-directive": "^4.0.0",
 		"remark-heading-id": "^1.0.1",
-		"remark-mermaidjs": "^7.0.0",
 		"remark-reading-time": "^2.0.2",
 		"sass-embedded": "^1.93.3",
 		"shiki": "^3.15.0",
-		"svelte": "^5.43.8",
+		"svelte": "^5.43.14",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.1.17",
 		"tailwindcss-intersect": "^2.2.0",
 		"tailwindcss-motion": "^1.1.1",
 		"terser": "^5.44.1",
 		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.46.4",
+		"typescript-eslint": "^8.47.0",
 		"unist-util-visit": "^5.0.0",
 		"unlighthouse": "^0.17.4",
-		"vite": "^7.2.2",
-		"vite-imagetools": "^9.0.0"
+		"vite": "^7.2.4",
+		"vite-imagetools": "^9.0.0",
+		"wrangler": "^4.50.0"
 	},
 	"dependencies": {
 		"@fontsource-variable/jetbrains-mono": "^5.2.8",
 		"@fontsource-variable/pixelify-sans": "^5.2.7",
 		"@inlang/paraglide-js": "^2.5.0",
 		"@ssgoi/svelte": "^2.5.3",
-		"@swc/html": "^1.15.2",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/qs": "^6.14.0",
 		"css-select": "~6.0.0",
-		"dashjs": "^5.0.3",
+		"dashjs": "^5.1.0",
 		"etag": "^1.8.1",
 		"fuse.js": "^7.1.0",
-		"hls.js": "^1.6.14",
+		"hls.js": "^1.6.15",
 		"install": "^0.13.0",
 		"lucide-svelte": "^0.554.0",
 		"moment": "^2.30.1",
@@ -80,9 +81,9 @@
 		"node-html-parser": "^7.0.1",
 		"qs": "^6.14.0",
 		"runed": "^0.36.0",
-		"simple-icons": "^15.21.0",
+		"simple-icons": "^15.22.0",
 		"svelte-persisted-store": "^0.12.0",
-		"zod": "^4.1.12"
+		"zod": "^4.1.13"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
@@ -91,7 +92,8 @@
 			"esbuild",
 			"puppeteer",
 			"sharp",
-			"vue-demi"
+			"vue-demi",
+			"workerd"
 		]
 	},
 	"packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
