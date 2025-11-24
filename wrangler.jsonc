@@ -10,7 +10,6 @@
     "nodejs_compat"
   ],
   "pages_build_output_dir": "./.svelte-kit/cloudflare",
-  "minify": true,
   "observability": {
     "enabled": true
   },
