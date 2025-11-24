@@ -18,34 +18,6 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm build
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v5
-        with:
-          name: build-artifacts
-          path: .
-          if-no-files-found: 'error'
-  deploy:
-    name: Deploy
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    needs:
-      - build
-    concurrency:
-      group: 'deploy-phyrone-${{ github.ref_name }}'
-    steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v5
-        with:
-          name: build-artifacts
-          path: .
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile --prod
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
