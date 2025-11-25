@@ -83,7 +83,7 @@ importers:
         version: 3.0.10(@sveltejs/kit@2.49.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))
       '@sveltejs/enhanced-img':
         specifier: ^0.9.0
-        version: 0.9.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(rollup@4.53.3)(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))
+        version: 0.9.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(rollup@4.53.3)(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))
       '@sveltejs/kit':
         specifier: ^2.49.0
         version: 2.49.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))
@@ -1751,8 +1751,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/enhanced-img@0.9.0':
-    resolution: {integrity: sha512-n6ToAijBOJzrSfXXYDWa3MHIIPALE+imIpIL7s4T8dGabPitudTmFp38EXUGLectaNsCalEc8rZLpG4jVeb5Zg==}
+  '@sveltejs/enhanced-img@0.9.1':
+    resolution: {integrity: sha512-anXvfo1nfgj66k5c9NpxiaW5krVPib4OQA0wU9P5y7OL4iks1dms0Syx/AWaQNWFpxSP6B1TTgzml4IN9G6R5g==}
     peerDependencies:
       '@sveltejs/vite-plugin-svelte': ^6.0.0
       svelte: ^5.0.0
@@ -7378,7 +7378,7 @@ snapshots:
     dependencies:
       '@sveltejs/kit': 2.49.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))
 
-  '@sveltejs/enhanced-img@0.9.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(rollup@4.53.3)(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))':
+  '@sveltejs/enhanced-img@0.9.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1)))(rollup@4.53.3)(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 6.2.1(svelte@5.43.14)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.44.1))
       magic-string: 0.30.21
