@@ -1,8 +1,9 @@
-import { paraglideMiddleware } from "$lib/paraglide/server";
-import type { Handle } from "@sveltejs/kit";
-import { parse } from "node-html-parser";
+import { paraglideMiddleware } from '$lib/paraglide/server';
+import type { Handle } from '@sveltejs/kit';
+import { parse } from 'node-html-parser';
 //import { available_themes, THEME_COOKIE_NAME } from '$lib/theme';
-import { z } from "zod";
+import { z } from 'zod';
+
 const MINIFY_HTML = z.stringbool()
 	.default(false)
 	.catch(() => false)
@@ -27,8 +28,8 @@ export const handle: Handle = ({ event, resolve }) =>
 						//let theme = event.cookies.get(THEME_COOKIE_NAME);
 						//if (theme && available_themes.includes(theme)) {html_element.setAttribute('data-theme', theme);}
 					}
-					let transformed1 = html_element ? element.toString() : html;
-					return transformed1;
+
+					return html_element ? element.toString() : html;
 				},
 			});
 		},

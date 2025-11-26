@@ -1,5 +1,5 @@
 import type { SsgoiConfig } from '@ssgoi/svelte';
-import { fade, hero, slide } from '@ssgoi/svelte/view-transitions';
+//import { fade, hero, slide } from '@ssgoi/svelte/view-transitions';
 
 export const transitions = {
 	transitions: [
