@@ -3,6 +3,7 @@ import { fade, hero, slide } from '@ssgoi/svelte/view-transitions';
 
 export const transitions = {
 	transitions: [
+		/*
 		{
 			from: '/blog/',
 			to: '/blog/*',
@@ -21,5 +22,6 @@ export const transitions = {
 			transition: slide({ direction: 'right' }),
 			symmetric: false
 		}
+		*/
 	]
 } satisfies SsgoiConfig;
