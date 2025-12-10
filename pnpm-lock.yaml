@@ -118,8 +118,8 @@ importers:
         specifier: ^10.4.22
         version: 10.4.22(postcss@8.5.6)
       daisyui:
-        specifier: 5.5.8
-        version: 5.5.8
+        specifier: 5.5.11
+        version: 5.5.11
       eslint:
         specifier: ^9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -2697,8 +2697,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  daisyui@5.5.8:
-    resolution: {integrity: sha512-6psL9jIEOFOw68V10j/BKCWcRgx8dh81mmNxShr+g7HDM6UHNoPharlp9zq/PQkHNuGU1ZQsajR3HgpvavbRKQ==}
+  daisyui@5.5.11:
+    resolution: {integrity: sha512-xQ1JIgYbhKe9DKhFtOWAKf91F1mK3HECa5xoINmSHMqW9KjEP+yOWttTN1K7zOwuDmk68CbovCDbMKLVtDmPBQ==}
 
   dashjs@5.1.0:
     resolution: {integrity: sha512-FilZfs+0pj9NB7q2VMT4zahG+V2JoleVl6K9kWunvndICdclw/jLAfLImcmCr1WqxH4hsgsFXvaVgea9XGkgVQ==}
@@ -8586,7 +8586,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  daisyui@5.5.8: {}
+  daisyui@5.5.11: {}
 
   dashjs@5.1.0:
     dependencies:
