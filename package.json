@@ -47,7 +47,7 @@
 		"remark-heading-id": "^1.0.1",
 		"remark-reading-time": "^2.0.2",
 		"sass-embedded": "^1.93.3",
-		"shiki": "^3.17.0",
+		"shiki": "^4.0.0",
 		"svelte": "^5.45.2",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.1.17",
