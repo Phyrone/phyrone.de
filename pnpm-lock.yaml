@@ -52,7 +52,7 @@ importers:
         version: 2.30.1
       motion:
         specifier: ^12.23.24
-        version: 12.34.5
+        version: 12.35.0
       node-html-parser:
         specifier: ^7.0.1
         version: 7.1.0
@@ -3583,8 +3583,8 @@ packages:
       react-dom:
         optional: true
 
-  framer-motion@12.34.5:
-    resolution: {integrity: sha512-Z2dQ+o7BsfpJI3+u0SQUNCrN+ajCKJen1blC4rCHx1Ta2EOHs+xKJegLT2aaD9iSMbU3OoX+WabQXkloUbZmJQ==}
+  framer-motion@12.35.0:
+    resolution: {integrity: sha512-w8hghCMQ4oq10j6aZh3U2yeEQv5K69O/seDI/41PK4HtgkLrcBovUNc0ayBC3UyyU7V1mrY2yLzvYdWJX9pGZQ==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -4477,8 +4477,8 @@ packages:
   motion-dom@12.23.12:
     resolution: {integrity: sha512-RcR4fvMCTESQBD/uKQe49D5RUeDOokkGRmz4ceaJKDBgHYtZtntC/s2vLvY38gqGaytinij/yi3hMcWVcEF5Kw==}
 
-  motion-dom@12.34.5:
-    resolution: {integrity: sha512-k33CsnxO2K3gBRMUZT+vPmc4Utlb5menKdG0RyVNLtlqRaaJPRWlE9fXl8NTtfZ5z3G8TDvqSu0MENLqSTaHZA==}
+  motion-dom@12.35.0:
+    resolution: {integrity: sha512-FFMLEnIejK/zDABn+vqGVAUN4T0+3fw+cVAY8MMT65yR+j5uMuvWdd4npACWhh94OVWQs79CrBBuwOwGRZAQiA==}
 
   motion-utils@12.29.2:
     resolution: {integrity: sha512-G3kc34H2cX2gI63RqU+cZq+zWRRPSsNIOjpdl9TN4AQwC4sgwYPl/Q/Obf/d53nOm569T0fYK+tcoSV50BWx8A==}
@@ -4489,8 +4489,8 @@ packages:
       '@vueuse/core': '>=10.0.0'
       vue: '>=3.0.0'
 
-  motion@12.34.5:
-    resolution: {integrity: sha512-N06NLJ9IeBHeielRqIvYvjPfXuRdyTxa+9++BgpGa+hY2D7TcMkI6QzV3jaRuv0aZRXgMa7cPy9YcBUBisPzAQ==}
+  motion@12.35.0:
+    resolution: {integrity: sha512-BQUhNUIGvUcwXCzwmnT1JpjUqab34lIwxHnXUyWRht1WC1vAyp7/4qgMiUXxN3K6hgUhyoR+HNnLeQMwUZjVjw==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -9834,9 +9834,9 @@ snapshots:
       motion-utils: 12.29.2
       tslib: 2.8.1
 
-  framer-motion@12.34.5:
+  framer-motion@12.35.0:
     dependencies:
-      motion-dom: 12.34.5
+      motion-dom: 12.35.0
       motion-utils: 12.29.2
       tslib: 2.8.1
 
@@ -10858,7 +10858,7 @@ snapshots:
     dependencies:
       motion-utils: 12.29.2
 
-  motion-dom@12.34.5:
+  motion-dom@12.35.0:
     dependencies:
       motion-utils: 12.29.2
 
@@ -10876,9 +10876,9 @@ snapshots:
       - react
       - react-dom
 
-  motion@12.34.5:
+  motion@12.35.0:
     dependencies:
-      framer-motion: 12.34.5
+      framer-motion: 12.35.0
       tslib: 2.8.1
 
   mri@1.2.0: {}
