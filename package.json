@@ -59,7 +59,7 @@
 		"unist-util-visit": "^5.0.0",
 		"unlighthouse": "^0.17.4",
 		"vite": "^7.2.4",
-		"vite-imagetools": "^9.0.2",
+		"vite-imagetools": "^10.0.0",
 		"wrangler": "^4.51.0"
 	},
 	"dependencies": {
