@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         name: Checkout
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
         name: Setup pnpm
       - name: Set up Node.js
         uses: actions/setup-node@v6
