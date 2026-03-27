@@ -74,7 +74,7 @@ importers:
     devDependencies:
       '@sveltejs/adapter-cloudflare':
         specifier: ^7.2.4
-        version: 7.2.8(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(wrangler@4.77.0)
+        version: 7.2.8(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(wrangler@4.78.0)
       '@sveltejs/adapter-node':
         specifier: ^5.4.0
         version: 5.5.4(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))
@@ -206,7 +206,7 @@ importers:
         version: 9.0.3(rollup@4.59.0)
       wrangler:
         specifier: ^4.51.0
-        version: 4.77.0
+        version: 4.78.0
 
 packages:
 
@@ -4284,8 +4284,8 @@ packages:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
 
-  miniflare@4.20260317.2:
-    resolution: {integrity: sha512-qNL+yWAFMX6fr0pWU6Lx1vNpPobpnDSF1V8eunIckWvoIQl8y1oBjL2RJFEGY3un+l3f9gwW9dirDPP26usYJQ==}
+  miniflare@4.20260317.3:
+    resolution: {integrity: sha512-tK78D3X4q30/SXqVwMhWrUfH+ffRou9dJLC+jkhNy5zh1I7i7T4JH6xihOvYxdCSBavJ5fQXaaxDJz6orh09BA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -5540,8 +5540,8 @@ packages:
     resolution: {integrity: sha512-BM/JzwwaRXxrLdElV2Uo6cTLEjhSb3WXboncJamZ15NgUURmvlXvxa6xkwIOILIjPNo9i8ku136ZvWV0Uly8+w==}
     engines: {node: '>=20.18.1'}
 
-  undici@7.24.5:
-    resolution: {integrity: sha512-3IWdCpjgxp15CbJnsi/Y9TCDE7HWVN19j1hmzVhoAkY/+CJx449tVxT5wZc1Gwg8J+P0LWvzlBzxYRnHJ+1i7Q==}
+  undici@7.24.6:
+    resolution: {integrity: sha512-Xi4agocCbRzt0yYMZGMA6ApD7gvtUFaxm4ZmeacWI4cZxaF6C+8I8QfofC20NAePiB/IcvZmzkJ7XPa471AEtA==}
     engines: {node: '>=20.18.1'}
 
   unenv@2.0.0-rc.24:
@@ -5931,8 +5931,8 @@ packages:
     resolution: {integrity: sha512-+TvsA6VAVoMC3XDKR5MoC/qlLqDixEfOBysDEKnPIPou/NvoPWCAuXHXMsswwlvmEuvX56lQjvELLyLuzTKvRw==}
     engines: {node: '>=12'}
 
-  wrangler@4.77.0:
-    resolution: {integrity: sha512-E2Gm69+K++BFd3QvoWjC290RPQj1vDOUotA++sNHmtKPb7EP6C8Qv+1D5Ii73tfZtyNgakpqHlh8lBBbVWTKAQ==}
+  wrangler@4.78.0:
+    resolution: {integrity: sha512-He/vUhk4ih0D0eFmtNnlbT6Od8j+BEokaSR+oYjbVsH0SWIrIch+eHqfLRSBjBQaOoh6HCNxcafcIkBm2u0Hag==}
     engines: {node: '>=20.3.0'}
     hasBin: true
     peerDependencies:
@@ -7694,12 +7694,12 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  '@sveltejs/adapter-cloudflare@7.2.8(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(wrangler@4.77.0)':
+  '@sveltejs/adapter-cloudflare@7.2.8(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(wrangler@4.78.0)':
     dependencies:
       '@cloudflare/workers-types': 4.20260218.0
       '@sveltejs/kit': 2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1))
       worktop: 0.8.0-next.18
-      wrangler: 4.77.0
+      wrangler: 4.78.0
 
   '@sveltejs/adapter-node@5.5.4(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.0)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))(svelte@5.55.0)(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1)))':
     dependencies:
@@ -8845,7 +8845,7 @@ snapshots:
       parse5: 7.3.0
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 7.24.5
+      undici: 7.24.6
       whatwg-mimetype: 4.0.0
 
   chokidar@4.0.3:
@@ -10610,7 +10610,7 @@ snapshots:
 
   mini-svg-data-uri@1.4.4: {}
 
-  miniflare@4.20260317.2:
+  miniflare@4.20260317.3:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.34.5
@@ -11933,7 +11933,7 @@ snapshots:
 
   undici@7.24.4: {}
 
-  undici@7.24.5: {}
+  undici@7.24.6: {}
 
   unenv@2.0.0-rc.24:
     dependencies:
@@ -12359,13 +12359,13 @@ snapshots:
       mrmime: 2.0.1
       regexparam: 3.0.0
 
-  wrangler@4.77.0:
+  wrangler@4.78.0:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.2
       '@cloudflare/unenv-preset': 2.16.0(unenv@2.0.0-rc.24)(workerd@1.20260317.1)
       blake3-wasm: 2.1.5
       esbuild: 0.27.3
-      miniflare: 4.20260317.2
+      miniflare: 4.20260317.3
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.24
       workerd: 1.20260317.1
