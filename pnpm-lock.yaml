@@ -18,8 +18,8 @@ importers:
         specifier: ^2.5.0
         version: 2.16.0
       '@ssgoi/svelte':
-        specifier: ^4.0.0
-        version: 4.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.0))
+        specifier: ^5.0.0
+        version: 5.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.0))
       '@tailwindcss/vite':
         specifier: ^4.1.17
         version: 4.2.2(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.2))
@@ -1775,12 +1775,12 @@ packages:
     resolution: {integrity: sha512-hI6twvUkzOmyGZhQMza1gpfqErZxXRw6JEsiVjUbo7tFanVD+8Oil0Ih3l2nGzHdxPI41zFmfUQG7GHqhciKZQ==}
     hasBin: true
 
-  '@ssgoi/core@4.0.0':
-    resolution: {integrity: sha512-z9TGF9EmHSGch7OSUPyyIcZZrlNC6jcsw4QLyD5KHQBd0lj4tvy+lT0PhydSkt5Nxu/ByLsfmwQF4d0hnpfXqQ==}
+  '@ssgoi/core@5.0.1':
+    resolution: {integrity: sha512-3tYFwsU/tYFkp2m1qe56upxsCls/6iOIj0h2IioU4+vM3RVmAd67jZM5S1AE8we1QYHafW8/4bJ8AZAOvmVlJQ==}
     engines: {node: '>=18.0.0'}
 
-  '@ssgoi/svelte@4.0.0':
-    resolution: {integrity: sha512-GxhIyNFkfWx1kLWdMzdNNzz8upg2pn3LJzDUCrM+4mxzXHZ71lvQZUQhVaid0lZ3GMhFYwHxbRFIvZ8320oZ1A==}
+  '@ssgoi/svelte@5.0.0':
+    resolution: {integrity: sha512-pz1ysXZaCJmMhjF3pDtPd0qBWKyhSPf9xMBnrHkS/Xwc1eP4jEsbWnb8TndqUSmfZrzUyRkMb+yjWZt1j9TKhQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       svelte: ^5.0.0
@@ -7590,11 +7590,11 @@ snapshots:
 
   '@sqlite.org/sqlite-wasm@3.48.0-build4': {}
 
-  '@ssgoi/core@4.0.0': {}
+  '@ssgoi/core@5.0.1': {}
 
-  '@ssgoi/svelte@4.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.0))':
+  '@ssgoi/svelte@5.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.0))':
     dependencies:
-      '@ssgoi/core': 4.0.0
+      '@ssgoi/core': 5.0.1
       svelte: 5.55.5(@typescript-eslint/types@8.59.0)
 
   '@standard-schema/spec@1.1.0': {}
