@@ -42,7 +42,7 @@
 		"node-gyp": "^12.1.0",
 		"prettier": "^3.7.1",
 		"prettier-plugin-svelte": "^3.4.0",
-		"prettier-plugin-tailwindcss": "^0.7.1",
+		"prettier-plugin-tailwindcss": "^0.8.0",
 		"remark-directive": "^4.0.0",
 		"remark-heading-id": "^1.0.1",
 		"remark-reading-time": "^2.0.2",
