@@ -12,10 +12,12 @@
 		"format": "prettier --write .",
 		"fmt": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
+		"fix": "prettier --write . && eslint . --fix",
 		"unlighthouse": "unlighthouse",
 		"wrangler": "wrangler"
 	},
 	"devDependencies": {
+		"@eslint/js": "^10.0.1",
 		"@sveltejs/adapter-cloudflare": "^7.2.8",
 		"@sveltejs/adapter-node": "^5.5.4",
 		"@sveltejs/adapter-static": "^3.0.10",
