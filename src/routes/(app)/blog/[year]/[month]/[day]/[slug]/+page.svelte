@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { get_image } from '$lib/images.ts';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	type Props = {
 		data: PageData;
@@ -11,9 +12,7 @@
 	let thumbnail = $derived(get_image(post.thumbnail, post._file));
 </script>
 
-<svelte:head>
-	<title>Phyrone | {post.title}</title>
-</svelte:head>
+<MetaTags title="Phyrone | {post.title}" description={post.description} keywords={post.tags} />
 
 <div data-hero-key="post-body-{btoa(post._id)}" class="max-w-5xl">
 	<div class="grid place-content-center" data-hero-key="post-thumbnail-{btoa(post._id)}">
