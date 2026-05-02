@@ -26,7 +26,10 @@ export default defineConfig({
 		cssCodeSplit: true,
 		sourcemap: true
 	},
-	experimental: { hmrPartialAccept: true },
+	experimental: {
+		hmrPartialAccept: true,
+		
+	},
 	ssr: { target: 'node' },
 	html: {},
 	json: { stringify: 'auto' },

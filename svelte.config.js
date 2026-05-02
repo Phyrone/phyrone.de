@@ -52,11 +52,10 @@ const config = {
 		preserveComments: false,
 		preserveWhitespace: false
 	},
-	vitePlugin: {
-		experimental: {}
-	},
 	kit: {
-		adapter: adapter_cloudflare({ fallback: 'spa' }),
+		adapter: adapter_cloudflare({
+			fallback: 'spa'
+		}),
 		/*
 		adapter: adapter_node({ out: 'dist', precompress: true }),
 		adapter: adapter_static({
@@ -80,7 +79,9 @@ const config = {
 			relative: false
 		},
 		prerender: {
-			concurrency: 16
+			concurrency: 16,
+			handleUnseenRoutes: 'fail',
+			entries: ['*', '/.well-known/matrix/server', '/.well-known/matrix/client']
 		}
 	},
 
