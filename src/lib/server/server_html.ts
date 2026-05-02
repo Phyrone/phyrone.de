@@ -17,10 +17,10 @@ export const handle: Handle = ({ event, resolve }) =>
 
 		return resolve(event, {
 			transformPageChunk: async ({ html }) => {
-				let element = parse(html, {
+				const element = parse(html, {
 					comment: true
 				});
-				let html_element = element.querySelector('html');
+				const html_element = element.querySelector('html');
 				if (html_element) {
 					html_element?.setAttribute('lang', locale);
 
