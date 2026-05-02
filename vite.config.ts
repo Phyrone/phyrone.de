@@ -27,8 +27,7 @@ export default defineConfig({
 		sourcemap: true
 	},
 	experimental: {
-		hmrPartialAccept: true,
-		
+		hmrPartialAccept: true
 	},
 	ssr: { target: 'node' },
 	html: {},

@@ -105,9 +105,9 @@
 		</p>
 		<ul>
 			<li>
-				<strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong> - Die betroffene Person hat
-				ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen
-				spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.
+				<strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong> - Die betroffene Person hat ihre
+				Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen
+				Zweck oder mehrere bestimmte Zwecke gegeben.
 			</li>
 			<li>
 				<strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)</strong> - die Verarbeitung
@@ -188,8 +188,8 @@
 			<a href="https://www.dataprivacyframework.gov/" target="_blank"
 				>https://www.dataprivacyframework.gov/</a
 			>
-			(in Englisch) entnehmen. Wir informieren Sie im Rahmen der Datenschutzhinweise, welche von uns
-			eingesetzten Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.
+			(in Englisch) entnehmen. Wir informieren Sie im Rahmen der Datenschutzhinweise, welche von uns eingesetzten
+			Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.
 		</p>
 
 		<h2 id="m12">Allgemeine Informationen zur Datenspeicherung und Löschung</h2>
@@ -281,8 +281,8 @@
 				jederzeit zu widerrufen.
 			</li>
 			<li>
-				<strong>Auskunftsrecht:</strong> Sie haben das Recht, eine Bestätigung darüber zu verlangen,
-				ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen
+				<strong>Auskunftsrecht:</strong> Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob
+				betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen
 				und Kopie der Daten entsprechend den gesetzlichen Vorgaben.
 			</li>
 			<li>
@@ -297,8 +297,8 @@
 				der Daten zu verlangen.
 			</li>
 			<li>
-				<strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht, Sie betreffende Daten,
-				die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten,
+				<strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht, Sie betreffende Daten, die
+				Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten,
 				gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen
 				zu fordern.
 			</li>
@@ -322,9 +322,9 @@
 			<li>
 				<strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer,
 				Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen
-				mit Inhalten und Funktionen); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen,
-				Zeitangaben, Identifikationsnummern, beteiligte Personen). Protokolldaten (z.B. Logfiles betreffend
-				Logins oder den Abruf von Daten oder Zugriffszeiten.).
+				mit Inhalten und Funktionen); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben,
+				Identifikationsnummern, beteiligte Personen). Protokolldaten (z.B. Logfiles betreffend Logins
+				oder den Abruf von Daten oder Zugriffszeiten.).
 			</li>
 			<li>
 				<strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).
@@ -403,13 +403,12 @@
 		<ul class="m-elements">
 			<li>
 				<strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. der vollständige Name, Wohnadresse,
-				Kontaktinformationen, Kundennummer, etc.); Kontaktdaten (z.B. Post- und E-Mail-Adressen oder
-				Telefonnummern); Inhaltsdaten (z. B. textliche oder bildliche Nachrichten und Beiträge sowie
-				die sie betreffenden Informationen, wie z. B. Angaben zur Autorenschaft oder Zeitpunkt der Erstellung);
-				Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz,
-				verwendete Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen). Meta-,
-				Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern,
-				beteiligte Personen).
+				Kontaktinformationen, Kundennummer, etc.); Kontaktdaten (z.B. Post- und E-Mail-Adressen oder Telefonnummern);
+				Inhaltsdaten (z. B. textliche oder bildliche Nachrichten und Beiträge sowie die sie betreffenden
+				Informationen, wie z. B. Angaben zur Autorenschaft oder Zeitpunkt der Erstellung); Nutzungsdaten
+				(z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete
+				Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen). Meta-, Kommunikations-
+				und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen).
 			</li>
 			<li>
 				<strong>Betroffene Personen:</strong>
@@ -482,8 +481,8 @@
 				<strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).
 			</li>
 			<li>
-				<strong>Zwecke der Verarbeitung:</strong> Kommunikation; Feedback (z.B. Sammeln von Feedback
-				via Online-Formular); Öffentlichkeitsarbeit; Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit;
+				<strong>Zwecke der Verarbeitung:</strong> Kommunikation; Feedback (z.B. Sammeln von Feedback via
+				Online-Formular); Öffentlichkeitsarbeit; Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit;
 				Informationstechnische Infrastruktur (Betrieb und Bereitstellung von Informationssystemen und
 				technischen Geräten (Computer, Server etc.).). Öffentlichkeitsarbeit und Informationszwecke.
 			</li>
@@ -742,10 +741,10 @@
 			<li>
 				<strong>Inhaltsdaten:</strong> Inhaltsdaten umfassen Informationen, die im Zuge der Erstellung,
 				Bearbeitung und Veröffentlichung von Inhalten aller Art generiert werden. Diese Kategorie von
-				Daten kann Texte, Bilder, Videos, Audiodateien und andere multimediale Inhalte einschließen,
-				die auf verschiedenen Plattformen und Medien veröffentlicht werden. Inhaltsdaten sind nicht nur
-				auf den eigentlichen Inhalt beschränkt, sondern beinhalten auch Metadaten, die Informationen
-				über den Inhalt selbst liefern, wie Tags, Beschreibungen, Autoreninformationen und Veröffentlichungsdaten
+				Daten kann Texte, Bilder, Videos, Audiodateien und andere multimediale Inhalte einschließen, die
+				auf verschiedenen Plattformen und Medien veröffentlicht werden. Inhaltsdaten sind nicht nur auf
+				den eigentlichen Inhalt beschränkt, sondern beinhalten auch Metadaten, die Informationen über
+				den Inhalt selbst liefern, wie Tags, Beschreibungen, Autoreninformationen und Veröffentlichungsdaten
 			</li>
 			<li>
 				<strong>Kontaktdaten:</strong> Kontaktdaten sind essentielle Informationen, die die Kommunikation
@@ -755,27 +754,27 @@
 			<li>
 				<strong>Meta-, Kommunikations- und Verfahrensdaten:</strong> Meta-, Kommunikations- und Verfahrensdaten
 				sind Kategorien, die Informationen über die Art und Weise enthalten, wie Daten verarbeitet, übermittelt
-				und verwaltet werden. Meta-Daten, auch bekannt als Daten über Daten, umfassen Informationen,
-				die den Kontext, die Herkunft und die Struktur anderer Daten beschreiben. Sie können Angaben
-				zur Dateigröße, dem Erstellungsdatum, dem Autor eines Dokuments und den Änderungshistorien beinhalten.
-				Kommunikationsdaten erfassen den Austausch von Informationen zwischen Nutzern über verschiedene
-				Kanäle, wie E-Mail-Verkehr, Anrufprotokolle, Nachrichten in sozialen Netzwerken und Chat-Verläufe,
-				inklusive der beteiligten Personen, Zeitstempel und Übertragungswege. Verfahrensdaten beschreiben
-				die Prozesse und Abläufe innerhalb von Systemen oder Organisationen, einschließlich Workflow-Dokumentationen,
-				Protokolle von Transaktionen und Aktivitäten, sowie Audit-Logs, die zur Nachverfolgung und Überprüfung
-				von Vorgängen verwendet werden.
+				und verwaltet werden. Meta-Daten, auch bekannt als Daten über Daten, umfassen Informationen, die
+				den Kontext, die Herkunft und die Struktur anderer Daten beschreiben. Sie können Angaben zur Dateigröße,
+				dem Erstellungsdatum, dem Autor eines Dokuments und den Änderungshistorien beinhalten. Kommunikationsdaten
+				erfassen den Austausch von Informationen zwischen Nutzern über verschiedene Kanäle, wie E-Mail-Verkehr,
+				Anrufprotokolle, Nachrichten in sozialen Netzwerken und Chat-Verläufe, inklusive der beteiligten
+				Personen, Zeitstempel und Übertragungswege. Verfahrensdaten beschreiben die Prozesse und Abläufe
+				innerhalb von Systemen oder Organisationen, einschließlich Workflow-Dokumentationen, Protokolle
+				von Transaktionen und Aktivitäten, sowie Audit-Logs, die zur Nachverfolgung und Überprüfung von
+				Vorgängen verwendet werden.
 			</li>
 			<li>
-				<strong>Nutzungsdaten:</strong> Nutzungsdaten beziehen sich auf Informationen, die erfassen,
-				wie Nutzer mit digitalen Produkten, Dienstleistungen oder Plattformen interagieren. Diese Daten
-				umfassen eine breite Palette von Informationen, die aufzeigen, wie Nutzer Anwendungen nutzen,
-				welche Funktionen sie bevorzugen, wie lange sie auf bestimmten Seiten verweilen und über welche
-				Pfade sie durch eine Anwendung navigieren. Nutzungsdaten können auch die Häufigkeit der Nutzung,
-				Zeitstempel von Aktivitäten, IP-Adressen, Geräteinformationen und Standortdaten einschließen.
-				Sie sind besonders wertvoll für die Analyse des Nutzerverhaltens, die Optimierung von Benutzererfahrungen,
-				das Personalisieren von Inhalten und das Verbessern von Produkten oder Dienstleistungen. Darüber
-				hinaus spielen Nutzungsdaten eine entscheidende Rolle beim Erkennen von Trends, Vorlieben und
-				möglichen Problembereichen innerhalb digitaler Angebote
+				<strong>Nutzungsdaten:</strong> Nutzungsdaten beziehen sich auf Informationen, die erfassen, wie
+				Nutzer mit digitalen Produkten, Dienstleistungen oder Plattformen interagieren. Diese Daten umfassen
+				eine breite Palette von Informationen, die aufzeigen, wie Nutzer Anwendungen nutzen, welche Funktionen
+				sie bevorzugen, wie lange sie auf bestimmten Seiten verweilen und über welche Pfade sie durch
+				eine Anwendung navigieren. Nutzungsdaten können auch die Häufigkeit der Nutzung, Zeitstempel von
+				Aktivitäten, IP-Adressen, Geräteinformationen und Standortdaten einschließen. Sie sind besonders
+				wertvoll für die Analyse des Nutzerverhaltens, die Optimierung von Benutzererfahrungen, das Personalisieren
+				von Inhalten und das Verbessern von Produkten oder Dienstleistungen. Darüber hinaus spielen Nutzungsdaten
+				eine entscheidende Rolle beim Erkennen von Trends, Vorlieben und möglichen Problembereichen innerhalb
+				digitaler Angebote
 			</li>
 			<li>
 				<strong>Personenbezogene Daten:</strong> "Personenbezogene Daten" sind alle Informationen, die
@@ -784,15 +783,14 @@
 				indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer,
 				zu Standortdaten, zu einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren besonderen
 				Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen,
-				psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person
-				sind.
+				psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
 			</li>
 			<li>
 				<strong>Protokolldaten:</strong> Protokolldaten sind Informationen über Ereignisse oder Aktivitäten,
-				die in einem System oder Netzwerk protokolliert wurden. Diese Daten enthalten typischerweise
-				Informationen wie Zeitstempel, IP-Adressen, Benutzeraktionen, Fehlermeldungen und andere Details
-				über die Nutzung oder den Betrieb eines Systems. Protokolldaten werden oft zur Analyse von Systemproblemen,
-				zur Sicherheitsüberwachung oder zur Erstellung von Leistungsberichten verwendet.
+				die in einem System oder Netzwerk protokolliert wurden. Diese Daten enthalten typischerweise Informationen
+				wie Zeitstempel, IP-Adressen, Benutzeraktionen, Fehlermeldungen und andere Details über die Nutzung
+				oder den Betrieb eines Systems. Protokolldaten werden oft zur Analyse von Systemproblemen, zur
+				Sicherheitsüberwachung oder zur Erstellung von Leistungsberichten verwendet.
 			</li>
 			<li>
 				<strong>Reichweitenmessung:</strong> Die Reichweitenmessung (auch als Web Analytics bezeichnet)
@@ -838,9 +836,9 @@
 				geschlussfolgert werden, dass dieser Nutzer sich für Werbeanzeigen für ähnliche Produkte oder
 				den Onlineshop, in dem er die Produkte betrachtet hat, interessiert. Von "Lookalike Audiences"
 				(bzw. ähnlichen Zielgruppen) spricht man wiederum, wenn die als geeignet eingeschätzten Inhalte
-				Nutzern angezeigt werden, deren Profile, bzw. Interessen mutmaßlich den Nutzern zu denen die
-				Profile gebildet wurden, entsprechen. Zur Zwecken der Bildung von Custom Audiences und Lookalike
-				Audiences werden im Regelfall Cookies und Web-Beacons eingesetzt.
+				Nutzern angezeigt werden, deren Profile, bzw. Interessen mutmaßlich den Nutzern zu denen die Profile
+				gebildet wurden, entsprechen. Zur Zwecken der Bildung von Custom Audiences und Lookalike Audiences
+				werden im Regelfall Cookies und Web-Beacons eingesetzt.
 			</li>
 		</ul>
 		<p class="seal">
