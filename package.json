@@ -69,7 +69,6 @@
 		"@fontsource-variable/jetbrains-mono": "^5.2.8",
 		"@fontsource-variable/pixelify-sans": "^5.2.7",
 		"@inlang/paraglide-js": "^2.18.0",
-		"@ssgoi/svelte": "^5.2.0",
 		"@types/qs": "^6.15.0",
 		"css-select": "~7.0.0",
 		"dashjs": "^5.1.1",

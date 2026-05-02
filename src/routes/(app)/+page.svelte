@@ -8,7 +8,7 @@
 
 <h1 class={['text-6xl', 'font-jetbrains-mono']}>HI</h1>
 
-<p class="font-jetbrains-mono text-lg break-words">
+<p class="font-jetbrains-mono text-lg wrap-break-words">
 	{m['landing.hello']()}
 	<a href="https://fim.htwk-leipzig.de/" class="link">{m['landing.university-link']()}</a>
 </p>

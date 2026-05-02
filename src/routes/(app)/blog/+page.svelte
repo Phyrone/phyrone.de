@@ -2,7 +2,6 @@
 	import 'shiki/themes/github-dark-default.mjs';
 	import type { PageData } from './$types';
 	import BlogPostCard from './BlogPostCard.svelte';
-	import { Ssgoi, SsgoiTransition } from '@ssgoi/svelte';
 
 	type Props = {
 		data: PageData;
@@ -13,11 +12,10 @@
 <svelte:head>
 	<title>Phyrone | Blog</title>
 </svelte:head>
-<SsgoiTransition id="/blog/">
-	<h1 class={['text-6xl', 'mb-4', 'font-jetbrains-mono', 'select-none']}>Blog</h1>
-	<div class={['flex', 'flex-col']}>
-		{#each data.posts as post}
-			<BlogPostCard {post} />
-		{/each}
-	</div>
-</SsgoiTransition>
+
+<h1 class={['text-6xl', 'mb-4', 'font-jetbrains-mono', 'select-none']}>Blog</h1>
+<div class={['flex', 'flex-col']}>
+	{#each data.posts as post}
+		<BlogPostCard {post} />
+	{/each}
+</div>
