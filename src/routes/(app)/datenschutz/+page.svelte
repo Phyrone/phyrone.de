@@ -3,7 +3,6 @@
 	import { localizeHref } from '$lib/paraglide/runtime';
 
 	import { resolveRoute, base } from '$app/paths';
-
 </script>
 
 <svelte:head>

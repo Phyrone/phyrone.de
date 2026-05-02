@@ -1,13 +1,55 @@
 import { z } from 'zod';
-import { resolveRoute } from '$app/paths';
+import { resolve } from '$app/paths';
 import type { Component } from 'svelte';
 /** @type {import('moment')} */
 import moment from 'moment';
 import type { MomentFormatSpecification } from 'moment';
+import { allPosts } from '$content';
+import type { Post } from '$content';
 
+export const blog_post_components = import.meta.glob('/posts/**/*.{svx,md}', {
+	eager: false,
+	import: 'default'
+});
+//console.log('blog_post_components', Object.keys(blog_post_components));
+export async function load_blog_post_component(post: Post): Promise<Component | undefined> {
+	const path = '/posts/' + post._file;
+	return blog_post_components[path]?.() as unknown as Component | undefined;
+}
+export function post_to_url(post: Post): string {
+	const y = post.date?.getFullYear();
+	const m = post.date ? post.date.getMonth() + 1 : undefined;
+	const d = post.date ? post.date.getDate() : undefined;
+	const s = post.slug;
+	return resolve('/blog/[[year]]/[[month]]/[[day]]/[slug]', {
+		year: y?.toString(),
+		month: m?.toString(),
+		day: d?.toString(),
+		slug: s
+	});
+}
+
+export type PathIndexPosts = Record<number, Record<number, Record<number, Record<string, Post>>>>;
+
+function index_posts() {
+	const posts: PathIndexPosts = {};
+	for (const post of allPosts) {
+		const y = post.date?.getFullYear() ?? 0;
+		const m = post.date ? post.date.getMonth() + 1 : 0;
+		const d = post.date ? post.date.getDate() : 0;
+		const s = post.slug;
+		posts[y] ??= {};
+		posts[y][m] ??= {};
+		posts[y][m][d] ??= {};
+		posts[y][m][d][s] = post;
+	}
+	return posts;
+}
+export const pathIndexedPosts = index_posts();
+
+/*
 const ARTICLE_DATA_EXTRACT_PATTERN =
 	/^\/posts\/(?:(?<year>\d{4})[-/](?:(?<month>[0-1]?\d)[-/](?:(?<day>[0-3]?\d)[-/])?)?)?(?:[a-zA-Z0-9][^/]+?\/)*?(?<slug>[a-zA-Z0-9][^/]+?)(?:\/index)?.(?:svx|svelte\.md|md)$/;
-
 const DATE_INPUT_FORMATS: MomentFormatSpecification = [
 	'DD.MM.YYYY',
 	'DD.MM.YY',
@@ -19,24 +61,24 @@ export const PostMetadata = z
 	.object({
 		slug: z.string(),
 		title: z.string(),
-		description: z.string({ coerce: true }),
-		date: z.string({ coerce: true }).transform((d) => moment(d, DATE_INPUT_FORMATS, 'de', true)),
-		thumbnail: z.string({ coerce: true }),
-		tags: z.array(z.string({ coerce: true }))
+		description: z.coerce.string(),
+		date: z.coerce.string().transform((d) => moment(d, DATE_INPUT_FORMATS, 'de', true)),
+		thumbnail: z.coerce.string(),
+		tags: z.array(z.coerce.string())
 	})
 	.partial();
 
 export type PostMetadata = z.infer<typeof PostMetadata>;
-
-export const post_documents = import.meta.glob('/posts/**/*.{svx,svelte.md}', {
-	eager: false,
-	import: 'default'
-});
-export const post_metadata = import.meta.glob('/posts/**/*.{svx,svelte.md}', {
-	eager: false,
-	import: 'metadata'
-});
-
+*/
+//export const post_documents = import.meta.glob('/posts/**/*.{svx,svelte.md}', {
+//	eager: false,
+//	import: 'default'
+//});
+//export const post_metadata = import.meta.glob('/posts/**/*.{svx,svelte.md}', {
+//	eager: false,
+//	import: 'metadata'
+//});
+/*
 export type PostKeyNamed = {
 	year: number | undefined;
 	month: number | undefined;
@@ -109,9 +151,9 @@ export async function get_post_metadata(key: string): Promise<PostMetadata | und
 }
 
 const ParamsConstraints = z.object({
-	y: z.number({ coerce: true }).positive().int().optional().catch(undefined),
-	m: z.number({ coerce: true }).positive().int().optional().catch(undefined),
-	d: z.number({ coerce: true }).positive().int().optional().catch(undefined),
+	y: z.coerce.number().positive().int().optional().catch(undefined),
+	m: z.coerce.number().positive().int().optional().catch(undefined),
+	d: z.coerce.number().positive().int().optional().catch(undefined),
 	s: z.string()
 });
 
@@ -157,13 +199,15 @@ export async function get_post(key: string): Promise<Component | undefined> {
 	if (!key) return undefined;
 	return (await post_documents[key]()) as unknown as Component;
 }
+*/
 
 //export const post_metadata = import.meta.glob('/src/posts/**/*.svx',{
 //	eager:false,
 //	import: 'metadata'
 //});
-
+/*
 export type Post = {
 	slug: string;
 	metadata: Record<string, any>;
 };
+ */

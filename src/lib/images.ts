@@ -17,6 +17,6 @@ export const images = import.meta.glob(
 export function get_image(path?: string, post?: string): EnhancedImgAttributes | undefined {
 	if (!path) return undefined;
 	if (!post) return images[path] as EnhancedImgAttributes | undefined;
-	const absolute_img_path = new URL(path, 'file:' + post).pathname;
+	const absolute_img_path = new URL(path, 'file:' + '/posts/' + post).pathname;
 	return images[absolute_img_path] as EnhancedImgAttributes | undefined;
 }

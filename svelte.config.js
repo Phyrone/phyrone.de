@@ -14,7 +14,7 @@ const highlighter = await createHighlighter({
 	themes: [theme],
 	langs
 });
-const sv_md_exteions = ['.svx', '.svelte.md'];
+const mdsvex_extensions = ['.svx', '.md'];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,7 +24,7 @@ const config = {
 		vitePreprocess(),
 		//TODO outsource mdsvex config into a seperate file
 		mdsvex({
-			extensions: sv_md_exteions,
+			extensions: mdsvex_extensions,
 			layout: resolve('./src/lib/layouts/default/root.svelte'),
 			remarkPlugins: [relativeEnhancedImages],
 			smartypants: true,
@@ -72,9 +72,10 @@ const config = {
 			$assets: 'src/assets',
 			$posts: 'src/posts',
 			$components: 'src/components',
-			$paraglide: 'src/lib/paraglide'
+			$paraglide: 'src/lib/paraglide',
+			$content: './.content-collections/generated'
 		},
-		inlineStyleThreshold: 256,
+		inlineStyleThreshold: 1024,
 		paths: {
 			relative: false
 		},
@@ -85,7 +86,7 @@ const config = {
 		}
 	},
 
-	extensions: ['.svelte', ...sv_md_exteions]
+	extensions: ['.svelte', ...mdsvex_extensions]
 };
 
 export default config;

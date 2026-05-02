@@ -2,13 +2,15 @@ import { paraglideMiddleware } from '$lib/paraglide/server';
 import type { Handle } from '@sveltejs/kit';
 import { parse } from 'node-html-parser';
 //import { available_themes, THEME_COOKIE_NAME } from '$lib/theme';
-import { z } from 'zod';
+//import { z } from 'zod';
 
+/*
 const MINIFY_HTML = z
 	.stringbool()
 	.default(false)
 	.catch(() => false)
 	.parse(import.meta.env.VITE_MINIFY_HTML);
+	*/
 
 // creating a handle to use the paraglide middleware
 export const handle: Handle = ({ event, resolve }) =>

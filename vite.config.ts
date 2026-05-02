@@ -3,12 +3,14 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import { enhancedImages } from '@sveltejs/enhanced-img';
 import tailwindcss from '@tailwindcss/vite';
+import contentCollections from '@content-collections/vite';
 
 export default defineConfig({
 	plugins: [
-		tailwindcss(),
+		tailwindcss({ optimize: true }),
 		enhancedImages(),
 		sveltekit(),
+		contentCollections(),
 		paraglideVitePlugin({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide',

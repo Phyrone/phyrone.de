@@ -1,17 +1,18 @@
 <script lang="ts">
-	import type { PostData } from '../+layout.ts';
 	import { get_image } from '$lib/images.ts';
 	import moment from 'moment/min/moment-with-locales';
 	import { getLocale } from '$paraglide/runtime';
+	import type { Post } from '$content';
+	import { post_to_url } from '$lib/posts';
 
 	type Props = {
-		post: PostData;
+		post: Post;
 	};
 
 	let { post }: Props = $props();
-	let thumbnail = $derived(get_image(post.metadata.thumbnail, post.key));
+	let thumbnail = $derived(get_image(post.thumbnail, post._file));
 
-	let href = $derived(post.url);
+	let href = $derived(post_to_url(post));
 </script>
 
 <a
@@ -22,7 +23,7 @@
 	]}
 >
 	{#if thumbnail}
-		<figure class="" data-hero-key="post-thumbnail-{btoa(post.key)}">
+		<figure class="" data-hero-key="post-thumbnail-{btoa(post._id)}">
 			<enhanced:img
 				class={[
 					'm-4 h-48 w-fit max-w-64 rounded-lg object-contain',
@@ -33,8 +34,8 @@
 			/>
 		</figure>
 	{/if}
-	<div class="card-body" data-hero-key="post-meta-{btoa(post.key)}">
-		<h2 class="card-title truncate">{post.metadata.title ?? post.slug}</h2>
+	<div class="card-body">
+		<h2 class="card-title truncate">{post.title}</h2>
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
 			{@const localized_moment_date = moment_date.locale(getLocale())}
@@ -42,8 +43,8 @@
 				<span>{localized_moment_date.format('LLLL')}</span>
 			</h3>
 		{/if}
-		{#if post.metadata.description}
-			<p class="truncate text-sm">{post.metadata.description}</p>
+		{#if post.description}
+			<p class="truncate text-sm">{post.description}</p>
 		{/if}
 	</div>
 </a>
