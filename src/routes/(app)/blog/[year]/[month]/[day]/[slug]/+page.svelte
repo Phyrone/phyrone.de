@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { get_image } from '$lib/images.ts';
-	import { MetaTags } from 'svelte-meta-tags';
+	import { MetaTags, type OpenGraph } from 'svelte-meta-tags';
 
 	type Props = {
 		data: PageData;
@@ -10,9 +10,25 @@
 	let { post } = $derived(data);
 
 	let thumbnail = $derived(get_image(post.thumbnail, post._file));
+
+	const opengraph = $derived({
+		title: post.title,
+		description: post.description,
+		article: {
+			publishedTime: post.date.toISOString(),
+			authors: ['Phyrone'],
+			tags: post.tags
+		}
+	} satisfies OpenGraph);
 </script>
 
-<MetaTags title="Phyrone | {post.title}" description={post.description} keywords={post.tags} />
+<MetaTags
+	title={post.title}
+	description={post.description}
+	keywords={post.tags}
+	canonical={`https://phyrone.de/blog/${post.date.getFullYear()}/${post.date.getMonth() + 1}/${post.date.getDate()}/${post.slug}`}
+	openGraph={opengraph}
+/>
 
 <div data-hero-key="post-body-{btoa(post._id)}" class="max-w-5xl">
 	<div class="grid place-content-center" data-hero-key="post-thumbnail-{btoa(post._id)}">

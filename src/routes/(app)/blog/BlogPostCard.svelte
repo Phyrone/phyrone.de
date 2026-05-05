@@ -16,6 +16,7 @@
 </script>
 
 <a
+	// eslint-disable-next-line svelte/no-navigation-without-resolve
 	{href}
 	class={[
 		'group card bg-base-200 drop-shadow-md transition-all ',
@@ -39,8 +40,11 @@
 		{#if post.date}
 			{@const moment_date = moment(post.date)}
 			{@const localized_moment_date = moment_date.locale(getLocale())}
-			<h3 class={['text-xs', 'truncate']} title={localized_moment_date.format('LLLL')}>
-				<span>{localized_moment_date.format('LLLL')}</span>
+			<h3 class={['text-xs', 'truncate']}>
+				<div class="tooltip tooltip-right tooltip-open">
+					<div class="tooltip-content">{localized_moment_date.format('LLLL')}</div>
+					<span>{localized_moment_date.fromNow()}</span>
+				</div>
 			</h3>
 		{/if}
 		{#if post.description}

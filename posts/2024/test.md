@@ -2,7 +2,7 @@
 title: Test
 thumbnail: ./img.png
 description: This is a test
-date: '04.01.2025'
+date: '04.01.2025 12:00:00'
 ---
 
 # TitleH1

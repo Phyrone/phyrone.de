@@ -69,6 +69,7 @@
 		"wrangler": "^4.87.0"
 	},
 	"dependencies": {
+		"@embedz/svelte": "^1.1.4",
 		"@fontsource-variable/jetbrains-mono": "^5.2.8",
 		"@fontsource-variable/pixelify-sans": "^5.2.7",
 		"@inlang/paraglide-js": "^2.18.0",

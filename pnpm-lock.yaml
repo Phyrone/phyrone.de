@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@embedz/svelte':
+        specifier: ^1.1.4
+        version: 1.1.4(svelte@5.55.5(@typescript-eslint/types@8.59.1))
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.2.8
         version: 5.2.8
@@ -330,6 +333,11 @@ packages:
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
+
+  '@embedz/svelte@1.1.4':
+    resolution: {integrity: sha512-RL1Pwwyl+29omfuFiUR6vBzXU+N3wDtetHQOur1u9hs38O9xlOl1xQys6lMAiVlt61FkrB7pvO8RfomAg+46lA==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -6133,6 +6141,10 @@ snapshots:
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+
+  '@embedz/svelte@1.1.4(svelte@5.55.5(@typescript-eslint/types@8.59.1))':
+    dependencies:
+      svelte: 5.55.5(@typescript-eslint/types@8.59.1)
 
   '@emnapi/core@1.10.0':
     dependencies:

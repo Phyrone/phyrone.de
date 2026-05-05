@@ -1,10 +1,10 @@
 import { defineCollection, defineConfig } from '@content-collections/core';
 import { z } from 'zod';
-import { defineParser } from '@content-collections/core';
+//import { defineParser } from '@content-collections/core';
 import type { Moment, MomentFormatSpecification } from 'moment';
 import moment from 'moment';
-//import git from 'isomorphic-git';
-//import fs from 'node:fs';
+import git from 'isomorphic-git';
+import fs from 'node:fs';
 import type { Schema as CollectionsSchema } from '@content-collections/core';
 
 const DATE_INPUT_FORMATS: MomentFormatSpecification = [
@@ -13,7 +13,11 @@ const DATE_INPUT_FORMATS: MomentFormatSpecification = [
 	'DD.MM.YYYY',
 	'DD.MM.YY',
 	'DD.MM.YYYY-HH:mm',
-	'DD.MM.YYYY HH:mm'
+  'DD.MM.YYYY HH:mm',
+  'DD.MM.YYYY HH:mm:ss',
+  'DD.MM.YYYY-HH:mm:ss',
+  'YYYY.MM.DD',
+	'YYYY-MM-DD'
 ];
 
 export const PostMetadata = z
@@ -21,7 +25,7 @@ export const PostMetadata = z
 		slug: z.coerce.string(),
 		title: z.coerce.string(),
 		description: z.coerce.string(),
-		date: z.coerce.string().transform((d) => moment(d, DATE_INPUT_FORMATS, 'de', true)),
+		date: z.coerce.string().transform((d) => moment(d, DATE_INPUT_FORMATS, 'de', false)),
 		thumbnail: z.coerce.string(),
 		tags: z.array(z.coerce.string())
 	})
@@ -55,18 +59,22 @@ async function date_if_blog_post(
 	doc: CollectionsSchema<'frontmatter-only', typeof PostMetadata>,
 	extract: ReturnType<typeof parse_from_path>
 ): Promise<Moment> {
-	let date = doc.date ?? moment(new Date(0));
-	if (extract?.year) {
-		date = date.year(extract.year);
-	}
-	if (extract?.month) {
-		date = date.month(extract.month - 1);
-	}
-	if (extract?.day) {
-		date = date.date(extract.day);
-	}
+  let date = doc.date ?? moment(0)
 
-	return date;
+	if (extract?.year && extract?.month && extract?.day) {
+		return moment([extract.year, extract.month - 1, extract.day]);
+  }
+  if (extract?.year) {
+    date = date.year(extract.year);
+  }
+  if (extract?.month) {
+    date = date.month(extract.month - 1);
+  }
+  if (extract?.day) {
+    date = date.date(extract.day);
+  }
+
+  return date;
 }
 
 const posts = defineCollection({
@@ -75,7 +83,7 @@ const posts = defineCollection({
 	parser: 'frontmatter-only',
 	include: '**/*.md',
 	schema: PostMetadata,
-	transform: async (doc, ctx) => {
+	transform: async (doc: CollectionsSchema<'frontmatter-only', typeof PostMetadata>) => {
 		const extract = parse_from_path(doc._meta.path);
 
 		const slug = doc.slug ?? extract?.slug ?? doc._meta.fileName;
@@ -88,7 +96,7 @@ const posts = defineCollection({
 			slug,
 			date,
 			description: doc.description,
-			tags: doc.tags,
+			tags: doc.tags ?? [],
 			thumbnail: doc.thumbnail,
 			title: doc.title ?? slug,
 			_path: doc._meta
