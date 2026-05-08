@@ -30,7 +30,7 @@
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.11",
 		"@tailwindcss/typography": "^0.5.19",
-		"@tailwindcss/vite": "0.0.0-insiders.f3fdda2",
+		"@tailwindcss/vite": "4.2.4",
 		"@types/eslint": "^9.6.1",
 		"@types/etag": "^1.8.4",
 		"@types/node": "^25.6.0",
