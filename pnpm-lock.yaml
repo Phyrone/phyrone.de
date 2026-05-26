@@ -143,7 +143,7 @@ importers:
         version: 17.6.0
       isomorphic-git:
         specifier: ^1.37.6
-        version: 1.38.2
+        version: 1.38.3
       just-camel-case:
         specifier: ^6.2.0
         version: 6.2.0
@@ -3956,8 +3956,8 @@ packages:
   isomorphic-fetch@3.0.0:
     resolution: {integrity: sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==}
 
-  isomorphic-git@1.38.2:
-    resolution: {integrity: sha512-+HGWLgAs7/iVjCgEt9wsC5F9FHIxGsw4KrQEHUWXxd9EFGrnTidftKgv3ROaIH/Cv6mMKHdL0z1ANO2BQQpRtQ==}
+  isomorphic-git@1.38.3:
+    resolution: {integrity: sha512-rOpt0yIW9HD1o6mA4w2f4XP5Lj42QnccbFbhzkby6L+t9c2klQxf9seqyrw5x8JcWWnbuPuN7v7YJ7yvHj9OPA==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -5911,8 +5911,8 @@ packages:
   when-exit@2.1.5:
     resolution: {integrity: sha512-VGkKJ564kzt6Ms1dbgPP/yuIoQCrsFAnRbptpC5wOEsDaNsbCB2bnfnaA8i/vRs5tjUSEOtIuvl9/MyVsvQZCg==}
 
-  which-typed-array@1.1.20:
-    resolution: {integrity: sha512-LYfpUkmqwl0h9A2HL09Mms427Q1RZWuOHsukfVcKRq9q95iQxdw0ix1JQrqbcDR9PH1QDwf5Qo8OZb5lksZ8Xg==}
+  which-typed-array@1.1.21:
+    resolution: {integrity: sha512-zbRA8cVm6io/d5W8uIe2hblzN76/Wm3v/yiythQvr+dpBWeqhPSWIDNj4zOyHi4zKbMK6DN34Xsr9jPHJERAEw==}
     engines: {node: '>= 0.4'}
 
   which@2.0.2:
@@ -9900,7 +9900,7 @@ snapshots:
 
   is-typed-array@1.1.15:
     dependencies:
-      which-typed-array: 1.1.20
+      which-typed-array: 1.1.21
 
   is-typedarray@1.0.0: {}
 
@@ -9921,7 +9921,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  isomorphic-git@1.38.2:
+  isomorphic-git@1.38.3:
     dependencies:
       async-lock: 1.4.1
       clean-git-ref: 2.0.1
@@ -12108,7 +12108,7 @@ snapshots:
 
   when-exit@2.1.5: {}
 
-  which-typed-array@1.1.20:
+  which-typed-array@1.1.21:
     dependencies:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.9
