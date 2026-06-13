@@ -45,7 +45,7 @@
 		"just-camel-case": "^6.2.0",
 		"mdsvex": "^0.12.7",
 		"node-addon-api": "^8.7.0",
-		"node-gyp": "^12.3.0",
+		"node-gyp": "^13.0.0",
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^4.0.0",
 		"prettier-plugin-tailwindcss": "^0.8.0",
