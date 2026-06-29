@@ -49,7 +49,7 @@ importers:
         version: 12.42.0
       node-html-parser:
         specifier: ^8.0.0
-        version: 8.0.3
+        version: 8.0.4
       qs:
         specifier: ^6.15.1
         version: 6.15.3
@@ -4647,8 +4647,8 @@ packages:
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     hasBin: true
 
-  node-html-parser@8.0.3:
-    resolution: {integrity: sha512-ilV20e83nDfiFoEyhlvgqks23Hmy6pySF6UNb8DpgmxnTbXDGgShYKzH2+7ctJK42LXyo+IFOgxCkXmmbacm8w==}
+  node-html-parser@8.0.4:
+    resolution: {integrity: sha512-w2YxujN/TqrSIWGVNW/fVgKKfAyQeHMXCvnKZI0owLnfP0tfjdLecUoy9zhOMZGoEFk6eP5qSDyvUarjPl3bwQ==}
 
   node-mock-http@1.0.4:
     resolution: {integrity: sha512-8DY+kFsDkNXy1sJglUfuODx1/opAGJGyrTuFqEoN90oRc2Vk0ZbD4K2qmKXBBEhZQzdKHIVfEJpDU8Ak2NJEvQ==}
@@ -10934,7 +10934,7 @@ snapshots:
       undici: 6.26.0
       which: 7.0.0
 
-  node-html-parser@8.0.3:
+  node-html-parser@8.0.4:
     dependencies:
       css-select: 5.2.2
       entities: 8.0.0
