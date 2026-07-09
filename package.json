@@ -60,7 +60,7 @@
 		"tailwindcss-intersect": "^2.2.0",
 		"tailwindcss-motion": "^1.1.1",
 		"terser": "^5.46.2",
-		"typescript": "^6.0.3",
+		"typescript": "^7.0.0",
 		"typescript-eslint": "^8.59.1",
 		"unist-util-visit": "^5.1.0",
 		"unlighthouse": "^0.18.0",
