@@ -61,7 +61,7 @@ importers:
         version: 16.27.0
       svelte-meta-tags:
         specifier: ^5.0.0
-        version: 5.0.1(svelte@5.56.7(@typescript-eslint/types@8.64.0))(typescript@7.0.2)
+        version: 5.0.2(svelte@5.56.7(@typescript-eslint/types@8.64.0))(typescript@7.0.2)
       svelte-persisted-store:
         specifier: ^0.12.0
         version: 0.12.0(svelte@5.56.7(@typescript-eslint/types@8.64.0))
@@ -5766,8 +5766,8 @@ packages:
       svelte:
         optional: true
 
-  svelte-meta-tags@5.0.1:
-    resolution: {integrity: sha512-ZCYCqBxpXjjyKbfytOrWKImJGd8ORFp/Y4CImtBna43sqpkGMkI95P5UgFHhZrTV9QidGdGZiQGQIteIPoUYtw==}
+  svelte-meta-tags@5.0.2:
+    resolution: {integrity: sha512-OkAcO7JKBzNGsRY8RE1mlVZYzuL9tS9S1zsV2PDp5cRhVJ4EN+Bu+bpNFHcMP3mBQAnpIRpsEteuBzlfiYjq1w==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -12458,7 +12458,7 @@ snapshots:
     optionalDependencies:
       svelte: 5.56.7(@typescript-eslint/types@8.64.0)
 
-  svelte-meta-tags@5.0.1(svelte@5.56.7(@typescript-eslint/types@8.64.0))(typescript@7.0.2):
+  svelte-meta-tags@5.0.2(svelte@5.56.7(@typescript-eslint/types@8.64.0))(typescript@7.0.2):
     dependencies:
       schema-dts: 2.0.0(typescript@7.0.2)
       svelte: 5.56.7(@typescript-eslint/types@8.64.0)
