@@ -143,7 +143,7 @@ importers:
         version: 17.7.0
       isomorphic-git:
         specifier: ^1.37.6
-        version: 1.38.9
+        version: 1.38.10
       just-camel-case:
         specifier: ^6.2.0
         version: 6.2.0
@@ -4342,8 +4342,8 @@ packages:
   isomorphic-fetch@3.0.0:
     resolution: {integrity: sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==}
 
-  isomorphic-git@1.38.9:
-    resolution: {integrity: sha512-3nwGo1UIScJUW2/W4KzTGA/V7Bf/AivBF4KuZGfxU+Bcz2oJo2emuxJK8hP2saZ3XfLOBqbKs+x9CLsFrn8vAg==}
+  isomorphic-git@1.38.10:
+    resolution: {integrity: sha512-nJSSq7ypu97vM33rSdxXyPzSWksCberjKspzXhFEcBHdVyxdNkWByAzJ/AURV1jIlfv8pLq37lGdIEt7ORj17Q==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -10785,7 +10785,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  isomorphic-git@1.38.9:
+  isomorphic-git@1.38.10:
     dependencies:
       async-lock: 1.4.1
       clean-git-ref: 2.0.1
