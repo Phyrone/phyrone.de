@@ -18,13 +18,13 @@ export async function load_blog_post_component(post: Post): Promise<Component | 
 }
 export function post_to_url(post: Post): string {
 	const y = post.date?.getFullYear();
-	const m = post.date ? post.date.getMonth() + 1 : undefined;
-	const d = post.date ? post.date.getDate() : undefined;
+	const m = post.date.getMonth() + 1;
+	const d = post.date.getDate();
 	const s = post.slug;
-	return resolve('/blog/[[year]]/[[month]]/[[day]]/[slug]', {
-		year: y?.toString(),
-		month: m?.toString(),
-		day: d?.toString(),
+	return resolve('/(app)/blog/[year]/[month]/[day]/[slug]', {
+		year: y.toString().padStart(4,'4'),
+		month: m.toString().padStart(2,'0'),
+		day: d.toString().padStart(2,'0'),
 		slug: s
 	});
 }

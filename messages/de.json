@@ -9,5 +9,17 @@
 		"hello": "ich bin Samuel, ein Informatik Student an der ",
 		"university-link": "HTWK Leipzig"
 	},
-	"hello_world": "Hello, {name} from de!"
+	"hello_world": "Hello, {name} from de!",
+	"utils": {
+		"datatools": {
+			"page": {
+				"title": "DataTools"
+			},
+			"fab": {
+				"open": {
+					"tooltip": "Node Hinzufügen"
+				}
+			}
+		}
+	}
 }

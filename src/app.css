@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@import './styles/fonts.css';
 
 @plugin 'daisyui/index.js';
 @plugin 'daisyui/theme/index.js' {

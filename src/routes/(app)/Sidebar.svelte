@@ -1,7 +1,8 @@
 <script lang="ts">
 	import profile_img from '$assets/profile.png?enhanced';
-	import { NewspaperIcon, PocketKnifeIcon } from 'lucide-svelte';
+	import { DatabaseZapIcon, NewspaperIcon, PocketKnifeIcon } from 'lucide-svelte';
 	import { siGithub, siMastodon, siYoutube, siBluesky } from 'simple-icons';
+	import { resolve } from '$app/paths';
 	import SimpleIcon from '$lib/SimpleIcon.svelte';
 </script>
 
@@ -21,7 +22,7 @@
 	]}
 >
 	<a
-		href="/"
+		href={resolve('/(app)')}
 		class="max-w-8 py-3 sm:mx-auto sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
 		title="Homepage"
 		aria-label="go to homepage"
@@ -40,22 +41,27 @@
 		/>
 	</a>
 	<ul
-		class="menu menu-xl menu-lg sm:menu-md sm:menu-vertical mx-auto w-full max-w-sm flex-auto px-0 sm:mx-0 sm:overflow-auto"
+		class="menu menu-lg sm:menu-md sm:menu-vertical mx-auto w-full max-w-sm flex-auto px-0 sm:mx-0 sm:overflow-auto"
 	>
 		<li>
-			<a href="/blog" title="Blog">
+			<a class="" href={resolve('/(app)/blog')} title="Blog">
 				<NewspaperIcon />
 				Blog
 			</a>
 		</li>
 		<li>
 			<details>
-				<summary>
+				<summary class="">
 					<PocketKnifeIcon />
 					Utils
 				</summary>
 				<ul>
-					<li>Comming Soon</li>
+					<li>
+						<a href={resolve('/(app)/datatools')}>
+							<DatabaseZapIcon />
+							Datatools
+						</a>
+					</li>
 				</ul>
 			</details>
 		</li>

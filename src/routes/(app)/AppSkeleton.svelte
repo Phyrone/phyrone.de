@@ -2,8 +2,8 @@
 	import type { Snippet } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import * as m from '$lib/paraglide/messages';
-	import { onNavigate } from '$app/navigation';
-	import { localizeHref } from '$lib/paraglide/runtime';
+	//import { onNavigate } from '$app/navigation';
+	import { resolve } from '$app/paths';
 
 	type Props = {
 		children?: Snippet;
@@ -38,10 +38,10 @@
 			{@render children?.()}
 		</dev>
 		<footer class="bottom-0 flex-none">
-			<a data-hero-key="imprint" href={localizeHref('/impressum')} class="btn btn-link"
+			<a data-hero-key="imprint" href={resolve('/(app)/impressum')} class="btn btn-link"
 				>{m.imprint()}</a
 			>
-			<a data-hero-key="privacy" href={localizeHref('/datenschutz')} class="btn btn-link"
+			<a data-hero-key="privacy" href={resolve('/(app)/datenschutz')} class="btn btn-link"
 				>{m.privacy_policy()}</a
 			>
 		</footer>
