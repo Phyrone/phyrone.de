@@ -24,13 +24,12 @@ export default defineConfig({
 		minify: 'terser',
 		cssMinify: 'lightningcss',
 		cssCodeSplit: true,
-		sourcemap: true
+		sourcemap: false
 	},
 	experimental: { hmrPartialAccept: true },
 	ssr: { target: 'node' },
-	html: {},
 	json: { stringify: 'auto' },
-	esbuild: { sourcemap: 'inline', charset: 'utf8', format: 'esm' },
+	esbuild: { charset: 'utf8', format: 'esm' },
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
