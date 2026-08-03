@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { get_image } from '$lib/images.ts';
-	import moment from 'moment/min/moment-with-locales';
+	import dayjs from '$lib/date.ts';
 	import { getLocale } from '$paraglide/runtime';
 	import type { Post } from '$content';
 	import { post_to_url } from '$lib/posts';
@@ -16,7 +16,6 @@
 </script>
 
 <a
-	// eslint-disable-next-line svelte/no-navigation-without-resolve
 	{href}
 	class={[
 		'group card bg-base-200 drop-shadow-md transition-all ',
@@ -38,12 +37,11 @@
 	<div class="card-body">
 		<h2 class="card-title truncate">{post.title}</h2>
 		{#if post.date}
-			{@const moment_date = moment(post.date)}
-			{@const localized_moment_date = moment_date.locale(getLocale())}
+			{@const localized_date = dayjs(post.date).locale(getLocale())}
 			<h3 class={['text-xs', 'truncate']}>
 				<div class="tooltip tooltip-right tooltip-open">
-					<div class="tooltip-content">{localized_moment_date.format('LLLL')}</div>
-					<span>{localized_moment_date.fromNow()}</span>
+					<div class="tooltip-content">{localized_date.format('LLLL')}</div>
+					<span>{localized_date.fromNow()}</span>
 				</div>
 			</h3>
 		{/if}

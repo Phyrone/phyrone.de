@@ -1,66 +1,30 @@
 import { defineCollection, defineConfig } from '@content-collections/core';
 import { z } from 'zod';
-//import { defineParser } from '@content-collections/core';
-import type { Moment, MomentFormatSpecification } from 'moment';
-import moment from 'moment';
+import dayjs, { type Dayjs } from 'dayjs';
+import { parse_post_date, parse_from_path } from './src/lib/post-meta.ts';
 import type { Schema as CollectionsSchema } from '@content-collections/core';
-
-const DATE_INPUT_FORMATS: MomentFormatSpecification = [
-	'DD',
-	'DD.MM',
-	'DD.MM.YYYY',
-	'DD.MM.YY',
-	'DD.MM.YYYY-HH:mm',
-	'DD.MM.YYYY HH:mm',
-	'DD.MM.YYYY HH:mm:ss',
-	'DD.MM.YYYY-HH:mm:ss',
-	'YYYY.MM.DD',
-	'YYYY-MM-DD'
-];
 
 export const PostMetadata = z
 	.object({
 		slug: z.coerce.string(),
 		title: z.coerce.string(),
 		description: z.coerce.string(),
-		date: z.coerce.string().transform((d) => moment(d, DATE_INPUT_FORMATS, 'de', false)),
+		date: z.coerce.string().transform((d) => parse_post_date(d)),
 		thumbnail: z.coerce.string(),
 		tags: z.array(z.coerce.string())
 	})
 	.partial();
 
 export type PostMetadata = z.infer<typeof PostMetadata>;
-const ARTICLE_DATA_EXTRACT_PATTERN =
-	/^(?:(?<year>\d{4})[-/](?:(?<month>[0-1]?\d)[-/](?:(?<day>[0-3]?\d)[-/])?)?)?(?:[a-zA-Z0-9][^/]+?\/)*?(?<slug>[a-zA-Z0-9][^/]+?)(?:\/index)?$/;
-
-function parse_from_path(path: string): null | {
-	year: number | undefined;
-	month: number | undefined;
-	day: number | undefined;
-	slug: string | undefined;
-} {
-	const parsed = ARTICLE_DATA_EXTRACT_PATTERN.exec(path);
-
-	if (parsed) {
-		return {
-			year: parsed.groups?.year ? parseInt(parsed.groups.year) : undefined,
-			month: parsed.groups?.month ? parseInt(parsed.groups.month) : undefined,
-			day: parsed.groups?.day ? parseInt(parsed.groups.day) : undefined,
-			slug: parsed.groups?.slug
-		};
-	}
-
-	return null;
-}
 
 async function date_if_blog_post(
 	doc: CollectionsSchema<'frontmatter-only', typeof PostMetadata>,
 	extract: ReturnType<typeof parse_from_path>
-): Promise<Moment> {
-	let date = doc.date ?? moment(0);
+): Promise<Dayjs> {
+	let date = doc.date ?? dayjs(0);
 
 	if (extract?.year && extract?.month && extract?.day) {
-		return moment([extract.year, extract.month - 1, extract.day]);
+		return dayjs(new Date(extract.year, extract.month - 1, extract.day));
 	}
 	if (extract?.year) {
 		date = date.year(extract.year);

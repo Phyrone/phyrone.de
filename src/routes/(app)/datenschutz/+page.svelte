@@ -56,7 +56,6 @@
 	<p>E-Mail-Adresse: <a href="mailto:admin@phyrone.de">admin@phyrone.de</a></p>
 	<p>
 		Impressum:
-		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 		<a href={localizeHref('/impressum')}>https://www.phyrone.de{base}{localizeHref('/impressum')}</a
 		>
 	</p>

@@ -41,6 +41,9 @@ jobs:
       - name: Typecheck
         run: pnpm check
 
+      - name: Unit tests
+        run: pnpm vitest run --project=server
+
       # The whole .svelte-kit tree, not just cloudflare/. The adapter's
       # _worker.js imports from ../output/server and ../cloudflare-tmp, and
       # wrangler bundles it at deploy time — so cloudflare/ alone does not
