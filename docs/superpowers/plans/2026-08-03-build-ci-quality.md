@@ -1153,7 +1153,8 @@ yields that date and slug. Frontmatter wins over the path.
 
 ## Deployment
 
-Every push runs the `verify` job (lint, typecheck, unit tests, build). Only `main` deploys, and the
+Every push runs the `verify` job (lint, typecheck, unit tests, build). Every branch then deploys —
+the production branch goes live, others become previews at `<branch>.<project>.pages.dev` — and the
 deploy reuses the exact artifact that was verified.
 
 Cloudflare Pages is the only deploy target. `adapter-node` and `adapter-static` are **not**

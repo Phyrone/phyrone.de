@@ -25,7 +25,7 @@ Two further problems are independent of that loop:
 ## Goals
 
 - No change can reach `main` without passing lint, typecheck and build.
-- No branch other than `main` deploys.
+- Nothing deploys anywhere — production or preview — without passing `verify` first.
 - Dependency automerge becomes safe by making the gate real, not by disabling it.
 - Remove accumulated dead weight: unused dependencies, dead code, dead deploy paths.
 
@@ -121,8 +121,17 @@ Two consequences, accepted:
   existence including odd-numbered non-LTS lines. `^24` stays on the latest 24.x LTS patch, and
   Renovate proposes the major bump as a reviewable PR.
 
-**Done when:** a push to a non-`main` branch runs `verify` and does not deploy; a push to `main`
-runs both.
+Every branch deploys, but only behind `verify`. Cloudflare Pages routes by branch name: the
+project's configured production branch goes live, and every other branch becomes a preview
+deployment at `<branch>.<project>.pages.dev` — which is what makes a pull request reviewable. The
+branch is passed explicitly with `pages deploy --branch=${{ github.ref_name }}`.
+
+Deploy is gated to `push` events so a same-repo pull request does not deploy twice, since the PR
+event and the branch push event would both fire. Fork PRs therefore never deploy, which is correct:
+they must not receive the Cloudflare API token.
+
+**Done when:** a push to any branch runs `verify` and then deploys; a failing `verify` blocks the
+deploy on every branch, `main` included.
 
 ## Part 3 — Renovate
 

@@ -48,13 +48,24 @@ jobs:
           path: .svelte-kit/cloudflare
           retention-days: 1
 
+  # Every branch deploys, but only after verify passes. Cloudflare Pages routes
+  # by branch name: the project's production branch goes live, every other
+  # branch becomes a preview deployment at <branch>.<project>.pages.dev, which
+  # is what makes a PR reviewable.
+  #
+  # Gated to `push` so a same-repo pull request does not deploy twice — the PR
+  # event and the branch push event would otherwise both fire. Fork PRs do not
+  # deploy at all, which is correct: they must not receive the API token.
   deploy:
     name: Deploy
     needs: verify
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     concurrency:
-      group: deploy
+      # Per-branch, so a deploy of one branch never queues behind another.
+      # cancel-in-progress stays false: cancelling a half-finished deploy is
+      # worse than queueing behind it.
+      group: deploy-${{ github.ref }}
       cancel-in-progress: false
     steps:
       - name: Checkout
@@ -71,5 +82,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy
+          command: pages deploy --branch=${{ github.ref_name }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
