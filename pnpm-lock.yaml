@@ -151,8 +151,8 @@ importers:
         specifier: ^10.5.4
         version: 10.5.4(postcss@8.5.25)
       daisyui:
-        specifier: 5.7.13
-        version: 5.7.13
+        specifier: 5.7.14
+        version: 5.7.14
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@10.2.2)
@@ -3605,8 +3605,8 @@ packages:
     resolution: {integrity: sha512-b8AmV3kfQaqWAuacbPuNbL6vahnOJflOhexLzMMNLga62+/nh0JzvJ0aO/5a5MVgUFGS7Hu1P9P03o3fJkDCyw==}
     engines: {node: '>=12'}
 
-  daisyui@5.7.13:
-    resolution: {integrity: sha512-FR2hWEZqfy8sW9j9z07Yv8hT+WMGc1AEBaeFrHY/3HPRCF3JL7gqLoIhb7E/2f1fecczBE/mEhpez7lQgU4HVQ==}
+  daisyui@5.7.14:
+    resolution: {integrity: sha512-mbEBc49mp6ueUNxVNPIQiX3mzYIirkST8EA3lLMKCkrWzpiM8Iy8eHjj+G6gitFQB73m9qFLPg75S4D1LDUw0g==}
 
   dashjs@5.2.0:
     resolution: {integrity: sha512-2W2KHFN53Sk7+rtdnIfSUK/3Oov+hraMTeVZwDOTSCNKM1cQtFiJdblNzRMnl59a/QDseG7JW+PC9mh/B+CMcg==}
@@ -10167,7 +10167,7 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
 
-  daisyui@5.7.13: {}
+  daisyui@5.7.14: {}
 
   dashjs@5.2.0(@svta/cml-cta@1.0.6(@svta/cml-structured-field-values@1.1.3(@svta/cml-utils@1.5.0))(@svta/cml-utils@1.5.0))(@svta/cml-structured-field-values@1.1.3(@svta/cml-utils@1.5.0))(@svta/cml-utils@1.5.0):
     dependencies:
