@@ -28,12 +28,34 @@ export default ts.config(
 		}
 	},
 	{
-		ignores: ['build/', '.svelte-kit/', 'dist/']
+		ignores: [
+			'build/',
+			'.svelte-kit/',
+			'dist/',
+			'.wrangler/',
+			'src/lib/paraglide/',
+			'.content-collections/'
+		]
 	},
 	{
 		rules: {
 			'@typescript-eslint/ban-ts-comment': 'off',
-			'@typescript-eslint/no-explicit-any': 'off'
+			'@typescript-eslint/no-explicit-any': 'off',
+			// Every occurrence in this project is a false positive: hrefs come
+			// either from arbitrary post markdown (frequently external), from
+			// paraglide's localizeHref, or from post_to_url — which already
+			// calls resolve() internally, one level deeper than the rule sees.
+			'svelte/no-navigation-without-resolve': 'off',
+			// Underscore marks a binding that must exist positionally (snippet
+			// parameters, destructured props) but is deliberately not used.
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					argsIgnorePattern: '^_',
+					varsIgnorePattern: '^_',
+					caughtErrorsIgnorePattern: '^_'
+				}
+			]
 		}
 	}
 );

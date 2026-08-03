@@ -1,0 +1,108 @@
+name: CI
+
+on:
+  push: {}
+  pull_request: {}
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    concurrency:
+      group: verify-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      # Build must precede the typecheck. Both `src/lib/paraglide/` and
+      # `.content-collections/generated` are generated and gitignored, and
+      # `svelte-kit sync` does not produce them — only a dev or build run does.
+      # On a clean checkout `pnpm check` reports 16 "Cannot find module" errors
+      # until the build has run.
+      - name: Build
+        run: pnpm build
+
+      - name: Typecheck
+        run: pnpm check
+
+      - name: Unit tests
+        run: pnpm vitest run --project=server
+
+      - name: Check for external origins
+        run: pnpm check:origins
+
+      # The whole .svelte-kit tree, not just cloudflare/. The adapter's
+      # _worker.js imports from ../output/server and ../cloudflare-tmp, and
+      # wrangler bundles it at deploy time — so cloudflare/ alone does not
+      # resolve. include-hidden-files is required because the path is dotted.
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: sveltekit-build
+          path: .svelte-kit
+          include-hidden-files: true
+          retention-days: 1
+
+  # Every branch deploys, but only after verify passes. Cloudflare Pages routes
+  # by branch name: the project's production branch goes live, every other
+  # branch becomes a preview deployment at <branch>.<project>.pages.dev, which
+  # is what makes a PR reviewable.
+  #
+  # Gated to `push` so a same-repo pull request does not deploy twice — the PR
+  # event and the branch push event would otherwise both fire. Fork PRs do not
+  # deploy at all, which is correct: they must not receive the API token.
+  deploy:
+    name: Deploy
+    needs: verify
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    concurrency:
+      # Per-branch, so a deploy of one branch never queues behind another.
+      # cancel-in-progress stays false: cancelling a half-finished deploy is
+      # worse than queueing behind it.
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # wrangler-action installs wrangler using this repo's package manager,
+      # which it resolves from the packageManager field — so pnpm and Node have
+      # to exist in this job even though nothing is built here.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: 'package.json'
+
+      - name: Download build output
+        uses: actions/download-artifact@v4
+        with:
+          name: sveltekit-build
+          path: .svelte-kit
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy --branch=${{ github.ref_name }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
-import { defineConfig } from 'unlighthouse';
+import { defineUnlighthouseConfig } from 'unlighthouse/config';
 
-export default defineConfig({
+export default defineUnlighthouseConfig({
 	site: 'https://www.phyrone.de'
 });

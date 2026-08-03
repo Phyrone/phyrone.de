@@ -1,4 +1,4 @@
-import type { EnhancedImgAttributes } from '@sveltejs/enhanced-img';
+import type { Picture } from 'vite-imagetools';
 
 export const images = import.meta.glob(
 	[
@@ -14,9 +14,9 @@ export const images = import.meta.glob(
 	}
 );
 
-export function get_image(path?: string, post?: string): EnhancedImgAttributes | undefined {
+export function get_image(path?: string, post?: string): Picture | undefined {
 	if (!path) return undefined;
-	if (!post) return images[path] as EnhancedImgAttributes | undefined;
+	if (!post) return images[path] as Picture | undefined;
 	const absolute_img_path = new URL(path, 'file:' + '/posts/' + post).pathname;
-	return images[absolute_img_path] as EnhancedImgAttributes | undefined;
+	return images[absolute_img_path] as Picture | undefined;
 }

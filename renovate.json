@@ -2,6 +2,27 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
 	"rebaseWhen": "behind-base-branch",
-	"commitMessagePrefix": "⬆\uFE0F ",
-	"automerge": true
+	"commitMessagePrefix": "⬆️ ",
+	"automerge": true,
+	"minimumReleaseAge": "3 days",
+	"packageRules": [
+		{
+			"description": "Major bumps get human review — this is how TypeScript 7 silently broke svelte-check.",
+			"matchUpdateTypes": ["major"],
+			"automerge": false
+		},
+		{
+			"description": "svelte-check 4.x cannot run against TypeScript 7 without a TS6+TS7 dual install and the --tsgo flag. Remove this cap once svelte-check supports TS 7 directly — do not carry it forward blindly.",
+			"matchPackageNames": ["typescript"],
+			"allowedVersions": "<7"
+		},
+		{
+			"matchPackageNames": ["@sveltejs/**"],
+			"groupName": "sveltejs"
+		},
+		{
+			"matchPackageNames": ["tailwindcss", "@tailwindcss/**", "daisyui"],
+			"groupName": "tailwind"
+		}
+	]
 }

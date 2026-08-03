@@ -1,6 +1,4 @@
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import adapter_node from '@sveltejs/adapter-node';
-import adapter_static from '@sveltejs/adapter-static';
 import adapter_cloudflare from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { createHighlighter, bundledLanguages } from 'shiki';
@@ -42,7 +40,6 @@ const config = {
 							}
 						})
 					);
-					//console.log(html);
 					return `<div class="mockup-code">{@html \`${html}\` }</div>`;
 				}
 			}
@@ -56,16 +53,25 @@ const config = {
 		adapter: adapter_cloudflare({
 			fallback: 'spa'
 		}),
-		/*
-		adapter: adapter_node({ out: 'dist', precompress: true }),
-		adapter: adapter_static({
-			pages: 'dist',
-			assets: 'dist',
-			fallback: '404.html',
-			precompress: true,
-			strict: true
-		}),
-		 */
+		// Enforcing rather than report-only: report-only CSP can only be
+		// delivered as an HTTP header, never via <meta http-equiv>, and this
+		// site is fully prerendered with no server to set headers. Every route
+		// was walked in a browser before this was switched on.
+		csp: {
+			mode: 'auto',
+			directives: {
+				'default-src': ['self'],
+				'script-src': ['self'],
+				'style-src': ['self', 'unsafe-inline'],
+				'img-src': ['self', 'data:', 'blob:'],
+				'font-src': ['self'],
+				'connect-src': ['self'],
+				'frame-src': ['https://www.youtube-nocookie.com'],
+				'object-src': ['none'],
+				'base-uri': ['self'],
+				'form-action': ['self']
+			}
+		},
 		alias: {
 			$lib: 'src/lib',
 			$styles: 'src/styles',

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { EllipsisIcon, MenuIcon, PlusIcon } from 'lucide-svelte';
+	import { EllipsisIcon, MenuIcon, PlusIcon } from '@lucide/svelte';
 	//import ms from 'ms';
-	import { PersistedState, PressedKeys } from 'runed';
+	import { PersistedState } from 'runed';
 	const tooltip_interacted = new PersistedState('datatools:tooltip:interacted', false, {
 		storage: 'local',
 		syncTabs: true
