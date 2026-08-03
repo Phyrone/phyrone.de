@@ -30,11 +30,16 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: Typecheck
-        run: pnpm check
-
+      # Build must precede the typecheck. Both `src/lib/paraglide/` and
+      # `.content-collections/generated` are generated and gitignored, and
+      # `svelte-kit sync` does not produce them — only a dev or build run does.
+      # On a clean checkout `pnpm check` reports 16 "Cannot find module" errors
+      # until the build has run.
       - name: Build
         run: pnpm build
+
+      - name: Typecheck
+        run: pnpm check
 
       - name: Upload build output
         uses: actions/upload-artifact@v4
