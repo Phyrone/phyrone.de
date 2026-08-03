@@ -41,11 +41,16 @@ jobs:
       - name: Typecheck
         run: pnpm check
 
+      # The whole .svelte-kit tree, not just cloudflare/. The adapter's
+      # _worker.js imports from ../output/server and ../cloudflare-tmp, and
+      # wrangler bundles it at deploy time — so cloudflare/ alone does not
+      # resolve. include-hidden-files is required because the path is dotted.
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
-          name: cloudflare-build
-          path: .svelte-kit/cloudflare
+          name: sveltekit-build
+          path: .svelte-kit
+          include-hidden-files: true
           retention-days: 1
 
   # Every branch deploys, but only after verify passes. Cloudflare Pages routes
@@ -85,8 +90,8 @@ jobs:
       - name: Download build output
         uses: actions/download-artifact@v4
         with:
-          name: cloudflare-build
-          path: .svelte-kit/cloudflare
+          name: sveltekit-build
+          path: .svelte-kit
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v4
