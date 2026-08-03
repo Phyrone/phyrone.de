@@ -1,6 +1,6 @@
 <script lang="ts">
 	import profile_img from '$assets/profile.png?enhanced';
-	import { DatabaseZapIcon, NewspaperIcon, PocketKnifeIcon } from 'lucide-svelte';
+	import { DatabaseZapIcon, NewspaperIcon, PocketKnifeIcon } from '@lucide/svelte';
 	import { siGithub, siMastodon, siYoutube, siBluesky } from 'simple-icons';
 	import { resolve } from '$app/paths';
 	import SimpleIcon from '$lib/SimpleIcon.svelte';

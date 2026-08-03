@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CircleXIcon, FileQuestion, RedoIcon, RefreshCcw } from 'lucide-svelte';
+	import { CircleXIcon, FileQuestion, RedoIcon, RefreshCcw } from '@lucide/svelte';
 	import type { Picture } from 'vite-imagetools';
 
 	type Props = {
