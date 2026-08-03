@@ -13,10 +13,10 @@ const DATE_INPUT_FORMATS: MomentFormatSpecification = [
 	'DD.MM.YYYY',
 	'DD.MM.YY',
 	'DD.MM.YYYY-HH:mm',
-  'DD.MM.YYYY HH:mm',
-  'DD.MM.YYYY HH:mm:ss',
-  'DD.MM.YYYY-HH:mm:ss',
-  'YYYY.MM.DD',
+	'DD.MM.YYYY HH:mm',
+	'DD.MM.YYYY HH:mm:ss',
+	'DD.MM.YYYY-HH:mm:ss',
+	'YYYY.MM.DD',
 	'YYYY-MM-DD'
 ];
 
@@ -59,22 +59,22 @@ async function date_if_blog_post(
 	doc: CollectionsSchema<'frontmatter-only', typeof PostMetadata>,
 	extract: ReturnType<typeof parse_from_path>
 ): Promise<Moment> {
-  let date = doc.date ?? moment(0)
+	let date = doc.date ?? moment(0);
 
 	if (extract?.year && extract?.month && extract?.day) {
 		return moment([extract.year, extract.month - 1, extract.day]);
-  }
-  if (extract?.year) {
-    date = date.year(extract.year);
-  }
-  if (extract?.month) {
-    date = date.month(extract.month - 1);
-  }
-  if (extract?.day) {
-    date = date.date(extract.day);
-  }
+	}
+	if (extract?.year) {
+		date = date.year(extract.year);
+	}
+	if (extract?.month) {
+		date = date.month(extract.month - 1);
+	}
+	if (extract?.day) {
+		date = date.date(extract.day);
+	}
 
-  return date;
+	return date;
 }
 
 const posts = defineCollection({
