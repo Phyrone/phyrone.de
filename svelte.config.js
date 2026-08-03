@@ -40,7 +40,6 @@ const config = {
 							}
 						})
 					);
-					//console.log(html);
 					return `<div class="mockup-code">{@html \`${html}\` }</div>`;
 				}
 			}
@@ -54,16 +53,6 @@ const config = {
 		adapter: adapter_cloudflare({
 			fallback: 'spa'
 		}),
-		/*
-		adapter: adapter_node({ out: 'dist', precompress: true }),
-		adapter: adapter_static({
-			pages: 'dist',
-			assets: 'dist',
-			fallback: '404.html',
-			precompress: true,
-			strict: true
-		}),
-		 */
 		alias: {
 			$lib: 'src/lib',
 			$styles: 'src/styles',
