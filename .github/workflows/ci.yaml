@@ -71,6 +71,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      # wrangler-action installs wrangler using this repo's package manager,
+      # which it resolves from the packageManager field — so pnpm and Node have
+      # to exist in this job even though nothing is built here.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: 'package.json'
+
       - name: Download build output
         uses: actions/download-artifact@v4
         with:
