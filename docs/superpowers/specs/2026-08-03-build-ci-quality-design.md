@@ -39,12 +39,12 @@ Two further problems are independent of that loop:
 
 ## Decisions
 
-| Decision | Choice | Rationale |
-| --- | --- | --- |
-| TypeScript 7 | Pin back to `^6`, hold via Renovate rule | Restores `pnpm check` with zero risk. The TS 6 + TS 7 dual-install that `svelte-check` suggests is bleeding-edge and may not satisfy typescript-eslint. Revisit deliberately. |
-| Docker / node adapter | Delete | `Dockerfile`, `docker-compose.yml` and the `prod` script all target `dist/index.js` from the node adapter, which is commented out in `svelte.config.js`. All three are already dead. Cloudflare Pages is the only real target. |
-| Node version pin | `engines.node` in `package.json` | Standard field. `actions/setup-node` reads it via `node-version-file: 'package.json'`. |
-| moment replacement | `dayjs` + `customParseFormat` | Accepts a format array directly, matching the current `moment(d, FORMATS, 'de', false)` call. Setters and `.toDate()` map 1:1. |
+| Decision              | Choice                                   | Rationale                                                                                                                                                                                                                      |
+| --------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| TypeScript 7          | Pin back to `^6`, hold via Renovate rule | Restores `pnpm check` with zero risk. The TS 6 + TS 7 dual-install that `svelte-check` suggests is bleeding-edge and may not satisfy typescript-eslint. Revisit deliberately.                                                  |
+| Docker / node adapter | Delete                                   | `Dockerfile`, `docker-compose.yml` and the `prod` script all target `dist/index.js` from the node adapter, which is commented out in `svelte.config.js`. All three are already dead. Cloudflare Pages is the only real target. |
+| Node version pin      | `engines.node` in `package.json`         | Standard field. `actions/setup-node` reads it via `node-version-file: 'package.json'`.                                                                                                                                         |
+| moment replacement    | `dayjs` + `customParseFormat`            | Accepts a format array directly, matching the current `moment(d, FORMATS, 'de', false)` call. Setters and `.toDate()` map 1:1.                                                                                                 |
 
 ---
 
@@ -86,7 +86,7 @@ concurrency: group: deploy, cancel-in-progress: false
 ```
 
 Deploy consumes `verify`'s artifact rather than rebuilding. Rebuilding would both double the CI
-time and deploy a *different* artifact than the one that was verified.
+time and deploy a _different_ artifact than the one that was verified.
 
 `cancel-in-progress: false` on deploy is deliberate: cancelling a half-finished deploy is worse than
 queueing behind it.
@@ -177,12 +177,12 @@ part 7).
 
 Mapping:
 
-| moment | dayjs |
-| --- | --- |
+| moment                                       | dayjs                                                  |
+| -------------------------------------------- | ------------------------------------------------------ |
 | `moment(d, DATE_INPUT_FORMATS, 'de', false)` | `dayjs(d, DATE_INPUT_FORMATS)` via `customParseFormat` |
-| `moment(0)` | `dayjs(0)` |
-| `.year(n)` / `.month(n)` / `.date(n)` | identical |
-| `.toDate()` | identical |
+| `moment(0)`                                  | `dayjs(0)`                                             |
+| `.year(n)` / `.month(n)` / `.date(n)`        | identical                                              |
+| `.toDate()`                                  | identical                                              |
 
 The existing code already reassigns (`date = date.year(...)`) rather than relying on mutation, so
 dayjs's immutability is not a behavioral change.
@@ -195,7 +195,7 @@ the `date_if_blog_post` precedence rules (frontmatter wins over path).
 
 This also gives the existing but unused vitest `server` project its first real use.
 
-Note that after part 7, `content-collections.ts` is the *only* consumer. It runs at build time in
+Note that after part 7, `content-collections.ts` is the _only_ consumer. It runs at build time in
 Node, so dayjs never enters the client bundle. Locale data is a static `import 'dayjs/locale/de'`
 resolved by Vite from `node_modules` — never a CDN fetch. (dayjs only loads from a CDN in its
 script-tag usage pattern, which this project does not use.) In practice the locale barely matters
@@ -244,7 +244,7 @@ CDN.** Cloudflare's own infrastructure is excluded, since that is the host.
 
 An audit found the rule currently holds. All ~40 external URLs in `src/` are `<a href>` hyperlinks
 (privacy-policy references, social profiles), not resource loads. Fonts come from bundled
-`@fontsource-variable/*` npm packages, not Google Fonts. The only external *resource* is the
+`@fontsource-variable/*` npm packages, not Google Fonts. The only external _resource_ is the
 `youtube-nocookie.com` iframe, which is click-gated. The built output references nothing external
 beyond those same hyperlinks.
 
@@ -257,7 +257,7 @@ only `https://www.youtube-nocookie.com`. SvelteKit generates hashes for inline s
 CSS that `inlineStyleThreshold: 1024` inlines.
 
 **Zod requires `jitless` for this to work.** Zod 4 compiles validators with `new Function`. Under a
-strict CSP this fails in two ways: the JIT itself is blocked, and zod's capability *probe* fires a
+strict CSP this fails in two ways: the JIT itself is blocked, and zod's capability _probe_ fires a
 `securitypolicyviolation` report even though it catches the resulting throw. Its own source says so
 (`v4/core/util.js`, `allowsEval`):
 

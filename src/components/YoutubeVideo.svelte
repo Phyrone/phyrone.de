@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PlayIcon } from 'lucide-svelte';
+	import { PlayIcon } from '@lucide/svelte';
 	import { show_youtube_accepted } from './YoutubeVideo.svelte.ts';
 	import * as m from '$lib/paraglide/messages';
 	import { browser } from '$app/environment';

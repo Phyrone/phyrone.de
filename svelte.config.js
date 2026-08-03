@@ -1,6 +1,4 @@
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import adapter_node from '@sveltejs/adapter-node';
-import adapter_static from '@sveltejs/adapter-static';
 import adapter_cloudflare from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { createHighlighter, bundledLanguages } from 'shiki';

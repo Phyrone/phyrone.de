@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CircleXIcon, FileQuestion, RedoIcon, RefreshCcw } from '@lucide/svelte';
+	import { CircleXIcon, FileQuestion } from '@lucide/svelte';
 	import type { Picture } from 'vite-imagetools';
 
 	type Props = {
@@ -9,7 +9,7 @@
 	let { src, alt }: Props = $props();
 </script>
 
-{#snippet failed(error, reset)}
+{#snippet failed(_error: unknown, reset: () => void)}
 	<div class="skeleton grid aspect-video h-56 w-96 place-content-center">
 		<button onclick={reset} class="btn btn-circle btn-error">
 			<CircleXIcon />

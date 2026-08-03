@@ -25,13 +25,13 @@
 
 These numbers were verified by running the commands, not estimated. Use them to confirm you are starting from the expected state.
 
-| Command | Result |
-| --- | --- |
-| `pnpm lint` | **FAILS** — Prettier flags 2 files in `project.inlang/` |
-| `pnpm check` | **CRASHES** — svelte-check refuses to run against TypeScript 7 |
-| `pnpm check` (with TS pinned to 6) | **FAILS** — 9 errors, 18 warnings, 10 files with problems |
-| `pnpm build` | passes, 19.8s |
-| Deploy size | 18 MB, of which **7.4 MB is sourcemaps** (25 `.map` files) |
+| Command                            | Result                                                         |
+| ---------------------------------- | -------------------------------------------------------------- |
+| `pnpm lint`                        | **FAILS** — Prettier flags 2 files in `project.inlang/`        |
+| `pnpm check`                       | **CRASHES** — svelte-check refuses to run against TypeScript 7 |
+| `pnpm check` (with TS pinned to 6) | **FAILS** — 9 errors, 18 warnings, 10 files with problems      |
+| `pnpm build`                       | passes, 19.8s                                                  |
+| Deploy size                        | 18 MB, of which **7.4 MB is sourcemaps** (25 `.map` files)     |
 
 ---
 
@@ -40,6 +40,7 @@ These numbers were verified by running the commands, not estimated. Use them to 
 Nothing else in this plan can be verified until `pnpm lint` and `pnpm check` both pass. The 9 type errors below were enumerated by actually pinning TypeScript and running the check — this is the complete list, not a sample.
 
 **Files:**
+
 - Modify: `package.json` (the `typescript` devDependency)
 - Modify: `.prettierignore`
 - Modify: `eslint.config.js`
@@ -52,10 +53,11 @@ Nothing else in this plan can be verified until `pnpm lint` and `pnpm check` bot
 - Modify: `src/lib/components/datatools/datatools.ts`
 
 **Interfaces:**
+
 - Consumes: nothing (first task).
 - Produces: `get_image(path?: string, post?: string): Picture | undefined` — the return type changes from `EnhancedImgAttributes` to `Picture`. No other task depends on this.
 
-**Background you need:** `svelte-check@4.7.4` hard-refuses TypeScript 7 unless you install *both* TS 6 and TS 7 under an alias and pass `--tsgo`. We are pinning back to TS 6 instead; Task 3 adds a Renovate rule so it cannot be bumped again.
+**Background you need:** `svelte-check@4.7.4` hard-refuses TypeScript 7 unless you install _both_ TS 6 and TS 7 under an alias and pass `--tsgo`. We are pinning back to TS 6 instead; Task 3 adds a Renovate rule so it cannot be bumped again.
 
 Four files import `lucide-svelte`, which **is not installed** — commit 7a5a6db migrated to `@lucide/svelte` and missed them. All four are currently unreferenced by any route, which is why the build passes while `check` fails: Vite never resolves them, but `svelte-check` reads every file on disk. All six icon names they use (`PlayIcon`, `Icon`, `CatIcon`, `EllipsisIcon`, `MenuIcon`, `PlusIcon`) do exist in `@lucide/svelte@1.28.0`, so a plain rename is sufficient. Do **not** delete these files — `src/routes/(app)/datatools/+page.svelte` is a work-in-progress feature with its body commented out, and these are its components.
 
@@ -71,7 +73,7 @@ pnpm add -D typescript@6.0.3
 pnpm check
 ```
 
-Expected: exits 1, ending with a line reporting **9 ERRORS 18 WARNINGS 10 FILES_WITH_PROBLEMS** (the total file count in that line varies with generated output and is not meaningful). If you see a different *error* count, stop and re-read this task — the list below may no longer be complete.
+Expected: exits 1, ending with a line reporting **9 ERRORS 18 WARNINGS 10 FILES_WITH_PROBLEMS** (the total file count in that line varies with generated output and is not meaningful). If you see a different _error_ count, stop and re-read this task — the list below may no longer be complete.
 
 - [ ] **Step 3: Extend `.prettierignore`**
 
@@ -115,22 +117,22 @@ Change `'lucide-svelte'` to `'@lucide/svelte'` in each of these, leaving the imp
 
 ```svelte
 <!-- src/components/YoutubeVideo.svelte:2 -->
-	import { PlayIcon } from '@lucide/svelte';
+import {PlayIcon} from '@lucide/svelte';
 ```
 
 ```svelte
 <!-- src/lib/LucidedSimpleIcon.svelte:2 -->
-	import { Icon } from '@lucide/svelte';
+import {Icon} from '@lucide/svelte';
 ```
 
 ```svelte
 <!-- src/routes/(app)/datatools/DataToolsMenu.svelte:3 -->
-	import { CatIcon } from '@lucide/svelte';
+import {CatIcon} from '@lucide/svelte';
 ```
 
 ```svelte
 <!-- src/routes/(app)/datatools/AddNodeFAB.svelte:2 -->
-	import { EllipsisIcon, MenuIcon, PlusIcon } from '@lucide/svelte';
+import {(EllipsisIcon, MenuIcon, PlusIcon)} from '@lucide/svelte';
 ```
 
 - [ ] **Step 6: Type the `failed` snippet parameters**
@@ -210,11 +212,13 @@ output in prettier and eslint."
 Today `.github/workflows/build.yaml` builds and then **deploys on every push to every branch**, with no lint, no check, no tests and no concurrency guard.
 
 **Files:**
+
 - Delete: `.github/workflows/build.yaml`
 - Create: `.github/workflows/ci.yaml`
 - Modify: `package.json` (add `engines`)
 
 **Interfaces:**
+
 - Consumes: `pnpm lint`, `pnpm check`, `pnpm build` all passing (Task 1).
 - Produces: a `verify` job that later tasks add steps to (Task 6 adds unit tests, Task 9 adds the external-origin guard), and an artifact named `cloudflare-build`.
 
@@ -354,9 +358,11 @@ Confirm on the Actions tab that the push to `chore/build-ci-quality` ran `verify
 `automerge: true` is not the problem — the absent gate was. Now that `verify` runs lint and check, Renovate waits on it before merging. This task tightens the remaining edges.
 
 **Files:**
+
 - Modify: `renovate.json`
 
 **Interfaces:**
+
 - Consumes: the `verify` job from Task 2 as a required status check.
 - Produces: nothing consumed by later tasks.
 
@@ -418,9 +424,11 @@ git commit -m "🔧 Harden Renovate: hold TS at 6, review majors, age releases"
 7.4 MB of the 18 MB deploy is sourcemaps that nothing consumes — there is no error-reporting service wired up.
 
 **Files:**
+
 - Modify: `vite.config.ts`
 
 **Interfaces:**
+
 - Consumes: nothing.
 - Produces: nothing.
 
@@ -472,6 +480,7 @@ Drops ~7.4MB from an 18MB deploy. Nothing consumed these maps."
 ## Task 5: Remove dead code and fix the year-padding bug
 
 **Files:**
+
 - Modify: `src/routes/(app)/+layout.ts`
 - Modify: `src/lib/posts.ts`
 - Delete: `src/lib/index.ts`
@@ -482,6 +491,7 @@ Drops ~7.4MB from an 18MB deploy. Nothing consumed these maps."
 - Delete: `Dockerfile`, `docker-compose.yml`, `.dockerignore`
 
 **Interfaces:**
+
 - Consumes: nothing.
 - Produces: `post_to_url(post: Post): string` — unchanged signature, corrected output. Task 6 tests it.
 
@@ -619,6 +629,7 @@ Fixes post_to_url padding years with '4' instead of '0'."
 **This is the only task with real behavioral risk, and the only one that gets tests.**
 
 **Files:**
+
 - Create: `src/lib/post-meta.ts`
 - Create: `src/lib/post-meta.test.ts`
 - Modify: `content-collections.ts`
@@ -626,6 +637,7 @@ Fixes post_to_url padding years with '4' instead of '0'."
 - Modify: `package.json` (swap the dependency)
 
 **Interfaces:**
+
 - Consumes: `post_to_url` from Task 5.
 - Produces:
   - `DATE_INPUT_FORMATS: string[]`
@@ -640,11 +652,11 @@ This was verified experimentally, not assumed. **moment scores every format in t
 Two changes fix it:
 
 1. **Order the format list most-specific first, with bare `'D'` last.**
-2. **Parse in strict mode** (`dayjs(input, FORMATS, true)`). In loose mode `4.1.2024` silently parses to *2027-12-19*. Strict mode's failure is `INVALID` — loud instead of silently wrong, which is what you want for a blog archive.
+2. **Parse in strict mode** (`dayjs(input, FORMATS, true)`). In loose mode `4.1.2024` silently parses to _2027-12-19_. Strict mode's failure is `INVALID` — loud instead of silently wrong, which is what you want for a blog archive.
 
 Strict mode requires **both padded and unpadded variants**: dayjs's `D` rejects `"04"` and `DD` rejects `"4"`.
 
-With that list, 16 of 17 test inputs match moment exactly. The one difference is an **improvement**: for `32.01.2024`, moment silently returns *2032-01-19* (reinterpreting `32` as a two-digit year) while dayjs correctly rejects it.
+With that list, 16 of 17 test inputs match moment exactly. The one difference is an **improvement**: for `32.01.2024`, moment silently returns _2032-01-19_ (reinterpreting `32` as a two-digit year) while dayjs correctly rejects it.
 
 `content-collections.ts` runs at build time in Node, so after Task 5 dayjs never enters the client bundle. It **can** import from `src/lib/` — this was verified by probe build.
 
@@ -941,8 +953,8 @@ Expected: a date of **4 January 2025, 12:00**. The two failure modes this catche
 In `.github/workflows/ci.yaml`, insert between the `Typecheck` and `Build` steps:
 
 ```yaml
-      - name: Unit tests
-        run: pnpm vitest run --project=server
+- name: Unit tests
+  run: pnpm vitest run --project=server
 ```
 
 This is added now rather than in Task 2 because before this task there were no tests, and a step that passes against an empty test set is worse than no step.
@@ -978,9 +990,11 @@ tested, and runs the suite in CI."
 Every package below was verified as never imported anywhere in `src/`, `utils/`, `posts/` or the root config files. Three specifics worth knowing: **no Tailwind plugin is registered in `src/app.css` at all** (it contains only `@import 'tailwindcss'` and two DaisyUI `@plugin` lines), `isomorphic-git` was imported but never called (removed in Task 5), and `ms` appears only inside a comment.
 
 **Files:**
+
 - Modify: `package.json`, `pnpm-lock.yaml`
 
 **Interfaces:**
+
 - Consumes: Task 5's import removals — several of these are only removable because their imports are already gone.
 - Produces: nothing.
 
@@ -1021,16 +1035,18 @@ adapters go with the Docker path removed in the previous commit."
 ## Task 8: Script hygiene, Playwright config and docs
 
 **Files:**
+
 - Modify: `package.json` (the `test` script)
 - Modify: `playwright.config.ts`
 - Create: `.editorconfig`
 - Create: `README.md`
 
 **Interfaces:**
+
 - Consumes: nothing.
 - Produces: nothing.
 
-**Note:** this task fixes the Playwright *configuration* so the harness is correct whenever e2e tests get written. It does **not** add an e2e run to CI — there are no e2e tests, and there is no point booting a browser to run nothing.
+**Note:** this task fixes the Playwright _configuration_ so the harness is correct whenever e2e tests get written. It does **not** add an e2e run to CI — there are no e2e tests, and there is no point booting a browser to run nothing.
 
 - [ ] **Step 1: Fix the `test` script to use pnpm**
 
@@ -1176,6 +1192,7 @@ settings."
 **This task lands last and is the riskiest in the plan.** A CSP can break a page while the build stays green.
 
 **Files:**
+
 - Modify: `svelte.config.js`
 - Modify: `src/hooks.ts`
 - Create: `scripts/check-no-external-origins.mjs`
@@ -1183,12 +1200,13 @@ settings."
 - Modify: `.github/workflows/ci.yaml`
 
 **Interfaces:**
+
 - Consumes: everything above; a clean codebase makes CSP violations traceable.
 - Produces: a `pnpm check:origins` script the CI `verify` job runs.
 
 **Background you must read — zod breaks under a strict CSP.**
 
-Zod 4 compiles validators with `new Function`. Under a strict CSP this fails twice over: the JIT is blocked, *and* zod's capability probe fires a `securitypolicyviolation` report even though it catches the resulting throw. Zod's own source says so, in `node_modules/zod/v4/core/util.js`:
+Zod 4 compiles validators with `new Function`. Under a strict CSP this fails twice over: the JIT is blocked, _and_ zod's capability probe fires a `securitypolicyviolation` report even though it catches the resulting throw. Zod's own source says so, in `node_modules/zod/v4/core/util.js`:
 
 > Skip the probe under `jitless`: strict CSPs report the caught `new Function` as a
 > `securitypolicyviolation` even though the throw is swallowed.
@@ -1360,8 +1378,8 @@ Expected: `No external origins in build output.` If it reports the YouTube ifram
 In `.github/workflows/ci.yaml`, immediately after the `Build` step and before `Upload build output`:
 
 ```yaml
-      - name: Check for external origins
-        run: pnpm check:origins
+- name: Check for external origins
+  run: pnpm check:origins
 ```
 
 - [ ] **Step 11: Full clean verification**

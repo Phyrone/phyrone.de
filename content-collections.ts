@@ -3,8 +3,6 @@ import { z } from 'zod';
 //import { defineParser } from '@content-collections/core';
 import type { Moment, MomentFormatSpecification } from 'moment';
 import moment from 'moment';
-import git from 'isomorphic-git';
-import fs from 'node:fs';
 import type { Schema as CollectionsSchema } from '@content-collections/core';
 
 const DATE_INPUT_FORMATS: MomentFormatSpecification = [

@@ -2,3 +2,11 @@
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+# Generated — do not format
+project.inlang/
+.content-collections/
+src/lib/paraglide/
+.svelte-kit/
+dist/
+build/

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Menubar } from 'bits-ui';
-	import { CatIcon } from 'lucide-svelte';
+	import { CatIcon } from '@lucide/svelte';
 	import { animate } from 'motion';
 
 	let cat_spin = $state(false);

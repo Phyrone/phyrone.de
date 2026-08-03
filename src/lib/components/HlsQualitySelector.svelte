@@ -78,7 +78,7 @@
 
 <span class="join">
 	<select class="select" bind:value={selected_level} disabled={auto_level}>
-		{#each levels as level, index}
+		{#each levels as level, index (index)}
 			<option class="bg-green-400" value={index}>{level.height}p</option>
 		{/each}
 	</select>

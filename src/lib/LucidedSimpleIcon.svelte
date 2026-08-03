@@ -1,5 +1,5 @@
 <script>
-	import { Icon } from 'lucide-svelte';
+	import { Icon } from '@lucide/svelte';
 
 	/**
 	 * @typedef {Object} Props
@@ -9,7 +9,8 @@
 	/** @type {Props & { [key: string]: any }} */
 	let { ...props } = $props();
 
-	const iconNode = [['path', { d: props.icon.path }]];
+	/** @type {import('@lucide/svelte').IconNode} */
+	const iconNode = $derived([['path', { d: props.icon.path }]]);
 </script>
 
 <Icon name={'si-' + props.icon.slug} {...props} {iconNode} />

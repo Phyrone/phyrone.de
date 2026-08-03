@@ -1,9 +1,5 @@
-import { z } from 'zod';
 import { resolve } from '$app/paths';
 import type { Component } from 'svelte';
-/** @type {import('moment')} */
-import moment from 'moment';
-import type { MomentFormatSpecification } from 'moment';
 import { allPosts } from '$content';
 import type { Post } from '$content';
 

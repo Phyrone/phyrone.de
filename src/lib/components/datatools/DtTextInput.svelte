@@ -2,8 +2,10 @@
 	import { Handle, Position, useSvelteFlow, type NodeProps } from '@xyflow/svelte';
 	import '@xyflow/svelte/dist/style.css';
 	import { TextareaAutosize } from 'runed';
-	let { id, data }: NodeProps = $props();
-	let { updateNodeData } = useSvelteFlow();
+	// `data` and `updateNodeData` are scaffolding for the unfinished datatools
+	// feature — kept deliberately, underscored to mark them as not yet wired up.
+	let { id, data: _data }: NodeProps = $props();
+	let { updateNodeData: _updateNodeData } = useSvelteFlow();
 	let text_area_ref: HTMLTextAreaElement = $state(null!);
 	let input_text = $state('');
 

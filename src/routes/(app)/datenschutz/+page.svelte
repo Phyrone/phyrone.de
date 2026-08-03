@@ -2,7 +2,7 @@
 	import { privacy_policy } from '$lib/paraglide/messages';
 	import { localizeHref } from '$lib/paraglide/runtime';
 
-	import { resolveRoute, base } from '$app/paths';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -55,8 +55,9 @@
 	<p>Samuel Laqua <br />Jägerhofstr. 17 <br />01445 Radebeul</p>
 	<p>E-Mail-Adresse: <a href="mailto:admin@phyrone.de">admin@phyrone.de</a></p>
 	<p>
-		Impressum: <a href={localizeHref('/impressum')}
-			>https://www.phyrone.de{base}{localizeHref('/impressum')}</a
+		Impressum:
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+		<a href={localizeHref('/impressum')}>https://www.phyrone.de{base}{localizeHref('/impressum')}</a
 		>
 	</p>
 
