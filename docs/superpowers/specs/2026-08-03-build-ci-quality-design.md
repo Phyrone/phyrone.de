@@ -195,11 +195,26 @@ the `date_if_blog_post` precedence rules (frontmatter wins over path).
 
 This also gives the existing but unused vitest `server` project its first real use.
 
+Note that after part 7, `content-collections.ts` is the *only* consumer. It runs at build time in
+Node, so dayjs never enters the client bundle. Locale data is a static `import 'dayjs/locale/de'`
+resolved by Vite from `node_modules` — never a CDN fetch. (dayjs only loads from a CDN in its
+script-tag usage pattern, which this project does not use.) In practice the locale barely matters
+here: every entry in `DATE_INPUT_FORMATS` is numeric, with no month names to localize.
+
+Removing `moment/min/moment-with-locales` from `(app)/+layout.ts` in part 7 is the larger win —
+that is a full moment build with every locale currently shipping to the browser unused.
+
 **Done when:** tests pass and a build produces the same post dates as before the change.
 
 ## Part 7 — Dead code
 
+- `src/routes/(app)/+layout.ts`: the load function is **empty**, but the file imports `zod` and
+  `moment/min/moment-with-locales` — the full moment build including every locale. Both are unused
+  and ship to the browser on every page. Delete both imports; if the empty `load` has no purpose,
+  delete the file.
 - `src/lib/posts.ts`: delete the ~150-line commented legacy block, leaving ~60 lines of live code.
+  Its `import { z } from 'zod'` and `moment` imports become unused once that block goes — every
+  `z.` reference in the file is inside the comment.
 - **Bug fix:** `post_to_url` calls `y.toString().padStart(4, '4')`. The pad character is `'4'`,
   which produces `4204` for year 204. Almost certainly meant `'0'`. Fixed, with a test.
 - `src/lib/index.ts`: delete. It is entirely comments, and no file imports `$lib` bare (verified).
@@ -222,6 +237,68 @@ This also gives the existing but unused vitest `server` project its first real u
   gitignored, so a clean checkout has broken imports until the first `pnpm dev` or `pnpm build`.
   Also: prerequisites, the commands table, and the Cloudflare Pages deploy story.
 
+## Part 9 — No external origins, enforced
+
+**Standing rule for this project: the site never loads scripts, assets or data from an external
+CDN.** Cloudflare's own infrastructure is excluded, since that is the host.
+
+An audit found the rule currently holds. All ~40 external URLs in `src/` are `<a href>` hyperlinks
+(privacy-policy references, social profiles), not resource loads. Fonts come from bundled
+`@fontsource-variable/*` npm packages, not Google Fonts. The only external *resource* is the
+`youtube-nocookie.com` iframe, which is click-gated. The built output references nothing external
+beyond those same hyperlinks.
+
+This part is therefore about preventing regression, in two layers.
+
+### 9a. Content Security Policy
+
+Configure `kit.csp` in `svelte.config.js` with `default-src 'self'` and `frame-src` allowlisting
+only `https://www.youtube-nocookie.com`. SvelteKit generates hashes for inline scripts and for the
+CSS that `inlineStyleThreshold: 1024` inlines.
+
+**Zod requires `jitless` for this to work.** Zod 4 compiles validators with `new Function`. Under a
+strict CSP this fails in two ways: the JIT itself is blocked, and zod's capability *probe* fires a
+`securitypolicyviolation` report even though it catches the resulting throw. Its own source says so
+(`v4/core/util.js`, `allowsEval`):
+
+> Skip the probe under `jitless`: strict CSPs report the caught `new Function` as a
+> `securitypolicyviolation` even though the throw is swallowed.
+
+Fix: call `z.config({ jitless: true })` at module top level in `src/hooks.ts`, which is universal
+and loads before any route `load` runs. `config()` is a supported public export. It must be set
+before the first parse, because `allowsEval` is memoized via `cached()`.
+
+No AOT compilation step is needed. Two facts make the performance cost irrelevant here:
+
+- Zod already disables eval on Cloudflare Workers automatically — it checks
+  `navigator.userAgent.includes("Cloudflare")`. So this is a **browser-only** change; the server
+  side is already jitless.
+- After part 7, the only client-side zod schema left is the 4 route params in the blog
+  `+page.ts`. Interpreted validation of 4 fields per navigation is not measurable.
+
+Keeping zod (rather than hand-writing that one check) preserves the project convention recorded in
+`CLAUDE.md` that runtime input validation uses zod.
+
+### 9b. CI guard
+
+Add a check to the `verify` job that greps the built output for external origins in `<script src>`,
+`<link href>` and `url()`, allowlisting self and Cloudflare, and fails with a readable message.
+
+CSP alone is insufficient as a guard: it surfaces a violation as a broken page in production, after
+deploy. The grep catches it at build time, naming the offending file.
+
+### Risk
+
+**CSP is the change in this plan most likely to break something user-visible.** A too-tight
+`frame-src` silently kills the YouTube embed; a too-tight `img-src` or `style-src` breaks
+`enhanced-img` output or inlined CSS. A green build does not prove it works. This part requires a
+manual pass over every page with the browser console open, checking for
+`securitypolicyviolation` reports — including the zod path, by navigating to a blog post so the
+route-param schema actually parses.
+
+Land 9a in report-only mode first (`Content-Security-Policy-Report-Only`) if any doubt remains, then
+switch to enforcing.
+
 ---
 
 ## Sequencing
@@ -233,6 +310,10 @@ touch.
 After that, parts 3–8 are largely independent. Part 7's removal of the `moment` import from
 `posts.ts` should land with or after part 6 to avoid a transient broken state.
 
+Part 9 lands **last**. It is the riskiest change, and it is far easier to verify a CSP against a
+codebase whose dead imports have already been removed — otherwise a violation from unused-but-
+bundled code sends the investigation down a false path.
+
 ## Verification
 
 After each part: `pnpm lint && pnpm check && pnpm build` exit 0.
@@ -242,6 +323,10 @@ Final check, from a clean state, to prove nothing depends on stale generated out
 ```bash
 rm -rf node_modules .svelte-kit .content-collections && pnpm install && pnpm lint && pnpm check && pnpm build && pnpm vitest run --project=server
 ```
+
+Plus one check no command covers: after part 9, load every route in a browser with the console
+open and confirm zero `securitypolicyviolation` reports — including a blog post, so the client-side
+zod route-param schema actually runs under the CSP.
 
 ## Risks
 
@@ -253,3 +338,5 @@ rm -rf node_modules .svelte-kit .content-collections && pnpm install && pnpm lin
 - **Removing 27 packages at once** risks one of them being loaded by a mechanism the import scan
   did not cover (a Vite plugin resolving by name, a PostCSS convention). The per-package restore
   step above is the mitigation.
+- **The CSP in part 9 can break pages while the build stays green.** See part 9's own risk note —
+  it needs manual per-page verification with the console open, not just CI.
