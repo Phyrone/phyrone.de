@@ -90,8 +90,16 @@ switching would mean adding one back and editing `svelte.config.js`.
 
 - Svelte 5 runes only (`$props`, `$state`) — never `export let`
 - Prettier: tabs, single quotes, no trailing commas, 100 columns. Run `pnpm fix` before committing.
-- Runtime input validation uses zod
+- Runtime input validation uses zod, configured `jitless` in `src/hooks.ts`. Zod 4 compiles
+  validators with `new Function`, which the CSP blocks — and its capability probe reports a
+  violation even when it swallows the throw. Do not remove that call.
 - Path aliases are defined in `svelte.config.js`, not `tsconfig.json`
 - **The site never loads scripts, assets or data from an external CDN.** Cloudflare's own
   infrastructure is exempt, as it is the host. Fonts, icons and libraries are bundled from
   `node_modules` — no Google Fonts, no script tags pointing at a CDN.
+
+  Enforced twice over: a Content Security Policy (`kit.csp` in `svelte.config.js`, emitted as a
+  `<meta>` tag on every prerendered page) and `pnpm check:origins`, which greps the build output and
+  fails CI naming the offending file. The CSP alone would only surface a breach as a broken page
+  after deploy. The single permitted external origin is `youtube-nocookie.com` under `frame-src`,
+  for the click-gated video embed.

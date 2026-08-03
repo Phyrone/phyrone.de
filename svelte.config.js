@@ -53,6 +53,25 @@ const config = {
 		adapter: adapter_cloudflare({
 			fallback: 'spa'
 		}),
+		// Enforcing rather than report-only: report-only CSP can only be
+		// delivered as an HTTP header, never via <meta http-equiv>, and this
+		// site is fully prerendered with no server to set headers. Every route
+		// was walked in a browser before this was switched on.
+		csp: {
+			mode: 'auto',
+			directives: {
+				'default-src': ['self'],
+				'script-src': ['self'],
+				'style-src': ['self', 'unsafe-inline'],
+				'img-src': ['self', 'data:', 'blob:'],
+				'font-src': ['self'],
+				'connect-src': ['self'],
+				'frame-src': ['https://www.youtube-nocookie.com'],
+				'object-src': ['none'],
+				'base-uri': ['self'],
+				'form-action': ['self']
+			}
+		},
 		alias: {
 			$lib: 'src/lib',
 			$styles: 'src/styles',
