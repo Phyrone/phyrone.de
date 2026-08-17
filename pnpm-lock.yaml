@@ -22,7 +22,7 @@ importers:
         version: 1.30.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))
       '@xyflow/svelte':
         specifier: ^1.6.2
-        version: 1.6.2(svelte@5.56.9(@typescript-eslint/types@8.66.0))
+        version: 1.6.3(svelte@5.56.9(@typescript-eslint/types@8.66.0))
       bits-ui:
         specifier: ^2.18.1
         version: 2.18.1(@internationalized/date@3.12.3)(@sveltejs/kit@2.70.2(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))(vite@8.2.1(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.49.2)(yaml@2.9.0)))(svelte@5.56.9(@typescript-eslint/types@8.66.0))(typescript@6.0.3)(vite@8.2.1(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.49.2)(yaml@2.9.0)))(svelte@5.56.9(@typescript-eslint/types@8.66.0))
@@ -2731,13 +2731,13 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@xyflow/svelte@1.6.2':
-    resolution: {integrity: sha512-wImcz0c4mCa2SYxo5p1YSBqdTBqI4Ky2CYO6XZfNqMIxVr6mB2cdVaduJqHuqTETQuUKv4Gr0eh3Ev3iU8k8fg==}
+  '@xyflow/svelte@1.6.3':
+    resolution: {integrity: sha512-JmnTJswUyzJ7wW6aW2DOhm/UFNMIXh3bQF6fKdlBN1Cnqys6cQkUlH6IjDhy8qaEE69yFHJuj3tuNnCcsd+e5g==}
     peerDependencies:
       svelte: ^5.25.0
 
-  '@xyflow/system@0.0.79':
-    resolution: {integrity: sha512-czLyOh91NF0hIzbNzwi8I6GlqG23BHh2435OddfI6uiaLH3xdrdygO93gqgH1Bv9mhy8XPFQJOBn1FTq4LvEWA==}
+  '@xyflow/system@0.0.80':
+    resolution: {integrity: sha512-ywc3ZqG91brzWrH1WlwMdIX4goOfrpBy6AbLdVSaof/Xx9l138ijIKRExM6EkMro2F+OImGmSiA/WKcXvKVcfA==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -8576,13 +8576,13 @@ snapshots:
     dependencies:
       vue: 3.5.40(typescript@6.0.3)
 
-  '@xyflow/svelte@1.6.2(svelte@5.56.9(@typescript-eslint/types@8.66.0))':
+  '@xyflow/svelte@1.6.3(svelte@5.56.9(@typescript-eslint/types@8.66.0))':
     dependencies:
       '@svelte-put/shortcut': 4.2.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))
-      '@xyflow/system': 0.0.79
+      '@xyflow/system': 0.0.80
       svelte: 5.56.9(@typescript-eslint/types@8.66.0)
 
-  '@xyflow/system@0.0.79':
+  '@xyflow/system@0.0.80':
     dependencies:
       '@types/d3-drag': 3.0.7
       '@types/d3-interpolate': 3.0.4
