@@ -19,7 +19,7 @@ importers:
         version: 2.23.2(typescript@6.0.3)(vite@8.2.2(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.49.2)(yaml@2.9.0))
       '@lucide/svelte':
         specifier: ^1.28.0
-        version: 1.31.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))
+        version: 1.33.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))
       '@xyflow/svelte':
         specifier: ^1.6.2
         version: 1.6.3(svelte@5.56.9(@typescript-eslint/types@8.66.0))
@@ -1403,8 +1403,8 @@ packages:
   '@lix-js/server-protocol-schema@0.1.1':
     resolution: {integrity: sha512-jBeALB6prAbtr5q4vTuxnRZZv1M2rKe8iNqRQhFJ4Tv7150unEa0vKyz0hs8Gl3fUGsWaNJBh3J8++fpbrpRBQ==}
 
-  '@lucide/svelte@1.31.0':
-    resolution: {integrity: sha512-pgPuLEJdF0UpsajG9eSw0YvqXVuDxB+/x58BRiC4xE/KEHiopOqT1id3KCUvRN/PUmQkN1F26sslcs/1jutlBQ==}
+  '@lucide/svelte@1.33.0':
+    resolution: {integrity: sha512-b+osTYG2V4dge5Lr7tnaTaahhy/4vH7Xb8zcqVjmctjwgkpXS0NNOJPkGzHHZoxtw/OO+2YAU28omeMfYCaawg==}
     peerDependencies:
       svelte: ^5
 
@@ -6760,7 +6760,7 @@ snapshots:
 
   '@lix-js/server-protocol-schema@0.1.1': {}
 
-  '@lucide/svelte@1.31.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))':
+  '@lucide/svelte@1.33.0(svelte@5.56.9(@typescript-eslint/types@8.66.0))':
     dependencies:
       svelte: 5.56.9(@typescript-eslint/types@8.66.0)
 
