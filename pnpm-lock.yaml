@@ -16,7 +16,7 @@ importers:
         version: 5.3.0
       '@inlang/paraglide-js':
         specifier: ^2.23.1
-        version: 2.24.1(typescript@6.0.3)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0))
+        version: 2.25.0(typescript@6.0.3)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0))
       '@lucide/svelte':
         specifier: ^1.28.0
         version: 1.35.0(svelte@5.56.10(@typescript-eslint/types@8.68.0))
@@ -158,7 +158,7 @@ importers:
         version: 5.1.0
       unlighthouse:
         specifier: ^0.18.0
-        version: 0.18.0(790ab45cf4881133382515c9d6a11ca6)
+        version: 0.18.0(554c2f1f3ef144f279b1eaba7af8b339)
       vite:
         specifier: ^8.2.0
         version: 8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0)
@@ -1346,8 +1346,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inlang/paraglide-js@2.24.1':
-    resolution: {integrity: sha512-r/gak0kY2yuqgz0RFxccb7A89fgcLpiqoEbYfv3nxlqyhdW2v8NajE1A2xiXrv/iAo7WCX4zk8EJAhL69rcp0g==}
+  '@inlang/paraglide-js@2.25.0':
+    resolution: {integrity: sha512-a3Gw3md1S3WyJK1rFAP/FwDCsFKnu1b98rJ3k5bUl6nc3cmbglaSYpuK9qq9aLLlUlZhuCtB/Pb1LeKDUaLycg==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.6'
@@ -5523,6 +5523,14 @@ packages:
     resolution: {integrity: sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==}
     hasBin: true
 
+  valibot@1.4.2:
+    resolution: {integrity: sha512-gjdCvJ6d3RyHAneqxMYMW9QMCwYMb3jpOO0IyHZV1bnRHFBHrX3VkIILt5XYR0WhwHiH7Mty8ovuPZ/O3gamrg==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   varint@6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
 
@@ -6668,15 +6676,17 @@ snapshots:
   '@img/sharp-win32-x64@0.35.3':
     optional: true
 
-  '@inlang/paraglide-js@2.24.1(typescript@6.0.3)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0))':
+  '@inlang/paraglide-js@2.25.0(typescript@6.0.3)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0))':
     dependencies:
       '@inlang/recommend-sherlock': 0.2.1
       '@inlang/sdk': 3.0.2
       commander: 11.1.0
       consola: 3.4.0
+      jiti: 2.7.0
       json5: 2.2.3
       unplugin: 2.3.11
       urlpattern-polyfill: 10.1.0
+      valibot: 1.4.2(typescript@6.0.3)
     optionalDependencies:
       typescript: 6.0.3
       vite: 8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0)
@@ -6904,7 +6914,7 @@ snapshots:
       pkg-types: 2.3.1
       std-env: 4.2.0
 
-  '@nuxt/ui@4.10.0(e460b4379a723fb5adb1d0e423ce86ac)':
+  '@nuxt/ui@4.10.0(ff0b37508ded3432f77618e484c1763d)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.1(vue@3.5.40(typescript@6.0.3))
@@ -6973,6 +6983,7 @@ snapshots:
     optionalDependencies:
       '@internationalized/date': 3.12.3
       '@internationalized/number': 3.6.7
+      valibot: 1.4.2(typescript@6.0.3)
       zod: 4.4.3
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -8031,12 +8042,12 @@ snapshots:
       unhead: 2.1.16
       vue: 3.5.40(typescript@6.0.3)
 
-  '@unlighthouse/cli@0.18.0(aa89448328e31b1f20a0dbd6fbac5cc7)':
+  '@unlighthouse/cli@0.18.0(6ea57e3b4a339cd86d7df40b36e01fd9)':
     dependencies:
       '@lhci/utils': 0.15.1(supports-color@10.2.2)
-      '@unlighthouse/client': 0.18.0(f4d4784c8becd05908955a0da4d445d3)
-      '@unlighthouse/core': 0.18.0(926b37a5f90a6faba81398f40e9f7eb3)
-      '@unlighthouse/server': 0.18.0(aa89448328e31b1f20a0dbd6fbac5cc7)
+      '@unlighthouse/client': 0.18.0(fd0c14a39f340d5ab2a634bebdc05de2)
+      '@unlighthouse/core': 0.18.0(65b56024323c477d02ba89e44a6fecdf)
+      '@unlighthouse/server': 0.18.0(6ea57e3b4a339cd86d7df40b36e01fd9)
       cac: 7.0.0
       consola: 3.4.2
       defu: 6.1.7
@@ -8135,9 +8146,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.18.0(f4d4784c8becd05908955a0da4d445d3)':
+  '@unlighthouse/client@0.18.0(fd0c14a39f340d5ab2a634bebdc05de2)':
     dependencies:
-      '@nuxt/ui': 4.10.0(e460b4379a723fb5adb1d0e423ce86ac)
+      '@nuxt/ui': 4.10.0(ff0b37508ded3432f77618e484c1763d)
       '@tailwindcss/vite': 4.3.3(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.0)(yaml@2.9.0))
       defu: 6.1.7
       fuse.js: 7.5.0
@@ -8223,11 +8234,11 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/core@0.18.0(926b37a5f90a6faba81398f40e9f7eb3)':
+  '@unlighthouse/core@0.18.0(65b56024323c477d02ba89e44a6fecdf)':
     dependencies:
       '@clack/prompts': 1.7.0
       '@puppeteer/browsers': 3.0.6(yauzl@2.10.0)
-      '@unlighthouse/client': 0.18.0(f4d4784c8becd05908955a0da4d445d3)
+      '@unlighthouse/client': 0.18.0(fd0c14a39f340d5ab2a634bebdc05de2)
       c12: 3.3.4
       chrome-launcher: 1.2.1(supports-color@10.2.2)
       consola: 3.4.2
@@ -8337,9 +8348,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/server@0.18.0(aa89448328e31b1f20a0dbd6fbac5cc7)':
+  '@unlighthouse/server@0.18.0(6ea57e3b4a339cd86d7df40b36e01fd9)':
     dependencies:
-      '@unlighthouse/core': 0.18.0(926b37a5f90a6faba81398f40e9f7eb3)
+      '@unlighthouse/core': 0.18.0(65b56024323c477d02ba89e44a6fecdf)
       h3: 1.15.11
       listhen: 1.10.1(@parcel/watcher@2.6.0)
     transitivePeerDependencies:
@@ -11397,11 +11408,11 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unlighthouse@0.18.0(790ab45cf4881133382515c9d6a11ca6):
+  unlighthouse@0.18.0(554c2f1f3ef144f279b1eaba7af8b339):
     dependencies:
-      '@unlighthouse/cli': 0.18.0(aa89448328e31b1f20a0dbd6fbac5cc7)
-      '@unlighthouse/client': 0.18.0(f4d4784c8becd05908955a0da4d445d3)
-      '@unlighthouse/core': 0.18.0(926b37a5f90a6faba81398f40e9f7eb3)
+      '@unlighthouse/cli': 0.18.0(6ea57e3b4a339cd86d7df40b36e01fd9)
+      '@unlighthouse/client': 0.18.0(fd0c14a39f340d5ab2a634bebdc05de2)
+      '@unlighthouse/core': 0.18.0(65b56024323c477d02ba89e44a6fecdf)
     optionalDependencies:
       puppeteer: 24.42.0(supports-color@10.2.2)(typescript@6.0.3)
       vue: 3.5.40(typescript@6.0.3)
@@ -11589,6 +11600,10 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   uuid@14.0.2: {}
+
+  valibot@1.4.2(typescript@6.0.3):
+    optionalDependencies:
+      typescript: 6.0.3
 
   varint@6.0.0:
     optional: true
