@@ -97,8 +97,8 @@ importers:
         specifier: ^4.1.10
         version: 4.1.11(playwright@1.62.1)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0))(vitest@4.1.11)
       daisyui:
-        specifier: 5.7.22
-        version: 5.7.22
+        specifier: 5.7.23
+        version: 5.7.23
       eslint:
         specifier: ^10.8.0
         version: 10.9.1(jiti@2.7.0)(supports-color@10.2.2)
@@ -3156,8 +3156,8 @@ packages:
     resolution: {integrity: sha512-b8AmV3kfQaqWAuacbPuNbL6vahnOJflOhexLzMMNLga62+/nh0JzvJ0aO/5a5MVgUFGS7Hu1P9P03o3fJkDCyw==}
     engines: {node: '>=12'}
 
-  daisyui@5.7.22:
-    resolution: {integrity: sha512-pYii+2NCN0+OIL6Lpuc054LK0QJeNv+GRK9UzN1GRmjdYhYO6WFl0QLoj5oPcitPD7o+okiiI0SKFkn641TxmA==}
+  daisyui@5.7.23:
+    resolution: {integrity: sha512-Jp5VuhfpLz9zLGEB1VTZFTSAcUn02qMazb55RSciY7V4xQgmzYm3Af160gkQc3OnMVfDUwnQXvwu4O4MwoK1NQ==}
 
   data-uri-to-buffer@6.0.2:
     resolution: {integrity: sha512-7hvf7/GW8e86rW0ptuwS3OcBGDjIi6SZva7hCyWC0yYry2cOPmLIjXAUHI6DK2HsnwJd9ifmt57i8eV2n4YNpw==}
@@ -8977,7 +8977,7 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
 
-  daisyui@5.7.22: {}
+  daisyui@5.7.23: {}
 
   data-uri-to-buffer@6.0.2: {}
 
