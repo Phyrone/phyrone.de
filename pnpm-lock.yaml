@@ -163,8 +163,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0)
       vite-imagetools:
-        specifier: ^11.0.0
-        version: 11.0.0(@types/node@26.4.1)(rollup@4.62.4)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0))
+        specifier: ^12.0.0
+        version: 12.0.1(@types/node@26.4.1)(rollup@4.62.4)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0))
       vitest:
         specifier: ^4.1.10
         version: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.4.1)(@vitest/browser-playwright@4.1.11)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0))
@@ -3727,8 +3727,8 @@ packages:
   image-ssim@0.2.0:
     resolution: {integrity: sha512-W7+sO6/yhxy83L0G7xR8YAc5Z5QFtYEXXRV6EaE8tuYBZJnA3gVgp3q7X7muhLZVodeb9UfvjSbwt9VJwjIYAg==}
 
-  imagetools-core@11.0.0:
-    resolution: {integrity: sha512-BaNX7im/o7PqGmck3/wElRx4xugnJYIMtPfOIAHEd2ZV1ZyalewE0H9nm/czZcjdtsgxVW7IzL0oJQn6J8kZuA==}
+  imagetools-core@12.0.0:
+    resolution: {integrity: sha512-9u1nEZrA6qd/dv1okXT/i1bLOnL9YAAg7k5BqnBJe5PxYYRecZ/GNyGxUXG5x6ybyvCa25zlx5XX++nSEAkjQw==}
     engines: {node: '>=22.0.0'}
 
   imagetools-core@9.1.0:
@@ -5550,8 +5550,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite-imagetools@11.0.0:
-    resolution: {integrity: sha512-9mMuI/gum/hg7OT2VUfVJvolmACJbc1kStMmm0ydoUHX+3jsj1zvsbmI0DYt2K8u2Tex6kiTuj86xDuIYNgV2A==}
+  vite-imagetools@12.0.1:
+    resolution: {integrity: sha512-BZcU5TLmCKJyLo6FIk8detM9TYtFkbwOaZ8ebd+Kt7YQKHXL+xJH/Oxg4bBNx8xcP3NPVblE6DI/VCaKja5nYQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       vite: '>=8.0.0'
@@ -9647,7 +9647,7 @@ snapshots:
 
   image-ssim@0.2.0: {}
 
-  imagetools-core@11.0.0: {}
+  imagetools-core@12.0.0: {}
 
   imagetools-core@9.1.0: {}
 
@@ -11627,10 +11627,10 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-imagetools@11.0.0(@types/node@26.4.1)(rollup@4.62.4)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0)):
+  vite-imagetools@12.0.1(@types/node@26.4.1)(rollup@4.62.4)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0)):
     dependencies:
       '@rollup/pluginutils': 5.4.0(rollup@4.62.4)
-      imagetools-core: 11.0.0
+      imagetools-core: 12.0.0
       sharp: 0.35.3(@types/node@26.4.1)
       vite: 8.2.2(@types/node@26.4.1)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.0)
     transitivePeerDependencies:
