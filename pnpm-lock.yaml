@@ -34,7 +34,7 @@ importers:
         version: 7.5.0
       hls.js:
         specifier: ^1.6.16
-        version: 1.7.1
+        version: 1.7.2
       motion:
         specifier: ^12.43.0
         version: 12.43.0
@@ -3680,8 +3680,8 @@ packages:
   hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
 
-  hls.js@1.7.1:
-    resolution: {integrity: sha512-DlzIkeBAS9IIQ432k3BUf3HlwbsR0+trB1i2lDdN2gUkNkrehFurh0/48M5c1/EjlDkdGng1gwZIpwyPxvdZ/g==}
+  hls.js@1.7.2:
+    resolution: {integrity: sha512-CW/pPvSOFIRsosbwxrYaE9ERmpTo5fbTqL7wCvuCFlqW1Bmb1K5fXsY7yiH95rmlr4rVuA7UXHbM/cIXQ6AXwg==}
 
   hookable@6.1.1:
     resolution: {integrity: sha512-U9LYDy1CwhMCnprUfeAZWZGByVbhd54hwepegYTK7Pi5NvqEj63ifz5z+xukznehT7i6NIZRu89Ay1AZmRsLEQ==}
@@ -9608,7 +9608,7 @@ snapshots:
 
   hey-listen@1.0.8: {}
 
-  hls.js@1.7.1: {}
+  hls.js@1.7.2: {}
 
   hookable@6.1.1: {}
 
