@@ -142,8 +142,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3
       tailwindcss-intersect:
-        specifier: ^2.2.0
-        version: 2.2.0(tailwindcss@4.3.3)
+        specifier: ^3.0.0
+        version: 3.0.0(tailwindcss@4.3.3)
       terser:
         specifier: ^5.49.0
         version: 5.51.2
@@ -5170,10 +5170,10 @@ packages:
       tailwindcss:
         optional: true
 
-  tailwindcss-intersect@2.2.0:
-    resolution: {integrity: sha512-LnOQ/iU44jNQ8k3OExa7Ccv/y5NlzAN574jjDnX5gLCdlqoeUT5ADtTznF92oAdon3NZA69b+JLknahbwsqxDA==}
+  tailwindcss-intersect@3.0.0:
+    resolution: {integrity: sha512-TSzO4z3iQ8zqF/DJXxqQXMkFfOhRGYK5MnArmxzF766fG7FuJVyNSyxg6w/6g8kKypT9wD6zG4qneb7k4So9yw==}
     peerDependencies:
-      tailwindcss: '>=3.2.0 || >=4.0.0'
+      tailwindcss: '>=4.0.0'
 
   tailwindcss@4.3.3:
     resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
@@ -11228,7 +11228,7 @@ snapshots:
       tailwind-merge: 3.6.0
       tailwindcss: 4.3.3
 
-  tailwindcss-intersect@2.2.0(tailwindcss@4.3.3):
+  tailwindcss-intersect@3.0.0(tailwindcss@4.3.3):
     dependencies:
       tailwindcss: 4.3.3
 
