@@ -52,7 +52,7 @@ jobs:
       # wrangler bundles it at deploy time — so cloudflare/ alone does not
       # resolve. include-hidden-files is required because the path is dotted.
       - name: Upload build output
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: sveltekit-build
           path: .svelte-kit
@@ -94,7 +94,7 @@ jobs:
           node-version-file: 'package.json'
 
       - name: Download build output
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: sveltekit-build
           path: .svelte-kit
