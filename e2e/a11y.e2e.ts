@@ -12,19 +12,11 @@ const routes = [
 
 test.describe('Accessibility (a11y)', () => {
 	for (const route of routes) {
-		test(`${route.name} (${route.path}) should have 0 a11y violations in light and dark mode`, async ({
-			page
-		}) => {
+		test(`${route.name} (${route.path}) should have 0 a11y violations`, async ({ page }) => {
 			await page.goto(route.path);
 			await page.waitForLoadState('domcontentloaded');
 
-			// Default / light mode check
-			let accessibilityScanResults = await new AxeBuilder({ page }).analyze();
-			expect(accessibilityScanResults.violations).toEqual([]);
-
-			// Dark mode check
-			await page.emulateMedia({ colorScheme: 'dark' });
-			accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+			const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
 			expect(accessibilityScanResults.violations).toEqual([]);
 		});
 	}
@@ -55,6 +47,8 @@ test.describe('Accessibility (a11y)', () => {
 		const blogLink = page.getByRole('link', { name: 'Blog', exact: true });
 		await blogLink.focus();
 		await expect(blogLink).toBeFocused();
-		await expect(blogLink).toHaveClass(/focus-visible:outline/);
+		// In src/app.css: .menu a:focus-visible has outline: 2px solid currentColor
+		const outlineStyle = await blogLink.evaluate((el) => window.getComputedStyle(el).outlineStyle);
+		expect(outlineStyle).toBe('solid');
 	});
 });

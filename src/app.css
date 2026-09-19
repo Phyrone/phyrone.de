@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
-@plugin 'daisyui' {
+@plugin 'daisyui/index.js';
+@plugin 'daisyui/theme/index.js' {
 	name: 'coffee';
-	default: true;
-	prefersdark: true;
 	logs: false;
 }
 

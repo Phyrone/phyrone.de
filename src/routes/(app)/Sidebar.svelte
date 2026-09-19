@@ -46,29 +46,20 @@
 	>
 		<ul class="menu menu-lg sm:menu-md sm:menu-vertical w-full px-0">
 			<li>
-				<a
-					class="focus-visible:outline-primary min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2"
-					href={resolve('/(app)/blog')}
-					title="Blog"
-				>
+				<a href={resolve('/(app)/blog')} title="Blog">
 					<NewspaperIcon />
 					Blog
 				</a>
 			</li>
 			<li>
 				<details>
-					<summary
-						class="focus-visible:outline-primary min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2"
-					>
+					<summary>
 						<PocketKnifeIcon />
 						Utils
 					</summary>
 					<ul>
 						<li>
-							<a
-								class="focus-visible:outline-primary min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2"
-								href={resolve('/(app)/datatools')}
-							>
+							<a href={resolve('/(app)/datatools')}>
 								<DatabaseZapIcon />
 								Datatools
 							</a>
