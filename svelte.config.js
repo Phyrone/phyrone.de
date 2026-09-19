@@ -51,7 +51,10 @@ const config = {
 	},
 	kit: {
 		adapter: adapter_cloudflare({
-			fallback: 'spa'
+			fallback: 'spa',
+			platformProxy: {
+				persist: false
+			}
 		}),
 		// Enforcing rather than report-only: report-only CSP can only be
 		// delivered as an HTTP header, never via <meta http-equiv>, and this
