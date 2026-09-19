@@ -37,7 +37,6 @@
 				'hover:drop-shadow-lg'
 			]}
 			src={profile_img}
-			role="img"
 			alt="Profilbild von Samuel Laqua"
 		/>
 	</a>

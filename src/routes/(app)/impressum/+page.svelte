@@ -5,6 +5,7 @@
 
 <MetaTags
 	title={m.imprint()}
+	titleTemplate="%s | Phyrone"
 	description="Impressum und rechtliche Angaben gemäß § 5 DDG für phyrone.de."
 	canonical="https://phyrone.de/impressum"
 	openGraph={{

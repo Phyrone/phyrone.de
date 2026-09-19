@@ -8,6 +8,7 @@
 
 <MetaTags
 	title={privacy_policy()}
+	titleTemplate="%s | Phyrone"
 	description="Datenschutzerklärung für phyrone.de und verbundene Onlineangebote."
 	canonical="https://phyrone.de/datenschutz"
 	openGraph={{

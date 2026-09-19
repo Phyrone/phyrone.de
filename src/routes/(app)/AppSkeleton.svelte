@@ -48,12 +48,12 @@
 			<a
 				data-hero-key="imprint"
 				href={resolve('/(app)/impressum')}
-				class="btn btn-link min-h-[44px] dark:text-sky-300">{m.imprint()}</a
+				class="btn btn-link min-h-[44px]">{m.imprint()}</a
 			>
 			<a
 				data-hero-key="privacy"
 				href={resolve('/(app)/datenschutz')}
-				class="btn btn-link min-h-[44px] dark:text-sky-300">{m.privacy_policy()}</a
+				class="btn btn-link min-h-[44px]">{m.privacy_policy()}</a
 			>
 		</footer>
 	</div>

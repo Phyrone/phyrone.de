@@ -8,6 +8,7 @@
 
 <MetaTags
 	title="Blog"
+	titleTemplate="%s | Phyrone"
 	description="Artikel über Softwareentwicklung, Informatik und Technik von Samuel Laqua (Phyrone)."
 	canonical="https://phyrone.de/blog"
 	openGraph={{

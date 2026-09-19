@@ -16,6 +16,7 @@
 
 <MetaTags
 	title={m['utils.datatools.page.title']()}
+	titleTemplate="%s | Phyrone"
 	description="Datatools und interaktive Datenwerkzeuge von Samuel Laqua."
 	canonical="https://phyrone.de/datatools"
 	openGraph={{

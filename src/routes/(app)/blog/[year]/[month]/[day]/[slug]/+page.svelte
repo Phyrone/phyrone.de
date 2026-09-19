@@ -39,6 +39,7 @@
 
 <MetaTags
 	title={post.title}
+	titleTemplate="%s | Phyrone"
 	description={post.description}
 	keywords={post.tags}
 	canonical={postUrl}

@@ -3,6 +3,7 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 
+/.agents
 # Generated — do not format
 project.inlang/
 .content-collections/
