@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 
-@plugin 'daisyui/index.js';
-@plugin 'daisyui/theme/index.js' {
-	name: 'coffee';
+@plugin 'daisyui' {
 	logs: false;
 }
 
@@ -14,10 +12,4 @@
 
 pre.shiki.nord::before {
 	content: none;
-}
-
-.menu a:focus-visible,
-.menu summary:focus-visible {
-	outline: 2px solid currentColor;
-	outline-offset: 2px;
 }

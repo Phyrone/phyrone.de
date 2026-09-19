@@ -24,7 +24,7 @@
 >
 	<a
 		href={resolve('/(app)')}
-		class="focus-visible:outline-primary flex h-12 w-12 items-center justify-center rounded-lg py-1 focus-visible:outline-2 focus-visible:outline-offset-2 sm:mx-auto sm:h-auto sm:w-48 sm:max-w-full sm:p-3"
+		class="max-w-8 py-3 sm:mx-auto sm:w-48 sm:max-w-full sm:p-0 sm:p-3"
 		title="Homepage"
 		aria-label="Zur Startseite"
 	>
@@ -40,83 +40,71 @@
 			alt="Profilbild von Samuel Laqua"
 		/>
 	</a>
-	<nav
-		class="mx-auto w-full max-w-sm flex-auto px-0 sm:mx-0 sm:overflow-auto"
-		aria-label="Hauptnavigation"
+	<ul
+		class="menu menu-lg sm:menu-md sm:menu-vertical mx-auto w-full max-w-sm flex-auto px-0 sm:mx-0 sm:overflow-auto"
 	>
-		<ul class="menu menu-lg sm:menu-md sm:menu-vertical w-full px-0">
-			<li>
-				<a href={resolve('/(app)/blog')} title="Blog">
-					<NewspaperIcon />
-					Blog
-				</a>
-			</li>
-			<li>
-				<details>
-					<summary>
-						<PocketKnifeIcon />
-						Utils
-					</summary>
-					<ul>
-						<li>
-							<a href={resolve('/(app)/datatools')}>
-								<DatabaseZapIcon />
-								Datatools
-							</a>
-						</li>
-					</ul>
-				</details>
-			</li>
-		</ul>
-	</nav>
+		<li>
+			<a class="" href={resolve('/(app)/blog')} title="Blog">
+				<NewspaperIcon />
+				Blog
+			</a>
+		</li>
+		<li>
+			<details>
+				<summary class="">
+					<PocketKnifeIcon />
+					Utils
+				</summary>
+				<ul>
+					<li>
+						<a href={resolve('/(app)/datatools')}>
+							<DatabaseZapIcon />
+							Datatools
+						</a>
+					</li>
+				</ul>
+			</details>
+		</li>
+	</ul>
 	<div class="join mx-auto flex w-full max-w-sm sm:mx-0">
 		<a
 			class={[
-				'btn join-item sm:btn-sm min-h-[44px] flex-auto transition-all sm:min-h-8',
-				'focus-visible:outline-primary hover:bg-black hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2'
+				'btn join-item sm:btn-sm flex-auto transition-all',
+				'hover:bg-black hover:text-white'
 			]}
 			href="https://github.com/phyrone"
 			title="Github"
-			aria-label="GitHub Profil von Phyrone (externer Link)"
+			aria-label="GitHub Profil"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
 			<SimpleIcon icon={siGithub} />
 		</a>
 		<a
-			class={[
-				'btn join-item sm:btn-sm min-h-[44px] flex-auto transition-all sm:min-h-8',
-				'focus-visible:outline-primary hover:bg-[#563ACC] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2'
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#563ACC] hover:text-white']}
 			href="https://mastodon.social/@phyrone"
 			title="Mastodon"
-			aria-label="Mastodon Profil von Phyrone (externer Link)"
+			aria-label="Mastodon Profil"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
 			<SimpleIcon icon={siMastodon} />
 		</a>
 		<a
-			class={[
-				'btn join-item sm:btn-sm min-h-[44px] flex-auto transition-all sm:min-h-8',
-				'focus-visible:outline-primary hover:bg-[#1285FE] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2'
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#1285FE] hover:text-white']}
 			href="https://bsky.app/profile/phyrone.bsky.social"
 			title="Bluesky"
-			aria-label="Bluesky Profil von Phyrone (externer Link)"
+			aria-label="Bluesky Profil"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
 			<SimpleIcon icon={siBluesky} />
 		</a>
 		<a
-			class={[
-				'btn join-item sm:btn-sm min-h-[44px] flex-auto transition-all sm:min-h-8',
-				'focus-visible:outline-primary hover:bg-[#ff0000] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2'
-			]}
+			class={['btn join-item sm:btn-sm flex-auto', 'hover:bg-[#ff0000] hover:text-white']}
 			href="https://www.youtube.com/@phyrone"
 			title="Youtube"
-			aria-label="YouTube Kanal von Phyrone (externer Link)"
+			aria-label="YouTube Kanal"
 			target="_blank"
 			rel="noopener noreferrer"
 		>

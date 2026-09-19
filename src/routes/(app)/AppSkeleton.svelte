@@ -44,16 +44,12 @@
 		<main id="main-content" class="flex-auto">
 			{@render children?.()}
 		</main>
-		<footer class="bottom-0 flex flex-none flex-wrap items-center gap-2 py-2">
-			<a
-				data-hero-key="imprint"
-				href={resolve('/(app)/impressum')}
-				class="btn btn-link min-h-[44px]">{m.imprint()}</a
+		<footer class="bottom-0 flex-none">
+			<a data-hero-key="imprint" href={resolve('/(app)/impressum')} class="btn btn-link"
+				>{m.imprint()}</a
 			>
-			<a
-				data-hero-key="privacy"
-				href={resolve('/(app)/datenschutz')}
-				class="btn btn-link min-h-[44px]">{m.privacy_policy()}</a
+			<a data-hero-key="privacy" href={resolve('/(app)/datenschutz')} class="btn btn-link"
+				>{m.privacy_policy()}</a
 			>
 		</footer>
 	</div>
