@@ -21,7 +21,8 @@
 		"wrangler": "wrangler",
 		"test:unit": "vitest",
 		"test": "pnpm test:unit --run && pnpm test:e2e",
-		"test:e2e": "playwright install && playwright test --pass-with-no-tests"
+		"test:e2e": "playwright install && playwright test --pass-with-no-tests",
+		"skills": "skills"
 	},
 	"devDependencies": {
 		"@content-collections/core": "^0.15.2",
@@ -48,6 +49,7 @@
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
 		"shiki": "^4.4.1",
+		"skills": "^1.7.0",
 		"svelte": "^5.56.8",
 		"svelte-check": "^4.7.4",
 		"tailwindcss": "^4.3.3",
