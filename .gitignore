@@ -1,5 +1,6 @@
 node_modules
 .idea
+.vscode
 .content-collections
 # Output
 .output
@@ -29,3 +30,4 @@ vite.config.ts.timestamp-*
 src/lib/paraglide
 # Playwright
 test-results
+playwright-report
