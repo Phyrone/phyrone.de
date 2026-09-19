@@ -64,7 +64,7 @@ Routes sit under the `(app)` group, which wraps children in `AppSkeleton.svelte`
 
 - Prettier: tabs, single quotes, no trailing commas, 100 cols, with the svelte and tailwind plugins (`.prettierrc`). ESLint has `no-explicit-any` and `ban-ts-comment` disabled.
 - Svelte 5 runes only (`$props`, `$state`) — no `export let`.
-- DaisyUI theme is `coffee`, configured in `src/app.css` via Tailwind 4's CSS-first `@plugin` syntax (there is no `tailwind.config.js`).
+- DaisyUI is configured via Tailwind 4's CSS-first `@plugin` syntax (there is no `tailwind.config.js`).
 - Runtime input validation uses zod.
 - Path aliases (defined in `svelte.config.js`, not `tsconfig.json`): `$lib`, `$styles`, `$assets`, `$posts`, `$components`, `$paraglide`, `$content` (`.content-collections/generated`). Use `post_to_url` for post URLs; relative markdown images are rewritten by `md-images.js`.
 
