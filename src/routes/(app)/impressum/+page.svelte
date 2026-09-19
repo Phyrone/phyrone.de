@@ -1,12 +1,23 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
+	import { MetaTags } from 'svelte-meta-tags';
 </script>
 
-<svelte:head>
-	<title>Phyrone | {m.imprint()}</title>
-</svelte:head>
+<MetaTags
+	title={m.imprint()}
+	description="Impressum und rechtliche Angaben gemäß § 5 DDG für phyrone.de."
+	canonical="https://phyrone.de/impressum"
+	openGraph={{
+		type: 'website',
+		url: 'https://phyrone.de/impressum',
+		title: `${m.imprint()} | Phyrone`,
+		description: 'Impressum und rechtliche Angaben gemäß § 5 DDG für phyrone.de.',
+		siteName: 'Phyrone',
+		locale: 'de_DE'
+	}}
+/>
 
-<main data-hero-key="imprint">
+<div data-hero-key="imprint">
 	<h1>Impressum</h1>
 
 	<h2>Angaben gemäß § 5 DDG</h2>
@@ -87,7 +98,7 @@
 	<a href="https://www.kanzlei-hasselbach.de/rechtsgebiete/familienrecht/"
 		>Kanzlei Hasselbach, Fachanwälte für Familienrecht</a
 	>
-</main>
+</div>
 
 <style>
 	@reference "tailwindcss/theme";

@@ -12,6 +12,7 @@
 	export { default as p } from './c-p.svelte';
 	export { default as img } from './c-img.svelte';
 	export { default as a } from './c-a.svelte';
+	export { default as input } from './c-input.svelte';
 </script>
 
 <script lang="ts">

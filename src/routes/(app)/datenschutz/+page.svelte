@@ -1,15 +1,26 @@
 <script lang="ts">
 	import { privacy_policy } from '$lib/paraglide/messages';
 	import { localizeHref } from '$lib/paraglide/runtime';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	import { base } from '$app/paths';
 </script>
 
-<svelte:head>
-	<title>Phyrone | {privacy_policy()}</title>
-</svelte:head>
+<MetaTags
+	title={privacy_policy()}
+	description="Datenschutzerklärung für phyrone.de und verbundene Onlineangebote."
+	canonical="https://phyrone.de/datenschutz"
+	openGraph={{
+		type: 'website',
+		url: 'https://phyrone.de/datenschutz',
+		title: `${privacy_policy()} | Phyrone`,
+		description: 'Datenschutzerklärung für phyrone.de und verbundene Onlineangebote.',
+		siteName: 'Phyrone',
+		locale: 'de_DE'
+	}}
+/>
 
-<main data-hero-key="privacy">
+<div data-hero-key="privacy">
 	<h1>Datenschutzerklärung</h1>
 	<h2 id="m716">Präambel</h2>
 	<p>
@@ -841,7 +852,7 @@
 			>Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a
 		>
 	</p>
-</main>
+</div>
 
 <style>
 	@reference "tailwindcss/theme";

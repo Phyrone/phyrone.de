@@ -33,7 +33,12 @@ const config = {
 							lang,
 							theme,
 							structure: 'classic',
-							colorReplacements: {},
+							colorReplacements: {
+								nord: {
+									'#616E88': '#9aa7bd',
+									'#616e88': '#9aa7bd'
+								}
+							},
 							meta: {
 								'data-code-lang': lang,
 								'data-code': code
@@ -67,7 +72,7 @@ const config = {
 				'script-src': ['self'],
 				'style-src': ['self', 'unsafe-inline'],
 				'img-src': ['self', 'data:', 'blob:'],
-				'font-src': ['self'],
+				'font-src': ['self', 'data:'],
 				'connect-src': ['self'],
 				'frame-src': ['https://www.youtube-nocookie.com'],
 				'object-src': ['none'],
@@ -91,7 +96,7 @@ const config = {
 		prerender: {
 			concurrency: 16,
 			handleUnseenRoutes: 'fail',
-			entries: ['*', '/.well-known/matrix/server', '/.well-known/matrix/client']
+			entries: ['*', '/.well-known/matrix/server', '/.well-known/matrix/client', '/sitemap.xml']
 		}
 	},
 

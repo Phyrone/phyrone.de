@@ -2,4 +2,4 @@
 	let { children, id } = $props();
 </script>
 
-<h5 class="text-xl" {id}>{@render children?.()}</h5>
+<h6 class="text-base font-semibold" {id}>{@render children?.()}</h6>

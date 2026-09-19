@@ -11,6 +11,13 @@
 	let { children }: Props = $props();
 </script>
 
+<a
+	href="#main-content"
+	class="focus:bg-base-200 focus:text-base-content focus:outline-primary sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:px-4 focus:py-2 focus:shadow-lg focus:outline-2"
+>
+	Zum Hauptinhalt springen
+</a>
+
 <div class="relative flex flex-col sm:flex-row">
 	<Sidebar />
 	<div
@@ -34,15 +41,19 @@
 			'lg:mx-4'
 		]}
 	>
-		<dev class="flex-auto">
+		<main id="main-content" class="flex-auto">
 			{@render children?.()}
-		</dev>
-		<footer class="bottom-0 flex-none">
-			<a data-hero-key="imprint" href={resolve('/(app)/impressum')} class="btn btn-link"
-				>{m.imprint()}</a
+		</main>
+		<footer class="bottom-0 flex flex-none flex-wrap items-center gap-2 py-2">
+			<a
+				data-hero-key="imprint"
+				href={resolve('/(app)/impressum')}
+				class="btn btn-link min-h-[44px] dark:text-sky-300">{m.imprint()}</a
 			>
-			<a data-hero-key="privacy" href={resolve('/(app)/datenschutz')} class="btn btn-link"
-				>{m.privacy_policy()}</a
+			<a
+				data-hero-key="privacy"
+				href={resolve('/(app)/datenschutz')}
+				class="btn btn-link min-h-[44px] dark:text-sky-300">{m.privacy_policy()}</a
 			>
 		</footer>
 	</div>
