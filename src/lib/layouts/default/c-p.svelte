@@ -2,4 +2,4 @@
 	let { children } = $props();
 </script>
 
-<p class="">{@render children?.()}</p>
+<p class="my-4 leading-relaxed">{@render children?.()}</p>

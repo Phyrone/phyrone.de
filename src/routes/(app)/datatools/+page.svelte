@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '$styles/fonts/jetbrains-mono.css';
 	//import { datatoolsNodeTypes } from '$lib/components/datatools/datatools';
 	//import { SvelteFlow, MiniMap, Controls, Background, Panel } from '@xyflow/svelte';
 	//import type { Node, Edge } from '@xyflow/svelte';

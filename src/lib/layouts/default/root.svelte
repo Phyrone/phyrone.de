@@ -13,6 +13,12 @@
 	export { default as img } from './c-img.svelte';
 	export { default as a } from './c-a.svelte';
 	export { default as input } from './c-input.svelte';
+	export { default as ul } from './c-ul.svelte';
+	export { default as ol } from './c-ol.svelte';
+	export { default as blockquote } from './c-blockquote.svelte';
+	export { default as code } from './c-code.svelte';
+	export { default as hr } from './c-hr.svelte';
+	export { default as table } from './c-table.svelte';
 </script>
 
 <script lang="ts">

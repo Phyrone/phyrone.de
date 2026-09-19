@@ -38,11 +38,14 @@
 		<h2 class="card-title truncate">{post.title}</h2>
 		{#if post.date}
 			{@const localized_date = dayjs(post.date).locale(getLocale())}
-			<h3 class={['text-xs', 'truncate']}>
-				<div class="tooltip tooltip-right tooltip-open">
-					<div class="tooltip-content">{localized_date.format('LLLL')}</div>
-					<span>{localized_date.fromNow()}</span>
-				</div>
+			<h3 class="text-xs">
+				<time
+					datetime={post.date.toISOString()}
+					class="tooltip tooltip-right"
+					data-tip={localized_date.format('LLLL')}
+				>
+					{localized_date.fromNow()}
+				</time>
 			</h3>
 		{/if}
 		{#if post.description}

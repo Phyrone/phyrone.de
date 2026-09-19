@@ -4,6 +4,7 @@ pnpm-lock.yaml
 yarn.lock
 
 /.agents
+/.gemini
 # Generated — do not format
 project.inlang/
 .content-collections/

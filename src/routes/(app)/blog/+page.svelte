@@ -4,6 +4,8 @@
 	import BlogPostCard from './BlogPostCard.svelte';
 	import { allPosts } from '$content';
 	import { MetaTags, JsonLd } from 'svelte-meta-tags';
+
+	let posts = $derived([...allPosts].sort((a, b) => b.date.getTime() - a.date.getTime()));
 </script>
 
 <MetaTags
@@ -33,8 +35,10 @@
 />
 
 <h1 class={['text-6xl', 'mb-4', 'font-jetbrains-mono', 'select-none']}>Blog</h1>
-<div class={['flex', 'flex-col']}>
-	{#each allPosts as post (post._file)}
+<div class={['flex', 'flex-col', 'gap-4']}>
+	{#each posts as post (post._file)}
 		<BlogPostCard {post} />
+	{:else}
+		<p class="opacity-70">Noch keine Beiträge vorhanden.</p>
 	{/each}
 </div>

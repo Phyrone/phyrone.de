@@ -27,9 +27,9 @@
 
 <svelte:boundary {failed}>
 	{#if typeof src === 'string'}
-		<img class="rounded-lg" {src} {alt} />
+		<img class="mx-auto my-4 h-auto max-w-full rounded-lg" {src} {alt} />
 	{:else if typeof src === 'object'}
-		<enhanced:img class="rounded-lg" {src} {alt} />
+		<enhanced:img class="mx-auto my-4 h-auto max-w-full rounded-lg" {src} {alt} />
 	{:else}
 		{@render unknown()}
 	{/if}

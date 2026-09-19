@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import './styles/fonts/jetbrains-mono.css';
+@import './styles/fonts/pixelify.css';
 
 @plugin 'daisyui' {
 	logs: false;

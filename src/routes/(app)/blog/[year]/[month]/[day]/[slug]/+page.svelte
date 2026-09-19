@@ -3,6 +3,8 @@
 	import { get_image } from '$lib/images.ts';
 	import { MetaTags, JsonLd, type OpenGraph } from 'svelte-meta-tags';
 	import { post_to_url } from '$lib/posts';
+	import dayjs from '$lib/date.ts';
+	import { getLocale } from '$paraglide/runtime';
 
 	type Props = {
 		data: PageData;
@@ -13,6 +15,7 @@
 	let thumbnail = $derived(get_image(post.thumbnail, post._file));
 	let postUrl = $derived('https://phyrone.de' + post_to_url(post));
 	let ogImage = $derived(thumbnail ? 'https://phyrone.de' + thumbnail.img.src : undefined);
+	let localized_date = $derived(dayjs(post.date).locale(getLocale()));
 
 	const opengraph = $derived({
 		type: 'article',
@@ -70,21 +73,33 @@
 	}}
 />
 
-<div data-hero-key="post-body-{btoa(post._id)}" class="max-w-5xl">
-	<div class="grid place-content-center" data-hero-key="post-thumbnail-{btoa(post._id)}">
-		{#if thumbnail}
+<div data-hero-key="post-body-{btoa(post._id)}" class="mx-auto max-w-3xl">
+	{#if thumbnail}
+		<div class="grid place-content-center" data-hero-key="post-thumbnail-{btoa(post._id)}">
 			<enhanced:img
 				class="m-4 h-48 w-fit max-w-64 rounded-lg object-contain md:m-0 md:h-full md:rounded-none"
 				src={thumbnail}
 				alt="thumbnail for {post.slug}"
 			/>
-		{/if}
-	</div>
+		</div>
+	{/if}
 	<div data-hero-key="post-meta-{btoa(post._id)}">
-		<h1 class={['text-7xl', 'font-bold']}>{post.title}</h1>
+		<h1 class="text-4xl font-bold sm:text-6xl">{post.title}</h1>
+		<div class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm opacity-70">
+			{#if post.date}
+				<time datetime={post.date.toISOString()}>{localized_date.format('LL')}</time>
+			{/if}
+			{#if post.tags.length}
+				<div class="flex flex-wrap gap-1">
+					{#each post.tags as tag (tag)}
+						<span class="badge badge-sm badge-ghost">{tag}</span>
+					{/each}
+				</div>
+			{/if}
+		</div>
 	</div>
 	<div class="divider"></div>
-	<article data-hero-key="post-content-{btoa(post._id)}">
+	<article class="max-w-none" data-hero-key="post-content-{btoa(post._id)}">
 		<data.content />
 	</article>
 </div>
