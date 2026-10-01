@@ -25,7 +25,7 @@ importers:
         version: 1.7.0(svelte@5.57.1(@typescript-eslint/types@8.70.1))
       bits-ui:
         specifier: ^2.18.1
-        version: 2.19.3(@internationalized/date@3.12.3)(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))
+        version: 2.19.3(@internationalized/date@3.12.4)(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))
       dayjs:
         specifier: ^1.11.21
         version: 1.11.23
@@ -49,7 +49,7 @@ importers:
         version: 0.37.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(zod@4.6.5)
       simple-icons:
         specifier: ^16.28.0
-        version: 16.32.0
+        version: 16.33.0
       svelte-meta-tags:
         specifier: ^5.0.2
         version: 5.0.2(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)
@@ -167,7 +167,7 @@ importers:
         version: 5.1.0
       unlighthouse:
         specifier: ^0.18.0
-        version: 0.18.1(7f2ca7d7802f8d386516040dac5564e1)
+        version: 0.18.1(b5bf3fb0b48aa58cf14ed723c4f9b247)
       vite:
         specifier: ^8.2.0
         version: 8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)
@@ -1474,8 +1474,14 @@ packages:
   '@internationalized/date@3.12.3':
     resolution: {integrity: sha512-fuLX+3ZKLsxI73y8b01EG/WjHb6gE6weCqlfawPO27kBWGMh9G1yH6Csv1uU7/cac9H2GHmOMt6CjmuQ1aia4Q==}
 
+  '@internationalized/date@3.12.4':
+    resolution: {integrity: sha512-M1dEn4c1U1HsSlaVR8upZtSqvXrTkHDfv18H01uCSJyjVLDxnBR38v/fMxecmlwXKR4i9HeZcmgQAPE6A+aGJQ==}
+
   '@internationalized/number@3.6.7':
     resolution: {integrity: sha512-3ji1fcrT+FPAK86UqEhB/psHixYo6niWPJtt7+qRaYFynt/BaJG8GhAPimtWUpEiVSTq8ZM8L5psMxGquiB/Vg==}
+
+  '@internationalized/number@3.6.8':
+    resolution: {integrity: sha512-8UmMFia46DUt+k97zKd9fKWXcWHR+k8ae3eYzILETuT2KbIvLyOfac7zesw+sJdRAAZ7Q9pM1Mk22aXp2LD0Ig==}
 
   '@isaacs/fs-minipass@4.0.1':
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
@@ -1596,8 +1602,6 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@inertiajs/vue3': ^2.0.7 || ^3
-      '@internationalized/date': ^3
-      '@internationalized/number': ^3
       '@nuxt/content': ^3
       '@tiptap/core': ^3
       '@tiptap/extension-bubble-menu': ^3
@@ -1627,10 +1631,6 @@ packages:
       zod: ^3.24.0 || ^4
     peerDependenciesMeta:
       '@inertiajs/vue3':
-        optional: true
-      '@internationalized/date':
-        optional: true
-      '@internationalized/number':
         optional: true
       '@nuxt/content':
         optional: true
@@ -3080,11 +3080,6 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
-    peerDependencies:
-      ajv: ^8.0.0
-    peerDependenciesMeta:
-      ajv:
-        optional: true
 
   ajv@6.15.0:
     resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
@@ -5379,8 +5374,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-icons@16.32.0:
-    resolution: {integrity: sha512-BwqATHxAulx7X6kNdTkecy7PBjLkgtAHcgrwYLd9iA+cD2At9DzhJwdwaSELk2+aZe01IfiM/Wxtyp68Dvup2A==}
+  simple-icons@16.33.0:
+    resolution: {integrity: sha512-z14u6A8ngAg9mgERRsNO8YkjIMefehIpBk7A8Dz3Gd91945qFP19MLPSHgV4z8P5u/MRYd5e07OTzaDoB4d6qA==}
     engines: {node: '>=0.12.18'}
 
   sirv@3.0.2:
@@ -7290,7 +7285,15 @@ snapshots:
     dependencies:
       '@swc/helpers': 0.5.21
 
+  '@internationalized/date@3.12.4':
+    dependencies:
+      '@swc/helpers': 0.5.21
+
   '@internationalized/number@3.6.7':
+    dependencies:
+      '@swc/helpers': 0.5.21
+
+  '@internationalized/number@3.6.8':
     dependencies:
       '@swc/helpers': 0.5.21
 
@@ -7590,10 +7593,12 @@ snapshots:
       pkg-types: 2.3.1
       std-env: 4.2.0
 
-  '@nuxt/ui@4.11.2(b045f3e85bd45927663450c4386f57b6)':
+  '@nuxt/ui@4.11.2(dda78f72df74af43d8c73b26e26ed1f9)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.3(vue@3.5.43(typescript@6.0.3))
+      '@internationalized/date': 3.12.4
+      '@internationalized/number': 3.6.8
       '@nuxt/fonts': 0.14.0(esbuild@0.28.1)(magic-string@1.4.2)(rolldown@1.2.11)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
       '@nuxt/icon': 2.5.1(magic-string@1.4.2)(rolldown@1.2.11)(unplugin@3.4.0(esbuild@0.28.1)(rolldown@1.2.11)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))(vue@3.5.43(typescript@6.0.3))
       '@nuxt/kit': 4.5.2(magic-string@1.4.2)(rolldown@1.2.11)(unplugin@3.4.0(esbuild@0.28.1)(rolldown@1.2.11)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))
@@ -7657,8 +7662,6 @@ snapshots:
       vaul-vue: 0.4.1(reka-ui@2.10.4(vue@3.5.43(typescript@6.0.3)))(vue@3.5.43(typescript@6.0.3))
       vue-component-type-helpers: 3.3.11
     optionalDependencies:
-      '@internationalized/date': 3.12.3
-      '@internationalized/number': 3.6.7
       valibot: 1.4.2(typescript@6.0.3)
       zod: 4.6.5
     transitivePeerDependencies:
@@ -8830,12 +8833,12 @@ snapshots:
       - rollup
       - unloader
 
-  '@unlighthouse/cli@0.18.1(697cfdc904f434a665a1c99a6ccc4ad1)':
+  '@unlighthouse/cli@0.18.1(f911dbf131a2685e9023a1930f4dfe1d)':
     dependencies:
       '@lhci/utils': 0.15.1(supports-color@10.2.2)
-      '@unlighthouse/client': 0.18.1(6d34d9914a0e6b9f2938f8fc1c41e7db)
-      '@unlighthouse/core': 0.18.1(a54f17bb50f8e156e6405ce8f32195d5)
-      '@unlighthouse/server': 0.18.1(697cfdc904f434a665a1c99a6ccc4ad1)
+      '@unlighthouse/client': 0.18.1(84f1d2e7d2ffdf9d511df4684221fa91)
+      '@unlighthouse/core': 0.18.1(06b34b6655c532fe7de663363716a7b5)
+      '@unlighthouse/server': 0.18.1(f911dbf131a2685e9023a1930f4dfe1d)
       cac: 7.0.0
       consola: 3.4.2
       defu: 6.1.7
@@ -8854,8 +8857,6 @@ snapshots:
       - '@deno/kv'
       - '@farmfe/core'
       - '@inertiajs/vue3'
-      - '@internationalized/date'
-      - '@internationalized/number'
       - '@netlify/blobs'
       - '@nuxt/content'
       - '@opentelemetry/core'
@@ -8940,9 +8941,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.18.1(6d34d9914a0e6b9f2938f8fc1c41e7db)':
+  '@unlighthouse/client@0.18.1(84f1d2e7d2ffdf9d511df4684221fa91)':
     dependencies:
-      '@nuxt/ui': 4.11.2(b045f3e85bd45927663450c4386f57b6)
+      '@nuxt/ui': 4.11.2(dda78f72df74af43d8c73b26e26ed1f9)
       '@tailwindcss/vite': 4.3.3(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
       defu: 6.1.7
       fuse.js: 7.5.0
@@ -8962,8 +8963,6 @@ snapshots:
       - '@deno/kv'
       - '@farmfe/core'
       - '@inertiajs/vue3'
-      - '@internationalized/date'
-      - '@internationalized/number'
       - '@netlify/blobs'
       - '@nuxt/content'
       - '@oxc-project/types'
@@ -9032,11 +9031,11 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/core@0.18.1(a54f17bb50f8e156e6405ce8f32195d5)':
+  '@unlighthouse/core@0.18.1(06b34b6655c532fe7de663363716a7b5)':
     dependencies:
       '@clack/prompts': 1.8.1
       '@puppeteer/browsers': 3.2.3(yauzl@2.10.0)
-      '@unlighthouse/client': 0.18.1(6d34d9914a0e6b9f2938f8fc1c41e7db)
+      '@unlighthouse/client': 0.18.1(84f1d2e7d2ffdf9d511df4684221fa91)
       c12: 3.3.4
       chrome-launcher: 1.2.1(supports-color@10.2.2)
       consola: 3.4.2
@@ -9073,8 +9072,6 @@ snapshots:
       - '@deno/kv'
       - '@farmfe/core'
       - '@inertiajs/vue3'
-      - '@internationalized/date'
-      - '@internationalized/number'
       - '@netlify/blobs'
       - '@nuxt/content'
       - '@opentelemetry/core'
@@ -9152,9 +9149,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/server@0.18.1(697cfdc904f434a665a1c99a6ccc4ad1)':
+  '@unlighthouse/server@0.18.1(f911dbf131a2685e9023a1930f4dfe1d)':
     dependencies:
-      '@unlighthouse/core': 0.18.1(a54f17bb50f8e156e6405ce8f32195d5)
+      '@unlighthouse/core': 0.18.1(06b34b6655c532fe7de663363716a7b5)
       h3: 1.15.11
       listhen: 1.10.1(@parcel/watcher@2.6.0)
     transitivePeerDependencies:
@@ -9168,8 +9165,6 @@ snapshots:
       - '@deno/kv'
       - '@farmfe/core'
       - '@inertiajs/vue3'
-      - '@internationalized/date'
-      - '@internationalized/number'
       - '@netlify/blobs'
       - '@nuxt/content'
       - '@opentelemetry/core'
@@ -9443,8 +9438,8 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ajv-formats@3.0.1(ajv@8.20.0):
-    optionalDependencies:
+  ajv-formats@3.0.1:
+    dependencies:
       ajv: 8.20.0
 
   ajv@6.15.0:
@@ -9548,11 +9543,11 @@ snapshots:
 
   binaryen@130.0.0: {}
 
-  bits-ui@2.19.3(@internationalized/date@3.12.3)(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1)):
+  bits-ui@2.19.3(@internationalized/date@3.12.4)(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1)):
     dependencies:
       '@floating-ui/core': 1.8.0
       '@floating-ui/dom': 1.8.0
-      '@internationalized/date': 3.12.3
+      '@internationalized/date': 3.12.4
       esm-env: 1.2.2
       runed: 0.35.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.1(@typescript-eslint/types@8.70.1))(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.1(@typescript-eslint/types@8.70.1))
       svelte: 5.57.1(@typescript-eslint/types@8.70.1)
@@ -10709,7 +10704,7 @@ snapshots:
       '@paulirish/trace_engine': 0.0.65
       '@sentry/node': 10.69.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(supports-color@10.2.2)
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       axe-core: 4.13.0
       chrome-launcher: 1.2.1(supports-color@10.2.2)
       configstore: 7.1.0
@@ -11892,7 +11887,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-icons@16.32.0: {}
+  simple-icons@16.33.0: {}
 
   sirv@3.0.2:
     dependencies:
@@ -12370,11 +12365,11 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unlighthouse@0.18.1(7f2ca7d7802f8d386516040dac5564e1):
+  unlighthouse@0.18.1(b5bf3fb0b48aa58cf14ed723c4f9b247):
     dependencies:
-      '@unlighthouse/cli': 0.18.1(697cfdc904f434a665a1c99a6ccc4ad1)
-      '@unlighthouse/client': 0.18.1(6d34d9914a0e6b9f2938f8fc1c41e7db)
-      '@unlighthouse/core': 0.18.1(a54f17bb50f8e156e6405ce8f32195d5)
+      '@unlighthouse/cli': 0.18.1(f911dbf131a2685e9023a1930f4dfe1d)
+      '@unlighthouse/client': 0.18.1(84f1d2e7d2ffdf9d511df4684221fa91)
+      '@unlighthouse/core': 0.18.1(06b34b6655c532fe7de663363716a7b5)
     optionalDependencies:
       puppeteer: 24.42.0(supports-color@10.2.2)(typescript@6.0.3)
       vue: 3.5.43(typescript@6.0.3)
@@ -12389,8 +12384,6 @@ snapshots:
       - '@deno/kv'
       - '@farmfe/core'
       - '@inertiajs/vue3'
-      - '@internationalized/date'
-      - '@internationalized/number'
       - '@netlify/blobs'
       - '@nuxt/content'
       - '@opentelemetry/core'
