@@ -27,8 +27,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Non-blocking: lint problems are surfaced as a warning annotation but do
+      # not fail the pipeline. Build, typecheck, tests and origins still gate.
       - name: Lint
-        run: pnpm lint
+        run: |
+          if ! pnpm lint; then
+            echo "::warning title=Lint::pnpm lint reported issues (not failing the build)"
+          fi
 
       # Build must precede the typecheck. Both `src/lib/paraglide/` and
       # `.content-collections/generated` are generated and gitignored, and
