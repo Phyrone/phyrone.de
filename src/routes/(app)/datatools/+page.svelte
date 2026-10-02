@@ -16,13 +16,13 @@
 <MetaTags
 	title={m['utils.datatools.page.title']()}
 	titleTemplate="%s | Phyrone"
-	description="Datatools und interaktive Datenwerkzeuge von Samuel Laqua."
+	description="Datatools und interaktive Datenwerkzeuge von Phyrone."
 	canonical="https://phyrone.de/datatools"
 	openGraph={{
 		type: 'website',
 		url: 'https://phyrone.de/datatools',
 		title: `${m['utils.datatools.page.title']()} | Phyrone`,
-		description: 'Datatools und interaktive Datenwerkzeuge von Samuel Laqua.',
+		description: 'Datatools und interaktive Datenwerkzeuge von Phyrone.',
 		siteName: 'Phyrone',
 		locale: 'de_DE'
 	}}

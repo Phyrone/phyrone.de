@@ -21,13 +21,13 @@ test.describe('SEO & Metadata', () => {
 		await page.goto('/');
 
 		// Title & canonical
-		await expect(page).toHaveTitle(/Samuel Laqua.*Phyrone/);
+		await expect(page).toHaveTitle(/Phyrone/);
 		const canonical = page.locator('link[rel="canonical"]');
 		await expect(canonical).toHaveAttribute('href', 'https://phyrone.de');
 
 		// OpenGraph
 		const ogTitle = page.locator('meta[property="og:title"]');
-		await expect(ogTitle).toHaveAttribute('content', /Samuel Laqua/);
+		await expect(ogTitle).toHaveAttribute('content', /Phyrone/);
 		const ogUrl = page.locator('meta[property="og:url"]');
 		await expect(ogUrl).toHaveAttribute('content', 'https://phyrone.de');
 
@@ -45,7 +45,7 @@ test.describe('SEO & Metadata', () => {
 
 		const person = schemas.find((s) => s['@type'] === 'Person');
 		expect(person).toBeDefined();
-		expect(person?.name).toBe('Samuel Laqua');
+		expect(person?.name).toBe('Phyrone');
 	});
 
 	test('Blog index has valid metadata and Blog schema', async ({ page }) => {

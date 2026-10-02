@@ -24,7 +24,7 @@
 		description: post.description,
 		article: {
 			publishedTime: post.date.toISOString(),
-			authors: ['Samuel Laqua'],
+			authors: ['Phyrone'],
 			tags: post.tags
 		},
 		images: ogImage
@@ -65,7 +65,7 @@
 		url: postUrl,
 		author: {
 			'@type': 'Person',
-			name: 'Samuel Laqua',
+			name: 'Phyrone',
 			url: 'https://phyrone.de'
 		},
 		image: ogImage,

@@ -4,16 +4,16 @@
 </script>
 
 <MetaTags
-	title="Samuel Laqua (Phyrone)"
+	title="Phyrone"
 	titleTemplate="%s"
-	description="Persönliche Webseite und Blog von Samuel Laqua (Phyrone) – Informatikstudent an der HTWK Leipzig und Softwareentwickler."
+	description="Persönliche Webseite und Blog von Phyrone – Informatikstudent an der HTWK Leipzig und Softwareentwickler."
 	canonical="https://phyrone.de"
 	openGraph={{
 		type: 'website',
 		url: 'https://phyrone.de',
-		title: 'Samuel Laqua (Phyrone)',
+		title: ' Phyrone',
 		description:
-			'Persönliche Webseite und Blog von Samuel Laqua (Phyrone) – Informatikstudent an der HTWK Leipzig und Softwareentwickler.',
+			'Persönliche Webseite und Blog von Phyrone – Informatikstudent an der HTWK Leipzig und Softwareentwickler.',
 		siteName: 'Phyrone',
 		locale: 'de_DE'
 	}}
@@ -25,12 +25,11 @@
 			'@type': 'WebSite',
 			name: 'Phyrone',
 			url: 'https://phyrone.de',
-			description: 'Persönliche Webseite und Blog von Samuel Laqua (Phyrone)'
+			description: 'Persönliche Webseite und Blog von Phyrone'
 		},
 		{
 			'@type': 'Person',
-			name: 'Samuel Laqua',
-			alternateName: 'Phyrone',
+			name: 'Phyrone',
 			url: 'https://phyrone.de',
 			jobTitle: 'Informatikstudent & Softwareentwickler',
 			alumniOf: {

@@ -37,7 +37,7 @@
 				'hover:drop-shadow-lg'
 			]}
 			src={profile_img}
-			alt="Profilbild von Samuel Laqua"
+			alt="Profilbild von Phyrone"
 		/>
 	</a>
 	<ul

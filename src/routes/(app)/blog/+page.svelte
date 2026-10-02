@@ -11,14 +11,13 @@
 <MetaTags
 	title="Blog"
 	titleTemplate="%s | Phyrone"
-	description="Artikel über Softwareentwicklung, Informatik und Technik von Samuel Laqua (Phyrone)."
+	description="Artikel über Softwareentwicklung, Informatik und Technik von Phyrone."
 	canonical="https://phyrone.de/blog"
 	openGraph={{
 		type: 'website',
 		url: 'https://phyrone.de/blog',
 		title: 'Blog | Phyrone',
-		description:
-			'Artikel über Softwareentwicklung, Informatik und Technik von Samuel Laqua (Phyrone).',
+		description: 'Artikel über Softwareentwicklung, Informatik und Technik von Phyrone.',
 		siteName: 'Phyrone',
 		locale: 'de_DE'
 	}}
@@ -28,8 +27,7 @@
 	schema={{
 		'@type': 'Blog',
 		name: 'Phyrone Blog',
-		description:
-			'Artikel über Softwareentwicklung, Informatik und Technik von Samuel Laqua (Phyrone).',
+		description: 'Artikel über Softwareentwicklung, Informatik und Technik von Phyrone.',
 		url: 'https://phyrone.de/blog'
 	}}
 />
