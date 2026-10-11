@@ -142,8 +142,8 @@ importers:
         specifier: ^2.0.6
         version: 2.0.6
       sv:
-        specifier: ^0.17.1
-        version: 0.17.1
+        specifier: ^1.0.0
+        version: 1.1.1
       svelte:
         specifier: ^5.56.8
         version: 5.57.2(@typescript-eslint/types@8.71.1)
@@ -2347,8 +2347,8 @@ packages:
     resolution: {integrity: sha512-VT3qmUb8pRV2QrZjd8iAmtg8lf4W0TIjZbvXtz5MKei/q96teWZgGJyyidJzOjzZzvdq616eSRVeMYIQChUTAQ==}
     engines: {node: '>= 18.0.0'}
 
-  '@sveltejs/sv-utils@0.3.3':
-    resolution: {integrity: sha512-K6Voe+/4Ry6o3QTFdG4cNkdgW9kvbkJuRyyIyUbSVkuJUVz4jCdvYNuDCBNYC1mpxBFi7nuulpOeuqRjldZXRA==}
+  '@sveltejs/sv-utils@1.0.2':
+    resolution: {integrity: sha512-iFK45T+Je0wswAtJ1sH2OtdpcsPDYlbwwO9joGKcEHsziZAKWaR9HjVMBkZkmjc+cu/uCJIemoV1tg4e25vHUQ==}
 
   '@sveltejs/vite-plugin-svelte@7.3.1':
     resolution: {integrity: sha512-ZPsLN8B1e/En+Ak5s4V7srFDT532oS0qieLsQwu63NGKsS+iAjoO2Js1BochlHlglcU+Pt7WAO3C5Ee+4f6gVA==}
@@ -5478,8 +5478,8 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
-  sv@0.17.1:
-    resolution: {integrity: sha512-h8kB4mIpxiZKPd8CxxpMjBjGXGYlI5KKAwIFccXxWYJEUO9dVomvVSZGnbWQV1+dN+KJ2kzvsVjpJ+aTrYQ0xg==}
+  sv@1.1.1:
+    resolution: {integrity: sha512-oacW2Ju3nY4wGTsGgMFmy7QbyuEuX6hKfqhOTWbUWJdeyScoJvvDYFCue2hfk8AUS1kJO+HGv+tvw16DSxmE8w==}
     hasBin: true
 
   svelte-check@4.7.6:
@@ -8247,7 +8247,7 @@ snapshots:
 
   '@sveltejs/load-config@0.2.3': {}
 
-  '@sveltejs/sv-utils@0.3.3': {}
+  '@sveltejs/sv-utils@1.0.2': {}
 
   '@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.1))(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.1)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))':
     dependencies:
@@ -11980,9 +11980,9 @@ snapshots:
       has-flag: 4.0.0
     optional: true
 
-  sv@0.17.1:
+  sv@1.1.1:
     dependencies:
-      '@sveltejs/sv-utils': 0.3.3
+      '@sveltejs/sv-utils': 1.0.2
 
   svelte-check@4.7.6(picomatch@4.0.5)(svelte@5.57.2(@typescript-eslint/types@8.71.1))(typescript@6.0.3):
     dependencies:
