@@ -46,7 +46,7 @@ importers:
         version: 9.0.5
       runed:
         specifier: ^0.37.1
-        version: 0.37.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(zod@4.6.6)
+        version: 0.37.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(zod@4.6.7)
       simple-icons:
         specifier: ^16.28.0
         version: 16.35.0
@@ -58,7 +58,7 @@ importers:
         version: 0.12.0(svelte@5.57.2(@typescript-eslint/types@8.71.2))
       zod:
         specifier: ^4.4.3
-        version: 4.6.6
+        version: 4.6.7
     devDependencies:
       '@axe-core/playwright':
         specifier: ^4.13.0
@@ -170,7 +170,7 @@ importers:
         version: 5.1.0
       unlighthouse:
         specifier: ^0.19.0
-        version: 0.19.1(d719a5c3b6af045801665f8449f35de0)
+        version: 0.19.1(974f71cb696cdb3d60defda8f55e3c9f)
       vite:
         specifier: ^8.2.0
         version: 8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)
@@ -6365,8 +6365,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.6.6:
-    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -7577,7 +7577,7 @@ snapshots:
       pkg-types: 2.3.1
       std-env: 4.2.0
 
-  '@nuxt/ui@4.11.2(efa312adfadb7b001f6f33915ecbcc9c)':
+  '@nuxt/ui@4.11.2(154028a5c6b9738307364dc21a2f03b3)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.3(vue@3.5.43(typescript@6.0.3))
@@ -7647,7 +7647,7 @@ snapshots:
       vue-component-type-helpers: 3.3.11
     optionalDependencies:
       valibot: 1.4.2(typescript@6.0.3)
-      zod: 4.6.6
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -8819,12 +8819,12 @@ snapshots:
       - rollup
       - unloader
 
-  '@unlighthouse/cli@0.19.1(8dbc30aeccc625e7890298d439bf06d7)':
+  '@unlighthouse/cli@0.19.1(7653105c2af09afd78a8b658ab6efaa9)':
     dependencies:
       '@lhci/utils': 0.15.1(supports-color@10.2.2)
-      '@unlighthouse/client': 0.19.1(8bb65f661b2b0e7fb5e7ba86ec73f223)
-      '@unlighthouse/core': 0.19.1(7939e6ba9ed266394ba5fb185456cf58)
-      '@unlighthouse/server': 0.19.1(8dbc30aeccc625e7890298d439bf06d7)
+      '@unlighthouse/client': 0.19.1(be62a5a87e4fe64f74dbeccffc72a2c9)
+      '@unlighthouse/core': 0.19.1(cbd64fa4355c1ca192b398894a18e257)
+      '@unlighthouse/server': 0.19.1(7653105c2af09afd78a8b658ab6efaa9)
       cac: 7.0.0
       consola: 3.4.2
       defu: 6.1.7
@@ -8927,9 +8927,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.19.1(8bb65f661b2b0e7fb5e7ba86ec73f223)':
+  '@unlighthouse/client@0.19.1(be62a5a87e4fe64f74dbeccffc72a2c9)':
     dependencies:
-      '@nuxt/ui': 4.11.2(efa312adfadb7b001f6f33915ecbcc9c)
+      '@nuxt/ui': 4.11.2(154028a5c6b9738307364dc21a2f03b3)
       '@tailwindcss/vite': 4.3.3(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
       defu: 6.1.7
       fuse.js: 7.5.0
@@ -9017,11 +9017,11 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/core@0.19.1(7939e6ba9ed266394ba5fb185456cf58)':
+  '@unlighthouse/core@0.19.1(cbd64fa4355c1ca192b398894a18e257)':
     dependencies:
       '@clack/prompts': 1.8.1
       '@puppeteer/browsers': 3.2.3(yauzl@2.10.0)
-      '@unlighthouse/client': 0.19.1(8bb65f661b2b0e7fb5e7ba86ec73f223)
+      '@unlighthouse/client': 0.19.1(be62a5a87e4fe64f74dbeccffc72a2c9)
       c12: 3.3.4
       chrome-launcher: 1.2.1(supports-color@10.2.2)
       consola: 3.4.2
@@ -9135,9 +9135,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/server@0.19.1(8dbc30aeccc625e7890298d439bf06d7)':
+  '@unlighthouse/server@0.19.1(7653105c2af09afd78a8b658ab6efaa9)':
     dependencies:
-      '@unlighthouse/core': 0.19.1(7939e6ba9ed266394ba5fb185456cf58)
+      '@unlighthouse/core': 0.19.1(cbd64fa4355c1ca192b398894a18e257)
       h3: 1.15.11
       listhen: 1.10.1(@parcel/watcher@2.6.0)
     transitivePeerDependencies:
@@ -11612,7 +11612,7 @@ snapshots:
     optionalDependencies:
       '@sveltejs/kit': 2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
 
-  runed@0.37.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(zod@4.6.6):
+  runed@0.37.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(zod@4.6.7):
     dependencies:
       dequal: 2.0.3
       esm-env: 1.2.2
@@ -11620,7 +11620,7 @@ snapshots:
       svelte: 5.57.2(@typescript-eslint/types@8.71.2)
     optionalDependencies:
       '@sveltejs/kit': 2.70.3(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
-      zod: 4.6.6
+      zod: 4.6.7
 
   rxjs@7.8.2:
     dependencies:
@@ -12361,11 +12361,11 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unlighthouse@0.19.1(d719a5c3b6af045801665f8449f35de0):
+  unlighthouse@0.19.1(974f71cb696cdb3d60defda8f55e3c9f):
     dependencies:
-      '@unlighthouse/cli': 0.19.1(8dbc30aeccc625e7890298d439bf06d7)
-      '@unlighthouse/client': 0.19.1(8bb65f661b2b0e7fb5e7ba86ec73f223)
-      '@unlighthouse/core': 0.19.1(7939e6ba9ed266394ba5fb185456cf58)
+      '@unlighthouse/cli': 0.19.1(7653105c2af09afd78a8b658ab6efaa9)
+      '@unlighthouse/client': 0.19.1(be62a5a87e4fe64f74dbeccffc72a2c9)
+      '@unlighthouse/core': 0.19.1(cbd64fa4355c1ca192b398894a18e257)
       c12: 3.3.4
     optionalDependencies:
       puppeteer: 24.42.0(supports-color@10.2.2)(typescript@6.0.3)
@@ -12868,6 +12868,6 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.6.6: {}
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}
