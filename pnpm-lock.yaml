@@ -137,7 +137,7 @@ importers:
         version: 4.5.0
       skills:
         specifier: ^1.7.0
-        version: 1.7.2
+        version: 1.7.4
       super-sitemap:
         specifier: ^2.0.6
         version: 2.0.6
@@ -5384,8 +5384,8 @@ packages:
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
-  skills@1.7.2:
-    resolution: {integrity: sha512-j+GzyF/oNahsjjjup6y3lJpFkC1lQjIkf4kAMXICA1hboBqi0fAGXAGoE4x9FRZiP1br/YE9+L3/Tqq6PIAe0A==}
+  skills@1.7.4:
+    resolution: {integrity: sha512-lHZJksE8UImNAr+LL6unqq7jERjdFw5EJasm17srycwL7rXHGdCmgu1L1ttLxUO9i3rdH+QQig+px0icHqLmRw==}
     engines: {node: '>=22.20.0'}
     hasBin: true
 
@@ -11889,7 +11889,7 @@ snapshots:
       got: 13.0.0
       p-limit: 6.2.0
 
-  skills@1.7.2:
+  skills@1.7.4:
     dependencies:
       tar: 7.5.22
       yaml: 2.9.1
