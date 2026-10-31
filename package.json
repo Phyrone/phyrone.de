@@ -53,7 +53,7 @@
 		"shiki": "^4.4.1",
 		"skills": "^1.7.0",
 		"super-sitemap": "^2.0.6",
-		"sv": "^0.17.1",
+		"sv": "^1.0.0",
 		"svelte": "^5.56.8",
 		"svelte-check": "^4.7.4",
 		"tailwindcss": "^4.3.3",
