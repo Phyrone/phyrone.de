@@ -19,7 +19,7 @@ importers:
         version: 2.29.2(eslint@10.13.0(jiti@2.7.0)(supports-color@10.2.2))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.51.2)(yaml@2.9.1))
       '@lucide/svelte':
         specifier: ^1.28.0
-        version: 1.41.0(svelte@5.57.3(@typescript-eslint/types@8.72.1))
+        version: 1.63.0(svelte@5.57.3(@typescript-eslint/types@8.72.1))
       '@xyflow/svelte':
         specifier: ^1.6.2
         version: 1.7.0(svelte@5.57.3(@typescript-eslint/types@8.72.1))
@@ -1534,8 +1534,8 @@ packages:
   '@lix-js/sdk@0.20.1':
     resolution: {integrity: sha512-oscOFP8Cr1My6Wh2KVYC9+aJ1mHs+d7vnD+7PPJaA4L+Y1FR37Sm99SrFGfvUizaj/XtRi2GlDF2IOFt9iXMNQ==}
 
-  '@lucide/svelte@1.41.0':
-    resolution: {integrity: sha512-N5dInvHWGxNcnu3VJvbO2zOJA832Uy4he6qGwcqd8i3m8iYGlLoebp+e+X8NfncXXLnXkYvru5BnkUVdNdo1xg==}
+  '@lucide/svelte@1.63.0':
+    resolution: {integrity: sha512-eAhbnjLMmbF7Xf6VMECERIKi8f0vDlDgMnNUcZgJKRclS2yjZel6XRaPlfFRvAvbGfVFrOchILEuCB/vTaz8PA==}
     peerDependencies:
       svelte: ^5
 
@@ -7376,7 +7376,7 @@ snapshots:
       binaryen: 130.0.0
       fflate: 0.8.3
 
-  '@lucide/svelte@1.41.0(svelte@5.57.3(@typescript-eslint/types@8.72.1))':
+  '@lucide/svelte@1.63.0(svelte@5.57.3(@typescript-eslint/types@8.72.1))':
     dependencies:
       svelte: 5.57.3(@typescript-eslint/types@8.72.1)
 
